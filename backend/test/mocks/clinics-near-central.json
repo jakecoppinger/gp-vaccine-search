@@ -1,0 +1,994 @@
+{
+  "clinics": [
+    {
+      "id": 4119,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/8091/thumb_d317961a9c009e60c29abd6f32544ec5.png",
+      "name": "World Square Medical Centre",
+      "slug": "world-square-medical-centre",
+      "street_address": "Shop 9.09c, 644 George St, Sydney",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8:30am", "short": "Opens 8:30am" }
+      },
+      "suburb_id": 13320
+    },
+    {
+      "id": 1904,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/3648/thumb_4bbbd87c3b2bca95784b31341efef2ab.png",
+      "name": "Crown St Medical Centre",
+      "slug": "crown-st-medical-centre",
+      "street_address": "351 Crown St, Lower Ground",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13332
+    },
+    {
+      "id": 5274,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/10333/thumb_ab81f2288f84c00f60582c34411a2af8.jpg",
+      "name": "Bourke Street Clinic",
+      "slug": "bourke-street-clinic",
+      "street_address": "421 Bourke Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13332
+    },
+    {
+      "id": 106,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/50/thumb_d66c4f3e4252bbb89f7b2514cd164729.png",
+      "name": "Broadway General Practice",
+      "slug": "broadway-general-practice",
+      "street_address": "M105 / Level 1, Broadway Shopping Centre, 1 Bay Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8:30am", "short": "Opens 8:30am" }
+      },
+      "suburb_id": 13326
+    },
+    {
+      "id": 5659,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/11110/thumb_7b10d824026900899b0b95f23a005d43.png",
+      "name": "Surry Hills Medical Centre",
+      "slug": "surry-hills-medical-centre",
+      "street_address": "569/573 Crown Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13332
+    },
+    {
+      "id": 1264,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/2359/thumb_9f3ace16ef1720791c11c3f6522c1f95.JPG",
+      "name": "CityDoc Medical Centre",
+      "slug": "citydoc-intergrative-healthcare",
+      "street_address": "7-9 Gibbons Street ",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13343
+    },
+    {
+      "id": 4478,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/8820/thumb_dfaa2db976a8eb5ee3cf9abe73683bf5.jpg",
+      "name": "Montrose Medical Practice",
+      "slug": "montrose-medical-practice",
+      "street_address": "20 Glebe Point Road",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens Mon 9am", "short": "Opens Mon" }
+      },
+      "suburb_id": 13399
+    },
+    {
+      "id": 3298,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/6431/thumb_05f1b558bfbe21fbe6d59b200ca94a9e.png",
+      "name": "Glebe Medical Centre",
+      "slug": "glebe-medical-centre",
+      "street_address": "53 GLEBE POINT Road",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 7:30am", "short": "Opens 7:30am" }
+      },
+      "suburb_id": 13399
+    },
+    {
+      "id": 2165,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/4170/thumb_ccce349808e7c7bf581d4340542d43a1.JPG",
+      "name": "Darlinghurst Medical Centre",
+      "slug": "darlinghurst-medical-centre",
+      "street_address": "213-219 Darlinghurst Road",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 7am", "short": "Opens 7am" }
+      },
+      "suburb_id": 13331
+    },
+    {
+      "id": 3568,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/6976/thumb_06804d128f0bbd4ce90d62cb80334fa8.png",
+      "name": "Sydney Doctors",
+      "slug": "sydney-doctors",
+      "street_address": "Level 1, 70 Pitt Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13320
+    },
+    {
+      "id": 2008,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/3856/thumb_d35acc116d809a80222e20b4580e84ed.png",
+      "name": "O'Connell St Clinic",
+      "slug": "o-connell-street-medical-centre",
+      "street_address": "Mezzanine Level / 12 O' Connell Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13320
+    },
+    {
+      "id": 3509,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/6856/thumb_09a5341f71d1453a7f647972a20c215e.png",
+      "name": "City Medical Practice - Sydney",
+      "slug": "city-medical-practice-sydney",
+      "street_address": "2 York Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13320
+    },
+    {
+      "id": 1425,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/2684/thumb_e0256a07fd00aa736ebe54e0cef9cda9.png",
+      "name": "Green Square Health",
+      "slug": "green-square-health",
+      "street_address": "4/965 Bourke Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13344
+    },
+    {
+      "id": 5455,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/10702/thumb_d6213519613645afe411718587629605.png",
+      "name": "Park Sydney Medical Practice",
+      "slug": "park-medical-sydney",
+      "street_address": "Shop 6A, Park Sydney Village, 149-163 Mitchell Road",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13409
+    },
+    {
+      "id": 2772,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/5391/thumb_5d5044c7f412fb7fedced59b0d4913d6.png",
+      "name": "Harold Park Medical Centre",
+      "slug": "harold-park-medical-centre",
+      "street_address": "12B 1 Dalgal Way",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13398
+    },
+    {
+      "id": 3032,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/5920/thumb_1c6091be1f018cbdac7cf9ece5a91634.JPG",
+      "name": "Alice Street General Practice",
+      "slug": "alice-street-general-practice",
+      "street_address": "6 Alice St",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13408
+    },
+    {
+      "id": 3300,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/6435/thumb_f94f0532b55d47ae8454fe759c37d7f7.png",
+      "name": "Rozelle Medical Centre",
+      "slug": "rozelle-medical-centre",
+      "street_address": "670 Darling Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13401
+    },
+    {
+      "id": 2705,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/5257/thumb_2430463d9f68b39234b917dc67e1e83b.jpg",
+      "name": "Rozelle Total Health",
+      "slug": "rozelle-total-health",
+      "street_address": "579 Darling Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13401
+    },
+    {
+      "id": 5018,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/9915/thumb_54928868edd0156b70bb6f4396feb79d.jpg",
+      "name": "Milsons Point Medical Centre",
+      "slug": "milsons-point-medical-centre",
+      "street_address": "80 Alfred Street South",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13439
+    },
+    {
+      "id": 4319,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/assets/empty_clinic_thumb_image.gif",
+      "name": "Bondi Junction GP Respiratory Clinic",
+      "slug": "bondi-junction-respiratory-clinic",
+      "street_address": "47 Spring Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13355
+    },
+    {
+      "id": 3115,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/6093/thumb_792ca6c222cd846b24c5691281e41627.jpg",
+      "name": "Bondi Junction Medical \u0026 Dental Centre",
+      "slug": "bondi-junction-medical-dental-centre",
+      "street_address": "3A Bronte Road",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 7am", "short": "Opens 7am" }
+      },
+      "suburb_id": 13355
+    },
+    {
+      "id": 2103,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/4046/thumb_4e6ef02e3ed46a5489df03f0c2fdaebf.png",
+      "name": "Park Family Practice",
+      "slug": "park-family-practice",
+      "street_address": "Shop 188/ 2A Hollywood Avenue",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8:30am", "short": "Opens 8:30am" }
+      },
+      "suburb_id": 13355
+    },
+    {
+      "id": 3301,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/6437/thumb_0621586ca0ea24fb03b385de970797c9.png",
+      "name": "Randwick Doctors Medical Centre",
+      "slug": "randwick-doctors-medical-centre",
+      "street_address": "62 Belmore Road",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13379
+    },
+    {
+      "id": 791,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/1413/thumb_83b25a6d00f9e57b547493f9536d0d1b.jpg",
+      "name": "Mascot Medical",
+      "slug": "mascot-medical-practice",
+      "street_address": "Shop 6, 1 Etherden Walk",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8:30am", "short": "Opens 8:30am" }
+      },
+      "suburb_id": 13350
+    },
+    {
+      "id": 6245,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/12298/thumb_ad7fbb238bd48f6f811a34b347750b9f.jpeg",
+      "name": "Bronte GP",
+      "slug": "dr-deidre-de-bruyn-t-a-bronte-gp",
+      "street_address": "Shop 1,  276-278 Bronte Road",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13360
+    },
+    {
+      "id": 1391,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/2614/thumb_5d764aec40c4dde33277f9aabfcea4ce.png",
+      "name": "UR Family Practice",
+      "slug": "ur-family-practice",
+      "street_address": "55/18-26 Church Avenue",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens Mon 9am", "short": "Opens Mon" }
+      },
+      "suburb_id": 13350
+    },
+    {
+      "id": 3297,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/6429/thumb_666b1fab8863b71e86ad2d80f75eb1e4.png",
+      "name": "Birkenhead Medical Centre",
+      "slug": "birkenhead-medical-centre",
+      "street_address": "Shop 134-135/19A Roseby Street",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13421
+    },
+    {
+      "id": 4855,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/9587/thumb_f787750cfd936471a9aa35ecde36043b.jpg",
+      "name": "Ocean Medical Practice",
+      "slug": "ocean-medical-centre",
+      "street_address": "194 Bondi Road",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8:30am", "short": "Opens 8:30am" }
+      },
+      "suburb_id": 13362
+    },
+    {
+      "id": 2900,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/5652/thumb_25866996e48b2f87ac8aced130c2775e.jpg",
+      "name": "North Sydney General Practice",
+      "slug": "north-sydney-general-practice",
+      "street_address": "1/239-245 Pacific Hwy",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13435
+    },
+    {
+      "id": 1932,
+      "image": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/3704/thumb_5a3dd21772896097d5b5c17f086b0ecf.jpg",
+      "name": "Coogee Family Medical Centre",
+      "slug": "coogee-family-medical-centre",
+      "street_address": "201 Coogee Bay Road, Coogee 2034 NSW",
+      "open_state": {
+        "is_open": false,
+        "label": { "long": "Opens 8am", "short": "Opens 8am" }
+      },
+      "suburb_id": 13384
+    }
+  ],
+  "doctors": [],
+  "suburbs": [
+    {
+      "id": 13320,
+      "name": "Sydney",
+      "state": "NSW",
+      "postcode": "2000",
+      "slug": "sydney-NSW-2000"
+    },
+    {
+      "id": 13332,
+      "name": "Surry Hills",
+      "state": "NSW",
+      "postcode": "2010",
+      "slug": "surry-hills-NSW-2010"
+    },
+    {
+      "id": 13326,
+      "name": "Broadway",
+      "state": "NSW",
+      "postcode": "2007",
+      "slug": "broadway-NSW-2007"
+    },
+    {
+      "id": 13343,
+      "name": "Redfern",
+      "state": "NSW",
+      "postcode": "2016",
+      "slug": "redfern-NSW-2016"
+    },
+    {
+      "id": 13399,
+      "name": "Glebe",
+      "state": "NSW",
+      "postcode": "2037",
+      "slug": "glebe-NSW-2037"
+    },
+    {
+      "id": 13331,
+      "name": "Darlinghurst",
+      "state": "NSW",
+      "postcode": "2010",
+      "slug": "darlinghurst-NSW-2010"
+    },
+    {
+      "id": 13344,
+      "name": "Waterloo",
+      "state": "NSW",
+      "postcode": "2017",
+      "slug": "waterloo-NSW-2017"
+    },
+    {
+      "id": 13409,
+      "name": "Erskineville",
+      "state": "NSW",
+      "postcode": "2043",
+      "slug": "erskineville-NSW-2043"
+    },
+    {
+      "id": 13398,
+      "name": "Forest Lodge",
+      "state": "NSW",
+      "postcode": "2037",
+      "slug": "forest-lodge-NSW-2037"
+    },
+    {
+      "id": 13408,
+      "name": "Newtown",
+      "state": "NSW",
+      "postcode": "2042",
+      "slug": "newtown-NSW-2042"
+    },
+    {
+      "id": 13401,
+      "name": "Rozelle",
+      "state": "NSW",
+      "postcode": "2039",
+      "slug": "rozelle-NSW-2039"
+    },
+    {
+      "id": 13439,
+      "name": "Milsons Point",
+      "state": "NSW",
+      "postcode": "2061",
+      "slug": "milsons-point-NSW-2061"
+    },
+    {
+      "id": 13355,
+      "name": "Bondi Junction",
+      "state": "NSW",
+      "postcode": "2022",
+      "slug": "bondi-junction-NSW-2022"
+    },
+    {
+      "id": 13379,
+      "name": "Randwick",
+      "state": "NSW",
+      "postcode": "2031",
+      "slug": "randwick-NSW-2031"
+    },
+    {
+      "id": 13350,
+      "name": "Mascot",
+      "state": "NSW",
+      "postcode": "2020",
+      "slug": "mascot-NSW-2020"
+    },
+    {
+      "id": 13360,
+      "name": "Waverley",
+      "state": "NSW",
+      "postcode": "2024",
+      "slug": "waverley-NSW-2024"
+    },
+    {
+      "id": 13421,
+      "name": "Drummoyne",
+      "state": "NSW",
+      "postcode": "2047",
+      "slug": "drummoyne-NSW-2047"
+    },
+    {
+      "id": 13362,
+      "name": "Bondi",
+      "state": "NSW",
+      "postcode": "2026",
+      "slug": "bondi-NSW-2026"
+    },
+    {
+      "id": 13435,
+      "name": "North Sydney",
+      "state": "NSW",
+      "postcode": "2060",
+      "slug": "north-sydney-NSW-2060"
+    },
+    {
+      "id": 13384,
+      "name": "Coogee",
+      "state": "NSW",
+      "postcode": "2034",
+      "slug": "coogee-NSW-2034"
+    }
+  ],
+  "matches": [
+    {
+      "entity_id": 4119,
+      "entity_type": "clinics",
+      "distance": "0.7",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 4119,
+      "doctor_id": null,
+      "suburb_id": 13320
+    },
+    {
+      "entity_id": 1904,
+      "entity_type": "clinics",
+      "distance": "0.8",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 1904,
+      "doctor_id": null,
+      "suburb_id": 13332
+    },
+    {
+      "entity_id": 5274,
+      "entity_type": "clinics",
+      "distance": "1.0",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 5274,
+      "doctor_id": null,
+      "suburb_id": 13332
+    },
+    {
+      "entity_id": 106,
+      "entity_type": "clinics",
+      "distance": "1.0",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 106,
+      "doctor_id": null,
+      "suburb_id": 13326
+    },
+    {
+      "entity_id": 5659,
+      "entity_type": "clinics",
+      "distance": "1.0",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 5659,
+      "doctor_id": null,
+      "suburb_id": 13332
+    },
+    {
+      "entity_id": 1264,
+      "entity_type": "clinics",
+      "distance": "1.2",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 1264,
+      "doctor_id": null,
+      "suburb_id": 13343
+    },
+    {
+      "entity_id": 4478,
+      "entity_type": "clinics",
+      "distance": "1.3",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 4478,
+      "doctor_id": null,
+      "suburb_id": 13399
+    },
+    {
+      "entity_id": 3298,
+      "entity_type": "clinics",
+      "distance": "1.3",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 3298,
+      "doctor_id": null,
+      "suburb_id": 13399
+    },
+    {
+      "entity_id": 2165,
+      "entity_type": "clinics",
+      "distance": "1.6",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 2165,
+      "doctor_id": null,
+      "suburb_id": 13331
+    },
+    {
+      "entity_id": 3568,
+      "entity_type": "clinics",
+      "distance": "1.9",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 3568,
+      "doctor_id": null,
+      "suburb_id": 13320
+    },
+    {
+      "entity_id": 2008,
+      "entity_type": "clinics",
+      "distance": "2.1",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 2008,
+      "doctor_id": null,
+      "suburb_id": 13320
+    },
+    {
+      "entity_id": 3509,
+      "entity_type": "clinics",
+      "distance": "2.1",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 3509,
+      "doctor_id": null,
+      "suburb_id": 13320
+    },
+    {
+      "entity_id": 1425,
+      "entity_type": "clinics",
+      "distance": "2.1",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 1425,
+      "doctor_id": null,
+      "suburb_id": 13344
+    },
+    {
+      "entity_id": 5455,
+      "entity_type": "clinics",
+      "distance": "2.6",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 5455,
+      "doctor_id": null,
+      "suburb_id": 13409
+    },
+    {
+      "entity_id": 2772,
+      "entity_type": "clinics",
+      "distance": "2.7",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 2772,
+      "doctor_id": null,
+      "suburb_id": 13398
+    },
+    {
+      "entity_id": 3032,
+      "entity_type": "clinics",
+      "distance": "3.3",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 3032,
+      "doctor_id": null,
+      "suburb_id": 13408
+    },
+    {
+      "entity_id": 3300,
+      "entity_type": "clinics",
+      "distance": "3.9",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 3300,
+      "doctor_id": null,
+      "suburb_id": 13401
+    },
+    {
+      "entity_id": 2705,
+      "entity_type": "clinics",
+      "distance": "4.0",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 2705,
+      "doctor_id": null,
+      "suburb_id": 13401
+    },
+    {
+      "entity_id": 5018,
+      "entity_type": "clinics",
+      "distance": "4.1",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 5018,
+      "doctor_id": null,
+      "suburb_id": 13439
+    },
+    {
+      "entity_id": 4319,
+      "entity_type": "clinics",
+      "distance": "4.1",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 4319,
+      "doctor_id": null,
+      "suburb_id": 13355
+    },
+    {
+      "entity_id": 3115,
+      "entity_type": "clinics",
+      "distance": "4.2",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 3115,
+      "doctor_id": null,
+      "suburb_id": 13355
+    },
+    {
+      "entity_id": 2103,
+      "entity_type": "clinics",
+      "distance": "4.4",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 2103,
+      "doctor_id": null,
+      "suburb_id": 13355
+    },
+    {
+      "entity_id": 3301,
+      "entity_type": "clinics",
+      "distance": "4.7",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 3301,
+      "doctor_id": null,
+      "suburb_id": 13379
+    },
+    {
+      "entity_id": 791,
+      "entity_type": "clinics",
+      "distance": "4.8",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 791,
+      "doctor_id": null,
+      "suburb_id": 13350
+    },
+    {
+      "entity_id": 6245,
+      "entity_type": "clinics",
+      "distance": "4.9",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 6245,
+      "doctor_id": null,
+      "suburb_id": 13360
+    },
+    {
+      "entity_id": 1391,
+      "entity_type": "clinics",
+      "distance": "5.0",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 1391,
+      "doctor_id": null,
+      "suburb_id": 13350
+    },
+    {
+      "entity_id": 3297,
+      "entity_type": "clinics",
+      "distance": "5.1",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 3297,
+      "doctor_id": null,
+      "suburb_id": 13421
+    },
+    {
+      "entity_id": 4855,
+      "entity_type": "clinics",
+      "distance": "5.4",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 4855,
+      "doctor_id": null,
+      "suburb_id": 13362
+    },
+    {
+      "entity_id": 2900,
+      "entity_type": "clinics",
+      "distance": "5.4",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 2900,
+      "doctor_id": null,
+      "suburb_id": 13435
+    },
+    {
+      "entity_id": 1932,
+      "entity_type": "clinics",
+      "distance": "6.1",
+      "featured_infos": [
+        {
+          "title": "COVID-19 Vaccine",
+          "description": "AstraZeneca \u0026 Pfizer",
+          "tone": "success",
+          "icon": "tick-thick"
+        }
+      ],
+      "clinic_id": 1932,
+      "doctor_id": null,
+      "suburb_id": 13384
+    }
+  ],
+  "meta": {
+    "paging": {
+      "next_cursor": "ZGlzdGFuY2UlM0Q2LjM0MTY3MjA1ODE3NTI0MTU6b3JpZ2luJTNELTMzLjg4%0AMzQ4MDUlMkMxNTEuMjA1ODk5NTpuYW1lJTNEVGhlJTIwVmlsbGFnZSUyME1l%0AZGljYWwlMjBQcmFjdGljZTppZCUzRDEwNDA%3D%0A"
+    }
+  }
+}

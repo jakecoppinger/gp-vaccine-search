@@ -1,0 +1,2537 @@
+{
+  "suburb": [
+    {
+      "id": 13399,
+      "name": "Glebe",
+      "state": "NSW",
+      "postcode": "2037",
+      "slug": "glebe-NSW-2037"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 69644,
+      "slug": "dr-hunter-tuon",
+      "full_name": "Dr Hunter Tuon",
+      "gender": "male",
+      "pre_triage_availability_type_id": "69644-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/69644/profile_805b1ce0a02c595da7701619128df8c5.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Hunter Tuon does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Hunter graduated from the University of Sydney in Medicine in 1999. He worked and trained in Canberra.Hospital prior to 2002 in areas of general practice and general surgery as well as pediatrics. He undertook general practice training from 2003 and became a fellow of the Royal Australian College of General Practitioners in 2005. His interests include preventive health, Implanon insertion and travel medicine.\n",
+      "statement_html": "<p>Hunter graduated from the University of Sydney in Medicine in 1999. He worked and trained in Canberra.Hospital prior to 2002 in areas of general practice and general surgery as well as pediatrics. He undertook general practice training from 2003 and became a fellow of the Royal Australian College of General Practitioners in 2005. His interests include preventive health, Implanon insertion and travel medicine.</p>\n",
+      "position": 4,
+      "earliest_available": "2021-08-09T08:00:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English",
+        "Japanese",
+        "Mandarin",
+        "Spanish"
+      ],
+      "qualifications": [
+        "MBBS",
+        "FRACGP"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        580893,
+        580877,
+        580883,
+        346792,
+        346793,
+        347000,
+        346999,
+        346913,
+        346927,
+        346954,
+        346958
+      ],
+      "doctor_interest_ids": [
+        64297,
+        64298,
+        64462
+      ]
+    },
+    {
+      "id": 69138,
+      "slug": "dr-heather-whitson",
+      "full_name": "Dr Heather Whitson",
+      "gender": "female",
+      "pre_triage_availability_type_id": "69138-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/69138/profile_22b5587aae922f3d0d7062715706d6a3.jpg",
+      "accepts_new_patients": false,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Heather Whitson does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Please note Dr Whitson is not able to see any new patients at this time. Please only book in with Dr Whitson if you have seen her before. \nHeather is a graduate of the University of New South Wales. She has completed two post-graduate diplomas – one in Obstetrics & Gynaecology, and one in Palliative Medicine – in addition to completing a certificate course in Sexual & Reproductive Health from Family Planning Australia. She is a fellow of the Royal Australian College of General Practitioners. Heather has worked in many rural and remote areas of Australia in general practice, Aboriginal health and palliative care. She has worked in the United Kingdom in the areas of psychiatry and emergency medicine. She enjoys all areas of general practice but has special interest in women’s health, travel medicine and palliative care. In addition to working at Montrose, Heather teaches in the School of Medicine at the University of Notre Dame Australia.\n",
+      "statement_html": "<p>Please note Dr Whitson is not able to see any new patients at this time. Please only book in with Dr Whitson if you have seen her before. \nHeather is a graduate of the University of New South Wales. She has completed two post-graduate diplomas – one in Obstetrics &amp; Gynaecology, and one in Palliative Medicine – in addition to completing a certificate course in Sexual &amp; Reproductive Health from Family Planning Australia. She is a fellow of the Royal Australian College of General Practitioners. Heather has worked in many rural and remote areas of Australia in general practice, Aboriginal health and palliative care. She has worked in the United Kingdom in the areas of psychiatry and emergency medicine. She enjoys all areas of general practice but has special interest in women’s health, travel medicine and palliative care. In addition to working at Montrose, Heather teaches in the School of Medicine at the University of Notre Dame Australia.</p>\n",
+      "position": 0,
+      "earliest_available": "2021-08-09T01:00:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English",
+        "French"
+      ],
+      "qualifications": [
+        "DipRACOG",
+        "MBBS",
+        "FRACGP",
+        "Dip Pall Med (Clinical)"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        580890,
+        580878,
+        580886,
+        405186,
+        405187,
+        347022,
+        346914,
+        346953
+      ],
+      "doctor_interest_ids": [
+        64303,
+        64304,
+        64314,
+        64315
+      ]
+    },
+    {
+      "id": 69647,
+      "slug": "dr-rebecca-chan",
+      "full_name": "Dr Rebecca Chan",
+      "gender": "female",
+      "pre_triage_availability_type_id": "69647-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/69647/profile_ffdb261fcd86600cf5327c124c849ca0.jpg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Rebecca Chan does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Rebecca graduated from the University of Notre Dame Sydney in 2012 and has since worked in a number of hospitals and general practices throughout Sydney.  She has completed both the Diploma of Child Health and the Family Planning national certificate in sexual and reproductive health.  In addition, she holds a Graduate Diploma in Genetic Counseling from the University of Melbourne.  She has special interests in paediatrics and women's health, and is accredited to provide implanon and IUD insertion and antenatal shared care.  Outside of work, she is kept busy with her two young boys and enjoys running and good food.\nPlease note Rebecca will be on maternity  leave from the 19th of March. She will return the to practice in August 2021.",
+      "statement_html": "<p>Rebecca graduated from the University of Notre Dame Sydney in 2012 and has since worked in a number of hospitals and general practices throughout Sydney.  She has completed both the Diploma of Child Health and the Family Planning national certificate in sexual and reproductive health.  In addition, she holds a Graduate Diploma in Genetic Counseling from the University of Melbourne.  She has special interests in paediatrics and women's health, and is accredited to provide implanon and IUD insertion and antenatal shared care.  Outside of work, she is kept busy with her two young boys and enjoys running and good food.\nPlease note Rebecca will be on maternity  leave from the 19th of March. She will return the to practice in August 2021.</p>\n",
+      "position": 9,
+      "earliest_available": "2021-08-17T06:30:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English"
+      ],
+      "qualifications": [
+        "Dip Child Health",
+        "MBBS",
+        "FRACGP",
+        "B MedSci",
+        "Grad Dip Genetic Couns",
+        "FPA Cert"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        580889,
+        580879,
+        580888,
+        347890,
+        347891,
+        346907,
+        346908,
+        346909,
+        346930,
+        346931,
+        346929,
+        346956,
+        346957
+      ],
+      "doctor_interest_ids": [
+        64295,
+        64316,
+        64317,
+        64318,
+        64319
+      ]
+    },
+    {
+      "id": 69653,
+      "slug": "dr-dileni-fernando",
+      "full_name": "Dr Dileni Fernando",
+      "gender": "female",
+      "pre_triage_availability_type_id": "69653-1800",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/69653/profile_ae0505fce02edb1e39f17519270cd93b.png",
+      "accepts_new_patients": false,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Dileni Fernando does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Please be aware that Dr Dileni Fernando is unable to take on any new patients as this time. If you have not seen Dileni before please call reception on 9660 6788 to discuss alternative practitioners.\nDileni is a graduate of the University of Newcastle. She has completed the certificate course in Sexual Health and Reproductive Medicine from Family Planning Australia and is a Fellow of the Royal Australian College of General Practitioners. She is accredited to provide antenatal shared care at Royal Prince Alfred Hospital and the Royal Hospital for Women. She has worked in a variety of hospitals and general practices  across NSW in addition to working for several years in a sexual health clinic. She enjoys the diversity and holistic nature of general practice and has special interests in sexual health, men's and women's health, preventative health and travel medicine. \n",
+      "statement_html": "<p>Please be aware that Dr Dileni Fernando is unable to take on any new patients as this time. If you have not seen Dileni before please call reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> to discuss alternative practitioners.\nDileni is a graduate of the University of Newcastle. She has completed the certificate course in Sexual Health and Reproductive Medicine from Family Planning Australia and is a Fellow of the Royal Australian College of General Practitioners. She is accredited to provide antenatal shared care at Royal Prince Alfred Hospital and the Royal Hospital for Women. She has worked in a variety of hospitals and general practices  across NSW in addition to working for several years in a sexual health clinic. She enjoys the diversity and holistic nature of general practice and has special interests in sexual health, men's and women's health, preventative health and travel medicine. </p>\n",
+      "position": 8,
+      "earliest_available": "2021-08-13T02:00:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English"
+      ],
+      "qualifications": [
+        "BMed",
+        "FRACGP",
+        "MD",
+        "FPA Cert"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        580891,
+        580880,
+        580887,
+        346985,
+        346986,
+        346988
+      ],
+      "doctor_interest_ids": [
+        64309,
+        64461
+      ]
+    },
+    {
+      "id": 69651,
+      "slug": "dr-catherine-choi-1",
+      "full_name": "Dr Catherine Choi",
+      "gender": "female",
+      "pre_triage_availability_type_id": "69651-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/69651/profile_16c2c50e63e8f119b0a165954ebb7de4.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Catherine Choi does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Catherine completed her medical degree at The University of Sydney, and subsequently gained experience at various tertiary hospitals and general practices across NSW. She has completed additional professional education in the form of a Diploma of Child Health, Certificate in Reproductive & Sexual Health and Certificate in Skin Cancer Medicine. She is also registered to provide antenatal care with Royal Prince Alfred Hospital, Royal North Shore Hospital and the Royal Hospital for Women. Additionally, Catherine is qualified to provide basic focussed psychological strategies to support mental health. She is also qualified for Implanon insertions. Catherine has a love for the breadth of general practice, is committed to constant learning and is passionate about providing high-quality, personalised care to people from all walks of life. This includes women’s health, sexual health and antental care, men’s health, mental health and promoting healthy lifestyle changes. Outside of work, Catherine loves travelling to experience new cultures, attempting barre/pump classes and eating her herb garden much faster than it grows.",
+      "statement_html": "<p>Catherine completed her medical degree at The University of Sydney, and subsequently gained experience at various tertiary hospitals and general practices across NSW. She has completed additional professional education in the form of a Diploma of Child Health, Certificate in Reproductive &amp; Sexual Health and Certificate in Skin Cancer Medicine. She is also registered to provide antenatal care with Royal Prince Alfred Hospital, Royal North Shore Hospital and the Royal Hospital for Women. Additionally, Catherine is qualified to provide basic focussed psychological strategies to support mental health. She is also qualified for Implanon insertions. Catherine has a love for the breadth of general practice, is committed to constant learning and is passionate about providing high-quality, personalised care to people from all walks of life. This includes women’s health, sexual health and antental care, men’s health, mental health and promoting healthy lifestyle changes. Outside of work, Catherine loves travelling to experience new cultures, attempting barre/pump classes and eating her herb garden much faster than it grows.</p>\n",
+      "position": 1,
+      "earliest_available": "2021-08-09T01:30:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English",
+        "Korean"
+      ],
+      "qualifications": [
+        "BA",
+        "Dip Child Health",
+        "MBBS",
+        "FRACGP",
+        "FPA Cert",
+        "Cert Skin Can Med",
+        "LLB (Hons)"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        346949,
+        580894,
+        580882,
+        580884,
+        346948,
+        346945,
+        346946,
+        346947,
+        346950,
+        346951,
+        346955,
+        346952
+      ],
+      "doctor_interest_ids": [
+        64289,
+        64290,
+        64293,
+        65314,
+        69183,
+        69184,
+        94226
+      ]
+    },
+    {
+      "id": 69726,
+      "slug": "declan-o-connor",
+      "full_name": "Declan O'Connor",
+      "gender": "male",
+      "pre_triage_availability_type_id": "69726-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/69726/profile_783e74433c6acf1afa6b91b57384a692.png",
+      "accepts_new_patients": false,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Declan O'Connor does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Declan has worked in private practice since graduating from the University of Newcastle, working in multiple clinics on the North Shore and in the Eastern Suburbs. He jointly runs and manages podiatry practicesin the North Shore area and the city where his focus is on promoting foot health and improving body posture as well as providing domiciliary podiatry care to patients across Sydney in their homes, and in retirement villages & aged care facilities.\nDeclan enjoys diabetic foot care, neurological & vascular testing, and using orthoses to treat musculoskeletal aches & pains and to improve posture, and nail surgery, but is available for any foot or lower limb issue big or small. Declan is available every Tuesday from 8am and alternate Saturday’s to continue the excellent podiatry care that Ed Pickersgill was providing.",
+      "statement_html": "<p>Declan has worked in private practice since graduating from the University of Newcastle, working in multiple clinics on the North Shore and in the Eastern Suburbs. He jointly runs and manages podiatry practicesin the North Shore area and the city where his focus is on promoting foot health and improving body posture as well as providing domiciliary podiatry care to patients across Sydney in their homes, and in retirement villages &amp; aged care facilities.\nDeclan enjoys diabetic foot care, neurological &amp; vascular testing, and using orthoses to treat musculoskeletal aches &amp; pains and to improve posture, and nail surgery, but is available for any foot or lower limb issue big or small. Declan is available every Tuesday from 8am and alternate Saturday’s to continue the excellent podiatry care that Ed Pickersgill was providing.</p>\n",
+      "position": 6,
+      "earliest_available": "2021-08-09T23:30:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English"
+      ],
+      "qualifications": [
+        "MS pMedAus",
+        "BPod",
+        "MAAPSM",
+        "MAPodA"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 155
+      },
+      "specialty": "Podiatrist",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        347748,
+        347800,
+        347747
+      ],
+      "doctor_interest_ids": []
+    },
+    {
+      "id": 79342,
+      "slug": "daniella-thrassis",
+      "full_name": "Daniella  Thrassis",
+      "gender": "female",
+      "pre_triage_availability_type_id": "79342-1800",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/79342/profile_041078e31666bbcfa9a2e327e7a468d2.png",
+      "accepts_new_patients": false,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Daniella  Thrassis does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Daniella graduated from the University of Sydney in 2010 and went on to complete a double masters degree in Sports and Musculoskeletal Physiotherapy from Griffith University in 2016. As a result she is an APA titled Sports and Musculoskeletal physiotherapist and currently is the Rehabilitation Physiotherapist at NSW Waratahs. Previously she has worked in large multidisciplinary sports medicine practice, Sydney Roosters NRL and Sydney University Rugby Club. She is also a Clinical Pilates instructor. As a result she has seen and rehabilitated a variety of conditions and injuries from both the sporting and general population.\n\nCombining her clinical and treatment skills with her pilates and rehabilitation experience Danni is passionate about using her manual skills, rehabilitation abilities and understanding of complex musculoskeletal injuries to help her patients. She believes that this will help them to achieve their goals of returning to sport, or activity, pain free.",
+      "statement_html": "<p>Daniella graduated from the University of Sydney in 2010 and went on to complete a double masters degree in Sports and Musculoskeletal Physiotherapy from Griffith University in 2016. As a result she is an APA titled Sports and Musculoskeletal physiotherapist and currently is the Rehabilitation Physiotherapist at NSW Waratahs. Previously she has worked in large multidisciplinary sports medicine practice, Sydney Roosters NRL and Sydney University Rugby Club. She is also a Clinical Pilates instructor. As a result she has seen and rehabilitated a variety of conditions and injuries from both the sporting and general population.</p>\n\n<p>Combining her clinical and treatment skills with her pilates and rehabilitation experience Danni is passionate about using her manual skills, rehabilitation abilities and understanding of complex musculoskeletal injuries to help her patients. She believes that this will help them to achieve their goals of returning to sport, or activity, pain free.</p>\n",
+      "position": 10,
+      "earliest_available": "2021-08-18T04:00:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [
+        "BAppSci(Phty)",
+        "MMuscSportsPhty"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 152
+      },
+      "specialty": "Physiotherapist",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        433983,
+        433984,
+        433992
+      ],
+      "doctor_interest_ids": []
+    },
+    {
+      "id": 79349,
+      "slug": "shane-kertanegara",
+      "full_name": "Shane Kertanegara",
+      "gender": "male",
+      "pre_triage_availability_type_id": "79349-1800",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/79349/profile_e5beef68efc1c005a353bababad9192f.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Shane Kertanegara does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Shane Kertanegara graduated from the University of Sydney in 2006 with 1st class honours and the University Medal. He is the current Head Physiotherapist at the NSW Waratahs and has been at the club for 10 years. A published author and current lecturer at the University of Sydney, Shane’s previous roles include Head Physiotherapist of Australian U20s Junior Wallabies and Sydney University Rugby Club. Shane has an interest in treating lower limb injuries, hip and groin pain, tendinopathies and the shoulder joint. He will aim to establish an accurate diagnosis, clear management plan and use effective treatment options to guide you through your condition.\n\n",
+      "statement_html": "<p>Shane Kertanegara graduated from the University of Sydney in 2006 with 1st class honours and the University Medal. He is the current Head Physiotherapist at the NSW Waratahs and has been at the club for 10 years. A published author and current lecturer at the University of Sydney, Shane’s previous roles include Head Physiotherapist of Australian U20s Junior Wallabies and Sydney University Rugby Club. Shane has an interest in treating lower limb injuries, hip and groin pain, tendinopathies and the shoulder joint. He will aim to establish an accurate diagnosis, clear management plan and use effective treatment options to guide you through your condition.</p>\n",
+      "position": 2,
+      "earliest_available": "2021-08-09T05:00:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [
+        "BAppSci(Phty)",
+        "Hons(1st class)"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 152
+      },
+      "specialty": "Physiotherapist",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        434017,
+        434018,
+        434019
+      ],
+      "doctor_interest_ids": []
+    },
+    {
+      "id": 90389,
+      "slug": "dr-ramanan-rams-chandrabalan",
+      "full_name": "Dr Ramanan (Rams)  Chandrabalan",
+      "gender": "male",
+      "pre_triage_availability_type_id": "90389-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/90389/profile_f61e6badca6a6c7441f5eca36f8f3a52.jpg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Ramanan (Rams)  Chandrabalan does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Rams completed his medical degree at the University of Sydney and completed his internship and\nresidency at Concord, Canterbury &amp; Broken Hill Hospitals. Prior to his career in medicine, Rams was\nan optometrist having completing his optometry degree at the University of New South Wales.\nRams enjoys the variety of general practice and enjoys looking after families, young and old! He has\nparticular interests in chronic disease management, sexual health, men’s health, women’s health\nand paediatrics, having completed the Diploma in Child Health in 2016. Rams is an antenatal shared\ncare provider with RPA &amp; Canterbury Hospitals and is certified to insert and remove Implanon\ncontraception. Furthermore, Rams is also an accredited S100 Hepatitis B &amp; HIV (including PrEP &amp;\nPEP) medication prescriber. In addition to his clinical practice, Rams frequently supervises medical\nstudents and trainee doctors, and is an examiner for the Royal Australian College of General\nPractitioners.\nOutside of work Rams enjoys spending time with friends and family and being comprehensively\nbeaten at tennis on a regular basis.",
+      "statement_html": "<p>Rams completed his medical degree at the University of Sydney and completed his internship and\nresidency at Concord, Canterbury &amp; Broken Hill Hospitals. Prior to his career in medicine, Rams was\nan optometrist having completing his optometry degree at the University of New South Wales.\nRams enjoys the variety of general practice and enjoys looking after families, young and old! He has\nparticular interests in chronic disease management, sexual health, men’s health, women’s health\nand paediatrics, having completed the Diploma in Child Health in 2016. Rams is an antenatal shared\ncare provider with RPA &amp; Canterbury Hospitals and is certified to insert and remove Implanon\ncontraception. Furthermore, Rams is also an accredited S100 Hepatitis B &amp; HIV (including PrEP &amp;\nPEP) medication prescriber. In addition to his clinical practice, Rams frequently supervises medical\nstudents and trainee doctors, and is an examiner for the Royal Australian College of General\nPractitioners.\nOutside of work Rams enjoys spending time with friends and family and being comprehensively\nbeaten at tennis on a regular basis.</p>\n",
+      "position": 7,
+      "earliest_available": "2021-08-11T01:45:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English"
+      ],
+      "qualifications": [
+        "DCH",
+        "MBBS",
+        "FRACGP",
+        "BSc",
+        "BOPTOM (HONS)"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        519994,
+        519995,
+        519996,
+        519997,
+        519998,
+        519999,
+        520000,
+        520001,
+        582618,
+        582616,
+        582617
+      ],
+      "doctor_interest_ids": [
+        91359,
+        91360,
+        91361,
+        91362
+      ]
+    },
+    {
+      "id": 94401,
+      "slug": "dr-covid-19-vaccinator",
+      "full_name": "Dr Covid 19 Vaccinator ",
+      "gender": "other",
+      "pre_triage_availability_type_id": "94401-600",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/94401/profile_06fdd24ffc06cab104105c476623b965.jpeg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Covid 19 Vaccinator  does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "position": 11,
+      "earliest_available": "2021-08-19T01:40:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        562387,
+        562386,
+        562429,
+        562430
+      ],
+      "doctor_interest_ids": []
+    },
+    {
+      "id": 97124,
+      "slug": "dr-frances-chen-1",
+      "full_name": "Dr Frances Chen",
+      "gender": "female",
+      "pre_triage_availability_type_id": "97124-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/97124/profile_f809a50a8376f016b11ec0ea660ab337.jpeg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Frances Chen does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Frances graduated from the University of New South Wales with a Bachelor of Medical Studies and Doctor of Medicine with Distinction. She has trained in a number of Sydney hospitals including Concord Hospital, Royal North Shore Hospital and Mona Vale Hospital before entering General Practice.  Frances enjoys all aspects of General Practice. She has additional qualifications and training in paediatrics, women's health and sexual health through the Diploma of Child Health, Certificate for Women's Health and National Certificate in Reproductive and Sexual Health. Frances is accredited for insertion of long acting contraception and to provide antenatal shared care for Royal Prince Alfred Hospital and Canterbury Hospital. Outside of medicine, Frances enjoys road trips, camping and exploring the great outdoors.",
+      "statement_html": "<p>Frances graduated from the University of New South Wales with a Bachelor of Medical Studies and Doctor of Medicine with Distinction. She has trained in a number of Sydney hospitals including Concord Hospital, Royal North Shore Hospital and Mona Vale Hospital before entering General Practice.  Frances enjoys all aspects of General Practice. She has additional qualifications and training in paediatrics, women's health and sexual health through the Diploma of Child Health, Certificate for Women's Health and National Certificate in Reproductive and Sexual Health. Frances is accredited for insertion of long acting contraception and to provide antenatal shared care for Royal Prince Alfred Hospital and Canterbury Hospital. Outside of medicine, Frances enjoys road trips, camping and exploring the great outdoors.</p>\n",
+      "position": 3,
+      "earliest_available": "2021-08-09T06:30:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English"
+      ],
+      "qualifications": [
+        "BMed",
+        "Dip Child Health",
+        "FRACGP",
+        "MD",
+        "FPA Cert",
+        "CWH (RANZCOG)"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        580892,
+        580881,
+        580885,
+        577638,
+        577639,
+        577640,
+        577641,
+        577642
+      ],
+      "doctor_interest_ids": [
+        98255,
+        98256,
+        98257,
+        98258,
+        98259,
+        98260,
+        98641,
+        98642
+      ]
+    },
+    {
+      "id": 99103,
+      "slug": "dr-greta-devane-1",
+      "full_name": "Dr Greta Devane",
+      "gender": "female",
+      "pre_triage_availability_type_id": "99103-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/assets/empty_doctor_profile_image-3a614ad768d24b7eba64fcb886b0d72497e4284fe6006387c217b2b1674730ab.gif",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": false,
+      "does_not_accept_new_patients_message_html": "Dr Greta Devane does not take on new patients.",
+      "statement": "Greta is a final term registrar working towards her fellowship with the Royal Australian College of General Practitioners. She has just returned to Sydney from Darwin where she spent six months working in Emergency Medicine, completing her Emergency Medicine Certificate and developing an interest in Aboriginal health. Prior to this Greta has worked in GP practices in rural NSW and Sydney, as well as working in a number of Sydney hospitals. Greta completed her medical degree at the University of Sydney in 2015 and also has a Bachelor of Science from the University of Queensland. Greta enjoys the variety that comes with general practice and her interests include women's health, mental health and the management of chronic health conditions. Outside of medicine, Greta enjoys swimming, exploring the outdoors and trying out new restaurants.",
+      "statement_html": "<p>Greta is a final term registrar working towards her fellowship with the Royal Australian College of General Practitioners. She has just returned to Sydney from Darwin where she spent six months working in Emergency Medicine, completing her Emergency Medicine Certificate and developing an interest in Aboriginal health. Prior to this Greta has worked in GP practices in rural NSW and Sydney, as well as working in a number of Sydney hospitals. Greta completed her medical degree at the University of Sydney in 2015 and also has a Bachelor of Science from the University of Queensland. Greta enjoys the variety that comes with general practice and her interests include women's health, mental health and the management of chronic health conditions. Outside of medicine, Greta enjoys swimming, exploring the outdoors and trying out new restaurants.</p>\n",
+      "position": 5,
+      "earliest_available": "2021-08-09T23:00:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English"
+      ],
+      "qualifications": [
+        "MBBS",
+        "BSc (Biomed)",
+        "EMC (ACEM)"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 4478,
+      "doctor_reason_ids": [
+        595863,
+        595864,
+        595865,
+        595866,
+        595867,
+        595868,
+        595869,
+        595870
+      ],
+      "doctor_interest_ids": [
+        100244,
+        100402,
+        100403,
+        100404
+      ]
+    }
+  ],
+  "doctor_reasons": [
+    {
+      "id": 580893,
+      "availability_type_id": 192770,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69644,
+      "reason_id": 66865,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580877,
+      "availability_type_id": 192750,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69644,
+      "reason_id": 40711,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580883,
+      "availability_type_id": 192763,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69644,
+      "reason_id": 66879,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346792,
+      "availability_type_id": 64638,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69644,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346793,
+      "availability_type_id": 64639,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69644,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 347000,
+      "availability_type_id": 64637,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69644,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346999,
+      "availability_type_id": 64638,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69644,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346913,
+      "availability_type_id": 64638,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69644,
+      "reason_id": 40493,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346927,
+      "availability_type_id": 64637,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69644,
+      "reason_id": 40713,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346954,
+      "availability_type_id": 64637,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you would like a Mental Health Care Plan during your initial consult you are required to book for 45 minutes. You will be billed according to time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you would like a Mental Health Care Plan during your initial consult you are required to book for 45 minutes. You will be billed according to time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69644,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346958,
+      "availability_type_id": 64638,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on 9660 6788 to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69644,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580890,
+      "availability_type_id": 192773,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69138,
+      "reason_id": 66865,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580878,
+      "availability_type_id": 192755,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69138,
+      "reason_id": 40711,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580886,
+      "availability_type_id": 192762,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69138,
+      "reason_id": 66879,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 405186,
+      "availability_type_id": 64632,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": null,
+      "message_html": null,
+      "doctor_id": 69138,
+      "reason_id": 40792,
+      "deleted_at": null,
+      "has_stipulations": false
+    },
+    {
+      "id": 405187,
+      "availability_type_id": 64631,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If this is your first appointment at the practice you will need to complete a new patient form prior to attending. This appointment will be booked for 45 minutes so your doctor can take a full history and go through an initial pregnancy consult. ",
+      "message_html": "<p>If this is your first appointment at the practice you will need to complete a new patient form prior to attending. This appointment will be booked for 45 minutes so your doctor can take a full history and go through an initial pregnancy consult. </p>\n",
+      "doctor_id": 69138,
+      "reason_id": 40792,
+      "deleted_at": null,
+      "has_stipulations": false
+    },
+    {
+      "id": 347022,
+      "availability_type_id": 64632,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69138,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346914,
+      "availability_type_id": 64632,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69138,
+      "reason_id": 40493,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346953,
+      "availability_type_id": 64632,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on 9660 6788 to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69138,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580889,
+      "availability_type_id": 199221,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69647,
+      "reason_id": 66865,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580879,
+      "availability_type_id": 199213,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69647,
+      "reason_id": 40711,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580888,
+      "availability_type_id": 199215,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69647,
+      "reason_id": 66879,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 347890,
+      "availability_type_id": 64617,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": null,
+      "message_html": null,
+      "doctor_id": 69647,
+      "reason_id": 40792,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 347891,
+      "availability_type_id": 64616,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If this is your first appointment at the practice you will need to complete a new patient form prior to attending. This appointment will be booked for 45 minutes so your doctor can take a full history and go through an initial pregnancy consult. ",
+      "message_html": "<p>If this is your first appointment at the practice you will need to complete a new patient form prior to attending. This appointment will be booked for 45 minutes so your doctor can take a full history and go through an initial pregnancy consult. </p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40792,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346907,
+      "availability_type_id": 64617,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346908,
+      "availability_type_id": 64618,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346909,
+      "availability_type_id": 64617,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40493,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346930,
+      "availability_type_id": 64616,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346931,
+      "availability_type_id": 64617,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346929,
+      "availability_type_id": 64616,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40713,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346956,
+      "availability_type_id": 64616,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you would like a Mental Health Care Plan during your initial consult you are required to book for 45 minutes. You will be billed according to time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you would like a Mental Health Care Plan during your initial consult you are required to book for 45 minutes. You will be billed according to time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346957,
+      "availability_type_id": 64617,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on 9660 6788 to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69647,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580891,
+      "availability_type_id": 192771,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69653,
+      "reason_id": 66865,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580880,
+      "availability_type_id": 192756,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69653,
+      "reason_id": 40711,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580887,
+      "availability_type_id": 192765,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69653,
+      "reason_id": 66879,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346985,
+      "availability_type_id": 64624,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69653,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346986,
+      "availability_type_id": 64624,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69653,
+      "reason_id": 40493,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346988,
+      "availability_type_id": 64624,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on 9660 6788 to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69653,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346949,
+      "availability_type_id": 64628,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. ",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. </p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40492,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580894,
+      "availability_type_id": 192772,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69651,
+      "reason_id": 66865,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580882,
+      "availability_type_id": 192757,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69651,
+      "reason_id": 40711,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580884,
+      "availability_type_id": 192764,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 69651,
+      "reason_id": 66879,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346948,
+      "availability_type_id": 64628,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346945,
+      "availability_type_id": 64628,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346946,
+      "availability_type_id": 64630,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346947,
+      "availability_type_id": 64629,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346950,
+      "availability_type_id": 64628,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40493,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346951,
+      "availability_type_id": 64629,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40713,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346955,
+      "availability_type_id": 64629,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you would like a Mental Health Care Plan during your initial consult you are required to book for 45 minutes. You will be billed according to time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you would like a Mental Health Care Plan during your initial consult you are required to book for 45 minutes. You will be billed according to time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 346952,
+      "availability_type_id": 64628,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on 9660 6788 to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 69651,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 347748,
+      "availability_type_id": 64626,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Please be aware we require 24hours notice for cancellations. If you need to cancel or reschedule your appointment please call reception on 9660 6788.",
+      "message_html": "<p>Please be aware we require 24hours notice for cancellations. If you need to cancel or reschedule your appointment please call reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a>.</p>\n",
+      "doctor_id": 69726,
+      "reason_id": 40782,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 347800,
+      "availability_type_id": 64627,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "Please be aware we require 24 hours notice to cancel or reschedule appointments. Please call the practice if you would like to change your appointment on 9660 6788.",
+      "message_html": "<p>Please be aware we require 24 hours notice to cancel or reschedule appointments. Please call the practice if you would like to change your appointment on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a>.</p>\n",
+      "doctor_id": 69726,
+      "reason_id": 40789,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 347747,
+      "availability_type_id": 64626,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please be aware we require 24hours notice for cancellations. If you need to cancel or reschedule your appointment please call reception on 9660 6788. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. ",
+      "message_html": "<p>Please be aware we require 24hours notice for cancellations. If you need to cancel or reschedule your appointment please call reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a>. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. </p>\n",
+      "doctor_id": 69726,
+      "reason_id": 40781,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 433983,
+      "availability_type_id": 72209,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": null,
+      "message_html": null,
+      "doctor_id": 79342,
+      "reason_id": 48818,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 433984,
+      "availability_type_id": 72209,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you are an existing patient of the practice but new to our Physiotherapists, you must book an initial 45 minute consult. Prices are available on our website. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you are an existing patient of the practice but new to our Physiotherapists, you must book an initial 45 minute consult. Prices are available on our website. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 79342,
+      "reason_id": 48818,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 433992,
+      "availability_type_id": 72209,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold or fly symptoms or have been to a COVID location please do not attend the practice. Please wear a mask at all times in the practice.",
+      "message_html": "<p>If you have any cold or fly symptoms or have been to a COVID location please do not attend the practice. Please wear a mask at all times in the practice.</p>\n",
+      "doctor_id": 79342,
+      "reason_id": 48822,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 434017,
+      "availability_type_id": 72214,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": null,
+      "message_html": null,
+      "doctor_id": 79349,
+      "reason_id": 48818,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 434018,
+      "availability_type_id": 72214,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you are an existing patient of the practice but new to our Physiotherapists, you must book an initial 45 minute consult. Prices are available on our website. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you are an existing patient of the practice but new to our Physiotherapists, you must book an initial 45 minute consult. Prices are available on our website. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 79349,
+      "reason_id": 48818,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 434019,
+      "availability_type_id": 72214,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold or fly symptoms or have been to a COVID location please do not attend the practice. Please wear a mask at all times in the practice.",
+      "message_html": "<p>If you have any cold or fly symptoms or have been to a COVID location please do not attend the practice. Please wear a mask at all times in the practice.</p>\n",
+      "doctor_id": 79349,
+      "reason_id": 48822,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 519994,
+      "availability_type_id": 132494,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 90389,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 519995,
+      "availability_type_id": 132495,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 90389,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 519996,
+      "availability_type_id": 132496,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 90389,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 519997,
+      "availability_type_id": 132494,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 90389,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 519998,
+      "availability_type_id": 132494,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 90389,
+      "reason_id": 40493,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 519999,
+      "availability_type_id": 132496,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 90389,
+      "reason_id": 40713,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 520000,
+      "availability_type_id": 132496,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you would like a Mental Health Care Plan during your initial consult you are required to book for 45 minutes. You will be billed according to time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you would like a Mental Health Care Plan during your initial consult you are required to book for 45 minutes. You will be billed according to time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 90389,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 520001,
+      "availability_type_id": 132494,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on 9660 6788 to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please be aware if you would like to discuss anything else with your Doctor during this consultation you will need to call Reception on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> to extend your appointment time. If you have any cold, flu or fever symptoms, even with a negative Covid swab, please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 90389,
+      "reason_id": 40716,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 582618,
+      "availability_type_id": 192758,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 90389,
+      "reason_id": 40711,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 582616,
+      "availability_type_id": 132496,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 90389,
+      "reason_id": 66865,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 582617,
+      "availability_type_id": 132494,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 90389,
+      "reason_id": 66879,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 562387,
+      "availability_type_id": 222293,
+      "duration": 600,
+      "is_for_new": false,
+      "message": "• We require a valid Medicare card for all patients to make a booking. \n• If you do not have medicare please visit https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en \n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• We require a valid Medicare card for all patients to make a booking. \n• If you do not have medicare please visit https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en \n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 94401,
+      "reason_id": 64670,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 562386,
+      "availability_type_id": 222293,
+      "duration": 600,
+      "is_for_new": true,
+      "message": "• We require a valid Medicare card for all patients to make a booking. \n• If you do not have medicare please visit https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en \n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• We require a valid Medicare card for all patients to make a booking. \n• If you do not have medicare please visit https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en \n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 94401,
+      "reason_id": 64670,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 562429,
+      "availability_type_id": 179049,
+      "duration": 600,
+      "is_for_new": false,
+      "message": "• We require a valid Medicare card for all patients to make a booking. \n• If you do not have medicare please visit https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en \n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• We require a valid Medicare card for all patients to make a booking. \n• If you do not have medicare please visit https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en \n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 94401,
+      "reason_id": 64676,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 562430,
+      "availability_type_id": 179049,
+      "duration": 600,
+      "is_for_new": true,
+      "message": "• We require a valid Medicare card for all patients to make a booking. \n• If you do not have medicare please visit https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en \n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• We require a valid Medicare card for all patients to make a booking. \n• If you do not have medicare please visit https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en \n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 94401,
+      "reason_id": 64676,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580892,
+      "availability_type_id": 195517,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 97124,
+      "reason_id": 66865,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580881,
+      "availability_type_id": 199214,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 97124,
+      "reason_id": 40711,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580885,
+      "availability_type_id": 195515,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "",
+      "message_html": null,
+      "doctor_id": 97124,
+      "reason_id": 66879,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 577638,
+      "availability_type_id": 195515,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 97124,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 577639,
+      "availability_type_id": 195516,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 97124,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 577640,
+      "availability_type_id": 195517,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 97124,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 577641,
+      "availability_type_id": 195515,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 97124,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 577642,
+      "availability_type_id": 195517,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 97124,
+      "reason_id": 40713,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 595863,
+      "availability_type_id": 214334,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Please arrive 15 minutes early to your appointment to complete your new patient registration form. Please be aware this appointment will cost $142 with a medicare rebate. Please call the practice if you have any questions. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 99103,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 595864,
+      "availability_type_id": 214335,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 99103,
+      "reason_id": 40490,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 595865,
+      "availability_type_id": 214336,
+      "duration": 2700,
+      "is_for_new": true,
+      "message": "If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you are a new patient coming in for a complex condition or multiple issues you will need a 45 minute consultation. Please be aware you will be billed based on time spent with your doctor. Please arrive 15 minutes before your appointment to complete your new patient registration form. If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 99103,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 595866,
+      "availability_type_id": 214334,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 99103,
+      "reason_id": 40491,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 595867,
+      "availability_type_id": 214336,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": " If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on 9660 6788 before booking an appointment. Please wear a mask at all times at the practice.",
+      "message_html": "<p>If you have any cold, flu or fever symptoms irrespective of your covid test result (positive or negative), please call the practice on <a href=\"tel:9660%206788\" target=\"_blank\">9660 6788</a> before booking an appointment. Please wear a mask at all times at the practice.</p>\n",
+      "doctor_id": 99103,
+      "reason_id": 40713,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 595868,
+      "availability_type_id": 214337,
+      "duration": 900,
+      "is_for_new": false,
+      "message": null,
+      "message_html": null,
+      "doctor_id": 99103,
+      "reason_id": 40711,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 595869,
+      "availability_type_id": 214334,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": null,
+      "message_html": null,
+      "doctor_id": 99103,
+      "reason_id": 66879,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 595870,
+      "availability_type_id": 214336,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": null,
+      "message_html": null,
+      "doctor_id": 99103,
+      "reason_id": 66865,
+      "deleted_at": null,
+      "has_stipulations": true
+    }
+  ],
+  "doctor_interests": [
+    {
+      "id": 64297,
+      "name": "Travel Medicine",
+      "doctor_id": 69644
+    },
+    {
+      "id": 64298,
+      "name": "Paediatric medicine",
+      "doctor_id": 69644
+    },
+    {
+      "id": 64462,
+      "name": "Iron Infusions",
+      "doctor_id": 69644
+    },
+    {
+      "id": 64303,
+      "name": "Palliative care",
+      "doctor_id": 69138
+    },
+    {
+      "id": 64304,
+      "name": "Travel medicine",
+      "doctor_id": 69138
+    },
+    {
+      "id": 64314,
+      "name": "Antenatal shared care",
+      "doctor_id": 69138
+    },
+    {
+      "id": 64315,
+      "name": "Sexual and reproductive health",
+      "doctor_id": 69138
+    },
+    {
+      "id": 64295,
+      "name": "Paediatric medicine",
+      "doctor_id": 69647
+    },
+    {
+      "id": 64316,
+      "name": "Womens health",
+      "doctor_id": 69647
+    },
+    {
+      "id": 64317,
+      "name": "Antenatal shared care",
+      "doctor_id": 69647
+    },
+    {
+      "id": 64318,
+      "name": "Mirena insertion",
+      "doctor_id": 69647
+    },
+    {
+      "id": 64319,
+      "name": "Implanon insertion & removal",
+      "doctor_id": 69647
+    },
+    {
+      "id": 64309,
+      "name": "Travel medicine",
+      "doctor_id": 69653
+    },
+    {
+      "id": 64461,
+      "name": "Woman's health",
+      "doctor_id": 69653
+    },
+    {
+      "id": 64289,
+      "name": "Mental health",
+      "doctor_id": 69651
+    },
+    {
+      "id": 64290,
+      "name": "Men's & Women's Health",
+      "doctor_id": 69651
+    },
+    {
+      "id": 64293,
+      "name": "Paediatric medicine",
+      "doctor_id": 69651
+    },
+    {
+      "id": 65314,
+      "name": "Antenatal care",
+      "doctor_id": 69651
+    },
+    {
+      "id": 69183,
+      "name": "Weight management",
+      "doctor_id": 69651
+    },
+    {
+      "id": 69184,
+      "name": "Preventative health care",
+      "doctor_id": 69651
+    },
+    {
+      "id": 94226,
+      "name": "Chronic disease management",
+      "doctor_id": 69651
+    },
+    {
+      "id": 91359,
+      "name": "Men's & Women's Health",
+      "doctor_id": 90389
+    },
+    {
+      "id": 91360,
+      "name": "Sexual and reproductive health",
+      "doctor_id": 90389
+    },
+    {
+      "id": 91361,
+      "name": "Paediatrics",
+      "doctor_id": 90389
+    },
+    {
+      "id": 91362,
+      "name": "Chronic disease management",
+      "doctor_id": 90389
+    },
+    {
+      "id": 98255,
+      "name": "Womens' Health",
+      "doctor_id": 97124
+    },
+    {
+      "id": 98256,
+      "name": "Sexual and reproductive health",
+      "doctor_id": 97124
+    },
+    {
+      "id": 98257,
+      "name": "Paediatric Health",
+      "doctor_id": 97124
+    },
+    {
+      "id": 98258,
+      "name": "Antenatal care",
+      "doctor_id": 97124
+    },
+    {
+      "id": 98259,
+      "name": "Mirena insertion",
+      "doctor_id": 97124
+    },
+    {
+      "id": 98260,
+      "name": "Implanon insertion & removal",
+      "doctor_id": 97124
+    },
+    {
+      "id": 98641,
+      "name": "Chronic disease management",
+      "doctor_id": 97124
+    },
+    {
+      "id": 98642,
+      "name": "Preventative health care",
+      "doctor_id": 97124
+    },
+    {
+      "id": 100244,
+      "name": "Emergency medicine",
+      "doctor_id": 99103
+    },
+    {
+      "id": 100402,
+      "name": "Women's health",
+      "doctor_id": 99103
+    },
+    {
+      "id": 100403,
+      "name": "Mental health",
+      "doctor_id": 99103
+    },
+    {
+      "id": 100404,
+      "name": "Chronic disease management",
+      "doctor_id": 99103
+    }
+  ],
+  "reasons": [
+    {
+      "id": 40490,
+      "name": "Brief Consult (5-15 minutes)",
+      "position": 1,
+      "bookable": false,
+      "message": "If you are booking for a complex condition or more than one matter please book a >20 minute Standard or >40 minute Long consult. \nBrief consults are $89 ($50.25 out of pocket) for existing patients and $146 ($70.95 out of pocket) for new patients. Medicare rebates are provided on the spot with a valid debit card. Please be aware, as of 01/01/2021 all children above the age of 5 are billed at a discounted rate. Please be aware that our fees are higher on weekends, please check our website or call reception to confirm the price.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Brief Consult (5-15 minutes)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40491,
+      "name": "Standard Consult (>20 minutes)",
+      "position": 2,
+      "bookable": false,
+      "message": "Usually for one complex medical condition or 2-3 minor issues. Standard consults are $145 ($70.95 out of pocket). Medicare rebates are provided on the spot with a valid debit card. Discounts are available for eligible patients. Please be aware, as of 01/01/2021 all children above the age of 5 are billed at a discounted rate Please be aware that our fees are higher on weekends, please check our website or call reception to confirm the price.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Standard Consult (>20 minutes)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 64670,
+      "name": "COVID-19 Vaccine Dose 1 - AstraZeneca",
+      "position": 7,
+      "bookable": false,
+      "message": "A COVID-19 Consent Form will be sent to your registered email. Please fill it out  online or arrive 20 minutes prior to your appointment. Thank you. If you are a new patient you must bring a current health summary for this appointment. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'COVID-19 Vaccine Dose 1 - AstraZeneca'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -998
+    },
+    {
+      "id": 64676,
+      "name": "COVID-19 Vaccine Dose 2 - AstraZeneca",
+      "position": 8,
+      "bookable": false,
+      "message": "If you are a new patient you must bring a current health summary for this appointment. As well as evidence of your first AstraZeneca vaccination. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Does not perform 'COVID-19 Vaccine Dose 2 - AstraZeneca'",
+      "does_not_perform_call_to_discuss": false,
+      "reason_group_id": -998
+    },
+    {
+      "id": 66865,
+      "name": "Telehealth (Video Consult) >40 mins",
+      "position": 6,
+      "bookable": false,
+      "message": "This appointment type cannot be booked online. Please call +61 2 9660 6788 to make a booking.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Telehealth (Video Consult) >40 mins'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -999
+    },
+    {
+      "id": 40713,
+      "name": "Long Consult (>40 minutes)",
+      "position": 3,
+      "bookable": false,
+      "message": "This appointment should be booked for more than 3 issues or a complex ongoing condition. Long consults are $197 ($86.5 out of pocket).  Medicare rebates are provided on the spot with a valid debit card. Discounts are available for eligible patients. Please be aware, as of 01/01/2021 all children above the age of 5 are billed at a discounted rate. Please be aware that our fees are higher on weekends, please check our website or call reception to confirm the price.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Long Consult (>40 minutes)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40711,
+      "name": "Telehealth (Video Consult) 5-15 minutes",
+      "position": 4,
+      "bookable": false,
+      "message": "This appointment type cannot be booked online. Please call +61 2 9660 6788 to make a booking.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Telehealth (Video Consult) 5-15 minutes'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -999
+    },
+    {
+      "id": 40492,
+      "name": "Skin Check",
+      "position": 24,
+      "bookable": false,
+      "message": null,
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Skin Check'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 66879,
+      "name": "Telehealth (Video Consult) >20 minutes",
+      "position": 5,
+      "bookable": false,
+      "message": "This appointment type cannot be booked online. Please call +61 2 9660 6788 to make a booking.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Telehealth (Video Consult) >20 minutes'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 59225,
+      "name": "2021 Flu Vaccination",
+      "position": 9,
+      "bookable": false,
+      "message": "This appointment is only available for online booking for existing patients of the practice. If you are a new patient please call reception on 9660 6788.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss '2021 Flu Vaccination'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40789,
+      "name": "Initial Podiatry Orthotic Consult",
+      "position": 17,
+      "bookable": false,
+      "message": "(Podiatry) Initial consultation (orthotics): for the assessment of foot pain relating to movement and motion of the foot or legs, or for the prescriptions of orthotics",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Initial Podiatry Orthotic Consult'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40781,
+      "name": "Standard Podiatry Consult",
+      "position": 18,
+      "bookable": false,
+      "message": "(Podiatry) Subsequent consultation: any podiatry-related complaint for existing podiatry patients  (nail, skin, gait assessments, or neurological and vascular testing)",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Standard Podiatry Consult'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40738,
+      "name": "Spirometry",
+      "position": 23,
+      "bookable": false,
+      "message": "This appointment type cannot be booked online. Please call +61 2 9660 6788 to make a booking.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Spirometry'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40737,
+      "name": "Implanon insertion or removal",
+      "position": 14,
+      "bookable": false,
+      "message": "This appointment type cannot be booked online. Please call +61 2 9660 6788 to make a booking.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Implanon insertion or removal'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40725,
+      "name": "Vaccinations",
+      "position": 15,
+      "bookable": false,
+      "message": "This appointment type cannot be booked online. Please call +61 2 9660 6788 to make a booking.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Vaccinations'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40782,
+      "name": "Initial Podiatry Consultation",
+      "position": 16,
+      "bookable": false,
+      "message": "(Podiatry) Initial consultation: for the treatment of any foot- or lower-limb related nail or skin complaint, including ingrown nails, corns and callus, routine foot care, nail surgery, and warts",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Initial Podiatry Consultation'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40723,
+      "name": "IUD removal or Insertion",
+      "position": 25,
+      "bookable": false,
+      "message": "This appointment type cannot be booked online. Please call +61 2 9660 6788 to make a booking.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'IUD removal or Insertion'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40792,
+      "name": "Initial Pregnancy consult",
+      "position": 10,
+      "bookable": false,
+      "message": "Your first antenatal appointment with your GP. Following appointments can be made as standard consults.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Initial Pregnancy consult'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40716,
+      "name": "Mental Health Care Plan/ Discussion",
+      "position": 11,
+      "bookable": false,
+      "message": "For an initial plan or a review of a plan. Please be aware, as of 01/01/2021 all children above the age of 5 are billed at a discounted rate. For a full list of our fees please visit our website.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Mental Health Care Plan/ Discussion'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40493,
+      "name": "Cervical Screening Test (Pap)",
+      "position": 12,
+      "bookable": false,
+      "message": "If you require anything else during your consultation please call reception on 9660 6788 to extend your appointment time.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Cervical Screening Test (Pap)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40736,
+      "name": "Iron infusion",
+      "position": 13,
+      "bookable": false,
+      "message": "This appointment type cannot be booked online. Please call +61 2 9660 6788 to make a booking.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Iron infusion'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40785,
+      "name": "Private Pychology Session",
+      "position": 19,
+      "bookable": false,
+      "message": "Private Psychology sessions are available for existing patients who do not have or have completed their Mental Health Care Plan. A valid referral to our psychologist may still be required. Please call reception on 9660 6788 if you are unsure. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Private Pychology Session'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40791,
+      "name": "New patient mental health consult",
+      "position": 20,
+      "bookable": false,
+      "message": "Extended length consult for new patients wishing to discuss mental health topics or complex concerns with a GP.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New patient mental health consult'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 48818,
+      "name": "Physiotherapy Initial Consult",
+      "position": 21,
+      "bookable": false,
+      "message": "For information about prices please visit our website or call our friendly reception team on 9660 6788. First time patients must call before booking. If you have any cold or flu symptoms or have visited a COVID location please do not attend the practice. Please wear a mask at all times at the practice.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Physiotherapy Initial Consult'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 48822,
+      "name": "Physiotherapy subsequent consult",
+      "position": 22,
+      "bookable": false,
+      "message": "For information about prices please visit our website or call our friendly reception team on 9660 6788. First time patients must call before booking. If you have any cold or fly symptoms or have been to a COVID location please do not attend the practice. Please wear a mask at all times in the practice. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 4478,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Physiotherapy subsequent consult'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    }
+  ],
+  "reason_groups": [
+    {
+      "id": -998,
+      "name": "COVID Vaccine",
+      "slug": "covid-vaccine",
+      "purpose": "covid-vaccine",
+      "only_show_with_purpose": false
+    },
+    {
+      "id": -999,
+      "name": "Telehealth",
+      "slug": "telehealth",
+      "purpose": "telehealth",
+      "only_show_with_purpose": false
+    }
+  ],
+  "themes": [],
+  "clinic": {
+    "id": 4478,
+    "name": "Montrose Medical Practice",
+    "slug": "montrose-medical-practice",
+    "street_address": "20 Glebe Point Road",
+    "phone": "+61 2 9660 6788",
+    "website": "https://www.montrosemedical.com.au/",
+    "latitude": -33.8840294,
+    "longitude": 151.1920772,
+    "timezone": "Australia/Sydney",
+    "blurb": "Montrose Medical Practice is a private billing family practice located in the heart of Glebe. Founded in 2009, Montrose has been lovingly restored and renovated to create a welcoming environment for our patients while also showcasing the rich cultural heritage of the building, which has been used as a surgery and doctors’ residence since 1899. \r\n \r\nOur vision at Montrose is to provide you and your family with quality healthcare in a warm and caring environment with an emphasis on preventative health. We have a great team of dedicated general practitioners, nurses and allied health professionals, including a clinical psychologist and podiatrist.  Pathology is also provided onsite through Douglas Hanly Moir. They are open Monday – Friday 9am-1pm.",
+    "blurb_html": "<p>Montrose Medical Practice is a private billing family practice located in the heart of Glebe. Founded in 2009, Montrose has been lovingly restored and renovated to create a welcoming environment for our patients while also showcasing the rich cultural heritage of the building, which has been used as a surgery and doctors’ residence since 1899. </p>\n\n<p>Our vision at Montrose is to provide you and your family with quality healthcare in a warm and caring environment with an emphasis on preventative health. We have a great team of dedicated general practitioners, nurses and allied health professionals, including a clinical psychologist and podiatrist.  Pathology is also provided onsite through Douglas Hanly Moir. They are open Monday – Friday 9am-1pm.</p>\n",
+    "alert_message": "If you have any cold, flu or fever symptoms please call the practice on 9660 6788, regardless of Covid swab results. As of January 1st 2021 children from the age of 5 years will be billed at a discounted rate. Please call reception if you have any questions. \r\nPlease note children are not Bulk Billed on weekends and consultation fees differ, please see our website for details. ",
+    "alert_message_html": "<p>If you have any cold, flu or fever symptoms please call the practice on 9660 6788, regardless of Covid swab results. As of January 1st 2021 children from the age of 5 years will be billed at a discounted rate. Please call reception if you have any questions. \nPlease note children are not Bulk Billed on weekends and consultation fees differ, please see our website for details. </p>\n",
+    "thumb_image_url": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/8820/thumb_dfaa2db976a8eb5ee3cf9abe73683bf5.jpg",
+    "active": true,
+    "hidden": false,
+    "company_name": null,
+    "has_mobile_check_in": false,
+    "uses_repeats_product": false,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&ll=-33.8840294%2C151.1920772&query=20+Glebe+Point+Road%2C+Glebe%2C+NSW+2037&query_place_id=&z=13",
+    "google_maps_image_url": "https://maps.googleapis.com/maps/api/staticmap?center=-33.8840294,151.1920772&markers=-33.8840294,151.1920772&zoom=12&size=218x172&key=AIzaSyC0zx8HubR-fxICSH2GcOEyC5umqsPVnwQ&signature=ucHUCbMkTKiSKA9e15G6fB0bs-I=",
+    "has_remote_walk_ins_support": false,
+    "has_remote_walk_ins_availability": false,
+    "remote_walk_ins_wait_time_min": null,
+    "remote_walk_ins_wait_time_max": null,
+    "remote_walk_ins_wait_time_urgency": null,
+    "remote_walk_ins_contact_time_min": null,
+    "remote_walk_ins_contact_time_max": null,
+    "flags": [
+      "new_booking_flow",
+      "new_booking_flow_native",
+      "new_triage_flow"
+    ],
+    "detail": true,
+    "maintenance_message_html": null,
+    "opening_hours": {
+      "recurring": [
+        {
+          "label": "Monday",
+          "hours": [
+            {
+              "label": "9:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Tuesday",
+          "hours": [
+            {
+              "label": "9:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Wednesday",
+          "hours": [
+            {
+              "label": "9:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Thursday",
+          "hours": [
+            {
+              "label": "9:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Friday",
+          "hours": [
+            {
+              "label": "9:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Saturday",
+          "hours": [
+            {
+              "label": "9:00am—1:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Sunday",
+          "hours": [
+            {
+              "label": "9:00am—1:00pm"
+            }
+          ]
+        }
+      ],
+      "seldom": []
+    },
+    "segment": {
+      "pms": 1
+    },
+    "accepts_dva_card": false,
+    "accepts_healthcare_card": false,
+    "billing_policy": "Montrose Medical Practice is a private billing practice. Our practice is equipped with Medicare Easyclaim which gives you the choice of having your Medicare claiming done on the spot with Medicare rebate deposited into your bank account using an EFTPOS card. Discounted fee applies to pension card holders, health care cardholders, full-time students and children from the age of 5. Children under the age of 5 who hold a valid Medicare card are bulk billed except on the weekend. Bulk billing appointments will be offered for children age 5- 15, during the week with Dr Manny until the 30th of June 2021",
+    "billing_type": "private_billing",
+    "transport_info": "Metered parking is available on Glebe Point Road or 2 hour free parking is available in Broadway shopping center. ",
+    "wheelchair_access": true,
+    "payment_methods": [
+      "Cash",
+      "EFTPOS",
+      "Visa",
+      "Mastercard"
+    ],
+    "facilities": [
+      "Onsite Pathology",
+      "Onsite Allied Health",
+      "Pharmacy Nearby"
+    ],
+    "accreditations": [
+      "Australian General Practice Accreditation Limited"
+    ],
+    "suburb_id": 13399,
+    "doctor_ids": [
+      69644,
+      69138,
+      69647,
+      69653,
+      69651,
+      69726,
+      79342,
+      79349,
+      90389,
+      94401,
+      97124,
+      99103
+    ],
+    "reason_ids": [
+      40490,
+      40491,
+      64670,
+      64676,
+      66865,
+      40713,
+      40711,
+      40492,
+      66879,
+      59225,
+      40789,
+      40781,
+      40738,
+      40737,
+      40725,
+      40782,
+      40723,
+      40792,
+      40716,
+      40493,
+      40736,
+      40785,
+      40791,
+      48818,
+      48822
+    ],
+    "theme_id": null
+  }
+}

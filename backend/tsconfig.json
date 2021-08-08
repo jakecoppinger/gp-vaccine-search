@@ -1,0 +1,21 @@
+{
+  "lib": [ "es6" ],
+  "compilerOptions": {
+      "sourceMap": true,
+      "moduleResolution": "node",
+      "lib": ["dom", "es6"],
+      "target": "ES5",
+      "noImplicitAny": true,
+      "pretty": true,
+      "sourceRoot": "./src/",
+      "rootDir": "./src/",
+      "outDir": "dist/",
+      "noUnusedParameters": true,
+      "incremental": true
+  },
+  "files": [
+      "src/app.ts",
+      "src/server.ts",
+      "src/lambda.ts",
+  ]
+}

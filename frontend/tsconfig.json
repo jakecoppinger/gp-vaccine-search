@@ -1,0 +1,16 @@
+{
+  "lib": ["es6"],
+  "compilerOptions": {
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "es6"],
+    "target": "ES6",
+    "noImplicitAny": true,
+    "pretty": true,
+    "sourceRoot": "./src/",
+    "rootDir": "./src/",
+    "allowSyntheticDefaultImports": true,
+    "strict": true
+  },
+  "files": ["src/script.ts"]
+}

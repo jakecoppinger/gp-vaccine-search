@@ -1,0 +1,37 @@
+service: nextaz 
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  memorySize: 128
+  stage: dev
+  region: ap-southeast-2
+functions:
+  backend:
+    timeout: 20
+    handler: dist/lambda.handler
+    events:
+      - http:
+          path: / # this matches the base path
+          method: ANY
+          cors: true
+      - http:
+          path: /{any+}
+          method: ANY
+          cors: true
+
+package: # Optional deployment packaging configuration
+  include: # Specify the directories and files which should be included in the deployment package
+    - dist/**
+  exclude:
+    - src/**
+
+plugins:
+    - serverless-offline
+    - serverless-api-gateway-throttling
+
+custom:
+  # Configures throttling settings for all http endpoints
+  apiGatewayThrottling:
+    maxRequestsPerSecond: 20
+    maxConcurrentRequests: 20

@@ -1,0 +1,2947 @@
+{
+  "suburb": [
+    {
+      "id": 13344,
+      "name": "Waterloo",
+      "state": "NSW",
+      "postcode": "2017",
+      "slug": "waterloo-NSW-2017"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 21039,
+      "slug": "dr-daniel-chanisheff-1",
+      "full_name": "Dr Daniel Chanisheff",
+      "gender": "male",
+      "pre_triage_availability_type_id": "21039-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/21039/profile_4d1b7c4492cb1506497707d5efe7adb7.jpg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Daniel Chanisheff does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Dr Daniel has previously worked in the area, and loved the diversity and engagement from the Green Square community that he has decided to base his long term practice here.\n\nWhen not seeing patients, he is often thinking of ways to make healthcare and healthy living more engaging and effort free for his patients.\n\nHe has special interest in chronic disease care, men’s and women’s health, travel immunisations and advice, psychological medicine, and cosmetic medicine.",
+      "statement_html": "<p>Dr Daniel has previously worked in the area, and loved the diversity and engagement from the Green Square community that he has decided to base his long term practice here.</p>\n\n<p>When not seeing patients, he is often thinking of ways to make healthcare and healthy living more engaging and effort free for his patients.</p>\n\n<p>He has special interest in chronic disease care, men’s and women’s health, travel immunisations and advice, psychological medicine, and cosmetic medicine.</p>\n",
+      "position": 10,
+      "earliest_available": "2021-08-23T23:30:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English",
+        "Uyghur"
+      ],
+      "qualifications": [
+        "MBBS",
+        "FRACGP"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        309175,
+        309180,
+        309214,
+        568120,
+        345162,
+        592079
+      ],
+      "doctor_interest_ids": [
+        21246,
+        21249,
+        14591,
+        14590,
+        14592,
+        14593,
+        47432,
+        47433,
+        60632
+      ]
+    },
+    {
+      "id": 21038,
+      "slug": "dr-kathryn-chae",
+      "full_name": "Dr Kathryn Chae",
+      "gender": "female",
+      "pre_triage_availability_type_id": "21038-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/21038/profile_ede5bdf8ddcd62a00bf713b83fc60e0c.jpg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Kathryn Chae does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Dr Kathryn is a very experienced and dedicated GP with special interests in women's health, pregnancy care and paediatric medicine. Kathryn has a wealth of experience in fertility health, menstrual disorders and PCOS, regularly consulting with patients presenting with complex health issues.  After graduating from UNSW in 2008 she obtained Fellowship with the Royal Australian College of General Practitioners in 2013.  Additionally, she obtained the Diploma of Child Health in 2012 and in 2013 she obtained the Certificate in Sexual Health and Family Planning. She holds Antenatal Shared Care Registration with both the Royal Hospital for Women and Royal Prince Alfred Hospital catering to all members of the Waterloo/Zetland community.  \n\nShe is well known to many in the community having worked in the Green Square area since 2013. You’ll always find her in the local area chatting away with her patients at the shops or the local café, as she loves being an active part of our community. Her patients tend to adore her, so if you’re looking for your forever GP look no further! \n\n",
+      "statement_html": "<p>Dr Kathryn is a very experienced and dedicated GP with special interests in women's health, pregnancy care and paediatric medicine. Kathryn has a wealth of experience in fertility health, menstrual disorders and PCOS, regularly consulting with patients presenting with complex health issues.  After graduating from UNSW in 2008 she obtained Fellowship with the Royal Australian College of General Practitioners in 2013.  Additionally, she obtained the Diploma of Child Health in 2012 and in 2013 she obtained the Certificate in Sexual Health and Family Planning. She holds Antenatal Shared Care Registration with both the Royal Hospital for Women and Royal Prince Alfred Hospital catering to all members of the Waterloo/Zetland community.  </p>\n\n<p>She is well known to many in the community having worked in the Green Square area since 2013. You’ll always find her in the local area chatting away with her patients at the shops or the local café, as she loves being an active part of our community. Her patients tend to adore her, so if you’re looking for your forever GP look no further! </p>\n",
+      "position": 12,
+      "earliest_available": "2021-08-13T01:15:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English",
+        "Korean"
+      ],
+      "qualifications": [],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        309171,
+        309176,
+        309212,
+        568124,
+        345161,
+        345145,
+        592077
+      ],
+      "doctor_interest_ids": [
+        14610,
+        14611,
+        21240,
+        14587,
+        14588,
+        30349,
+        86431,
+        86432,
+        86433,
+        86434
+      ]
+    },
+    {
+      "id": 37277,
+      "slug": "dr-victoria-phan",
+      "full_name": "Dr Victoria Phan",
+      "gender": "female",
+      "pre_triage_availability_type_id": "37277-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/37277/profile_bc1b099aff1dd56f08eeb3e011648fff.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Victoria Phan does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Vicky enjoys a holistic approach to General Practice, getting to know patients and their families from all walks of life. Her special interests include sexual health, children's medicine, and pregnancy care. She is registered for antenatal shared care with Royal Prince Alfred Hospital. She is also certified to perform contraceptive implantation. In her spare time, she enjoys travelling, baking and having a good laugh with her family and friends.\n",
+      "statement_html": "<p>Vicky enjoys a holistic approach to General Practice, getting to know patients and their families from all walks of life. Her special interests include sexual health, children's medicine, and pregnancy care. She is registered for antenatal shared care with Royal Prince Alfred Hospital. She is also certified to perform contraceptive implantation. In her spare time, she enjoys travelling, baking and having a good laugh with her family and friends.</p>\n",
+      "position": 9,
+      "earliest_available": "2021-08-09T07:15:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [
+        "DCH",
+        "FRACGP",
+        "FPC",
+        "BMed (MD)",
+        "MClin US"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        309173,
+        309179,
+        309213,
+        568123,
+        345163,
+        345147,
+        592082
+      ],
+      "doctor_interest_ids": [
+        29436,
+        29439,
+        30347,
+        30348,
+        30350,
+        30351,
+        30352
+      ]
+    },
+    {
+      "id": 57994,
+      "slug": "dr-holly-inglis-1",
+      "full_name": "Dr Holly Inglis",
+      "gender": "female",
+      "pre_triage_availability_type_id": "57994-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/57994/profile_4c155dbbd4671b13c70012f886422187.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Holly Inglis does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Dr Holly is a Sydney University alumni, completing her advanced science, medical and Masters degrees there. She undertook junior doctor training in Wagga Wagga and gained experience in both orthopaedics and ophthalmology before pursuing general practice. She was admitted as a Fellow of the Royal Australian Collage of General Practitioners in 2017. She has a strong interest in skin cancer medicine and welcomes all skin cancer checks & is able to do your surgery too. Dr Holly caters to all primary care needs and has a particular interest in S100 HIV prescribing/ PrEP prescribing, LGBTQIA+ health including management of gender affirming hormones (currently not avail. for implant insertion), sexual health including Mirena & Implanons, women & child health and evidence-based health & well being for all patients. She will be available at Green Square on a casual basis for appointment. ",
+      "statement_html": "<p>Dr Holly is a Sydney University alumni, completing her advanced science, medical and Masters degrees there. She undertook junior doctor training in Wagga Wagga and gained experience in both orthopaedics and ophthalmology before pursuing general practice. She was admitted as a Fellow of the Royal Australian Collage of General Practitioners in 2017. She has a strong interest in skin cancer medicine and welcomes all skin cancer checks &amp; is able to do your surgery too. Dr Holly caters to all primary care needs and has a particular interest in S100 HIV prescribing/ PrEP prescribing, LGBTQIA+ health including management of gender affirming hormones (currently not avail. for implant insertion), sexual health including Mirena &amp; Implanons, women &amp; child health and evidence-based health &amp; well being for all patients. She will be available at Green Square on a casual basis for appointment. </p>\n",
+      "position": 8,
+      "earliest_available": "2021-08-09T00:30:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English"
+      ],
+      "qualifications": [
+        "DCH",
+        "MMed",
+        "MBBS",
+        "FRACGP",
+        "BSc"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        309177,
+        309172,
+        309215,
+        568125,
+        345159,
+        360630,
+        359272,
+        592080
+      ],
+      "doctor_interest_ids": [
+        60611,
+        60612,
+        60613,
+        60614,
+        60615,
+        60616,
+        60617,
+        60618,
+        60619,
+        60620,
+        60621,
+        60622,
+        60623,
+        60624
+      ]
+    },
+    {
+      "id": 58224,
+      "slug": "dr-winnie-yao",
+      "full_name": "Dr Winnie Yao",
+      "gender": "female",
+      "pre_triage_availability_type_id": "58224-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/58224/profile_701a8a44d95e7fc349267eb55bf8b203.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Winnie Yao does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "会讲中文的医生。\n\nDr Winnie was recently working as a GP in the CBD area, and is interested in holistic family medicine. She has a special interest in women's health and paediatric medicine, having previously worked in a tertiary hospital in both the Paediatric and Obstetrics & Gynaecology departments for 8 months each. She also does skin checks and minor procedures. \n\nAccreditations:\n- FPAA National Certificate in Reproductive & Sexual Health for Doctors (Family Planning certificate)\n- Antenatal shared care with multiple hospitals\n- Implanon insertion and removal\n- PrEP and sexual health\n- Fluent in Mandarin Chinese",
+      "statement_html": "<p>会讲中文的医生。</p>\n\n<p>Dr Winnie was recently working as a GP in the CBD area, and is interested in holistic family medicine. She has a special interest in women's health and paediatric medicine, having previously worked in a tertiary hospital in both the Paediatric and Obstetrics &amp; Gynaecology departments for 8 months each. She also does skin checks and minor procedures. </p>\n\n<p>Accreditations:\n- FPAA National Certificate in Reproductive &amp; Sexual Health for Doctors (Family Planning certificate)\n- Antenatal shared care with multiple hospitals\n- Implanon insertion and removal\n- PrEP and sexual health\n- Fluent in Mandarin Chinese</p>\n",
+      "position": 7,
+      "earliest_available": "2021-08-09T23:45:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "Mandarin"
+      ],
+      "qualifications": [],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        309174,
+        309178,
+        309211,
+        568122,
+        345160,
+        345146,
+        592078
+      ],
+      "doctor_interest_ids": [
+        51909,
+        51910,
+        51911,
+        51912,
+        51913
+      ]
+    },
+    {
+      "id": 72297,
+      "slug": "charlotte-jiayun-wang-rn",
+      "full_name": "Charlotte (Jiayun) Wang (RN)",
+      "gender": "female",
+      "pre_triage_availability_type_id": "72297-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/72297/profile_59d77479bc8932a8099d6d9298884bb2.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Charlotte (Jiayun) Wang (RN) does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "position": 13,
+      "earliest_available": "2021-08-08T22:15:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 192
+      },
+      "specialty": "Registered Nurse",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        533628,
+        533629
+      ],
+      "doctor_interest_ids": []
+    },
+    {
+      "id": 74457,
+      "slug": "dr-min-huang-1",
+      "full_name": "Dr Min Huang",
+      "gender": "male",
+      "pre_triage_availability_type_id": "74457-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/74457/profile_397a78fd41c1aba7c695e9201aac97d5.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Min Huang does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Dr Min enjoys getting to know new people and has joined our team to engage with our community. \n\nHe completed his medical training through Western Sydney University in 2015 and then went on to work at St George and Sutherland Hospitals. He then commenced working as a GP in 2018 and completed his fellowship in 2020. He has undertaken further training with a Diploma of Child Health and the Family Planning National Certificate of Reproductive & Sexual Health.\n\nHe has a particular interest in sexual health and after having worked in KRC, he is keen to continue applying the skills he has gained within a general practice scope. He also enjoys sports medicine and nutritional medicine with a strong focus on lifestyle measures being an important aspect of one’s overall health.\n\nOutside of work, he enjoys staying active and social by playing touch football whilst also enjoying boxing and rock climbing. When he has some downtime he attempts to recreate cooking recipes with varying levels of success.",
+      "statement_html": "<p>Dr Min enjoys getting to know new people and has joined our team to engage with our community. </p>\n\n<p>He completed his medical training through Western Sydney University in 2015 and then went on to work at St George and Sutherland Hospitals. He then commenced working as a GP in 2018 and completed his fellowship in 2020. He has undertaken further training with a Diploma of Child Health and the Family Planning National Certificate of Reproductive &amp; Sexual Health.</p>\n\n<p>He has a particular interest in sexual health and after having worked in KRC, he is keen to continue applying the skills he has gained within a general practice scope. He also enjoys sports medicine and nutritional medicine with a strong focus on lifestyle measures being an important aspect of one’s overall health.</p>\n\n<p>Outside of work, he enjoys staying active and social by playing touch football whilst also enjoying boxing and rock climbing. When he has some downtime he attempts to recreate cooking recipes with varying levels of success.</p>\n",
+      "position": 4,
+      "earliest_available": "2021-08-09T08:30:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [
+        "English"
+      ],
+      "qualifications": [
+        "DCH",
+        "MBBS",
+        "FRACGP"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        592224,
+        592230,
+        592235,
+        592236,
+        392377,
+        392378,
+        392379,
+        568118,
+        592076
+      ],
+      "doctor_interest_ids": [
+        70683,
+        70684,
+        86413,
+        86414,
+        86415,
+        86416,
+        86417,
+        86418,
+        86419,
+        86420,
+        86421
+      ]
+    },
+    {
+      "id": 21183,
+      "slug": "edward-kim-physiotherapist",
+      "full_name": "Edward Kim (physiotherapist)",
+      "gender": "male",
+      "pre_triage_availability_type_id": "21183-1800",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/21183/profile_294fcdea6835b484e619a5a4374e586f.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Edward Kim (physiotherapist) does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Edward Kim is a dedicated physiotherapist with extensive experience providing physiotherapy services to patients of all ages and presentations in both private practice and aged care settings. Outside of work, Edward competes professionally in jujitsu and is an avid car enthusiast.  He is currently available for appointments on Mondays, Tuesdays, Fridays and Saturdays. ",
+      "statement_html": "<p>Edward Kim is a dedicated physiotherapist with extensive experience providing physiotherapy services to patients of all ages and presentations in both private practice and aged care settings. Outside of work, Edward competes professionally in jujitsu and is an avid car enthusiast.  He is currently available for appointments on Mondays, Tuesdays, Fridays and Saturdays. </p>\n",
+      "position": 14,
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "languages": [],
+      "qualifications": [],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 152
+      },
+      "specialty": "Physiotherapist",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [],
+      "doctor_interest_ids": []
+    },
+    {
+      "id": 82358,
+      "slug": "dr-caitlin-weston",
+      "full_name": "Dr Caitlin Weston",
+      "gender": "female",
+      "pre_triage_availability_type_id": "82358-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/82358/profile_fe9e13eec4515513122601557ec8bc85.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Caitlin Weston does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Dr Caitlin Weston has now moved on to the Campbelltown AMS clinic. Her patient records have been retained at GS Health. Please feel free to book with any of our GPs for continuity of care. \n\nCaitlin has been working as a doctor since 2014, making the switch from hospital-based medicine to General Practice at the beginning of 2020. She grew up in Sydney but has spent several years living and working in regional NSW.\n\nCaitlin is interested in everything General Practice has to offer, so if you’re after a GP who is warm, patient and thorough, she’d be delighted to help you to improve your health and well-being.\n",
+      "statement_html": "<p>Dr Caitlin Weston has now moved on to the Campbelltown AMS clinic. Her patient records have been retained at GS Health. Please feel free to book with any of our GPs for continuity of care. </p>\n\n<p>Caitlin has been working as a doctor since 2014, making the switch from hospital-based medicine to General Practice at the beginning of 2020. She grew up in Sydney but has spent several years living and working in regional NSW.</p>\n\n<p>Caitlin is interested in everything General Practice has to offer, so if you’re after a GP who is warm, patient and thorough, she’d be delighted to help you to improve your health and well-being.</p>\n",
+      "position": 11,
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "languages": [],
+      "qualifications": [
+        "MBBS"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        554446,
+        481110,
+        481111,
+        481112,
+        481113,
+        462329,
+        462330,
+        462331,
+        462332,
+        462333,
+        462334,
+        532222
+      ],
+      "doctor_interest_ids": [
+        86422,
+        86423,
+        86424,
+        86425,
+        86426,
+        86427
+      ]
+    },
+    {
+      "id": 87490,
+      "slug": "astrazeneca-covid-19-vaccine-clinic-3",
+      "full_name": "AstraZeneca COVID-19 Vaccine Clinic",
+      "pre_triage_availability_type_id": "87490-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/87490/profile_5899388273f222dd1b43c2101adbba41.png",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "AstraZeneca COVID-19 Vaccine Clinic does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "<strong>Not available = Fully booked.</strong> DO NOT CALL THE PRACTICE. We cannot provide ANY information. \n\nIf you DO NOT have MEDICARE you cannot book an appointment at Green Square Health.  If you do not have Medicare you'll need to go to a government-funded respiratory clinic.\n\nPlease check regularly as we will add more appointments as vaccine doses arrive. \n\nIf you're eligible please book the correct vaccine appointment type. If you're unsure about your eligibility please check via <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">Health direct eligibility checker</a>\n\nThere are no private fees for COVID-19 vaccination appointments.\n\nPlease remember to bring a mask on the day and have completed both HotDoc forms (New Patient Registration & COVID-19 Consent).",
+      "statement_html": "<p><strong>Not available = Fully booked.</strong> DO NOT CALL THE PRACTICE. We cannot provide ANY information. </p>\n\n<p>If you DO NOT have MEDICARE you cannot book an appointment at Green Square Health.  If you do not have Medicare you'll need to go to a government-funded respiratory clinic.</p>\n\n<p>Please check regularly as we will add more appointments as vaccine doses arrive. </p>\n\n<p>If you're eligible please book the correct vaccine appointment type. If you're unsure about your eligibility please check via <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">Health direct eligibility checker</a></p>\n\n<p>There are no private fees for COVID-19 vaccination appointments.</p>\n\n<p>Please remember to bring a mask on the day and have completed both HotDoc forms (New Patient Registration &amp; COVID-19 Consent).</p>\n",
+      "position": 1,
+      "earliest_available": "2021-08-23T05:15:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 192
+      },
+      "specialty": "Registered Nurse",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        515668,
+        515669,
+        515601,
+        515600
+      ],
+      "doctor_interest_ids": []
+    },
+    {
+      "id": 95016,
+      "slug": "dr-andrew-trang-2",
+      "full_name": "Dr Andrew Trang",
+      "gender": "male",
+      "pre_triage_availability_type_id": "95016-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/95016/profile_d165418095961a445d4f2f297d7c9612.jpeg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Andrew Trang does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Dr Andrew Trang was born and bred in Adelaide, South Australia.\nHe is a passionate and motivated general practitioner who enjoys providing holistic healthcare to his patients.\nAfter training at the University of Adelaide, he enjoyed working in a wide range of acute care specialties including emergency medicine, intensive care, anaesthesia.\nWhilst he enjoyed the challenges of Anaesthesia training, he missed the continuity of patient care which led him to achieve his fellowship in the Royal Australian College of General Practice.\nIn addition to his interest in skin cancer medicine, he enjoys performing iron infusions as well as minor procedures including implanon insertion and removal.\nClinic areas of interest: Skin Cancer Medicine, Chronic Disease Management, Preventative healthcare.\nPersonal Interests: Andrew enjoys spending time with his family, exploring the outdoors and eateries. On the odd occasion, he enjoys riding his motorbike on the race track.\n",
+      "statement_html": "<p>Dr Andrew Trang was born and bred in Adelaide, South Australia.\nHe is a passionate and motivated general practitioner who enjoys providing holistic healthcare to his patients.\nAfter training at the University of Adelaide, he enjoyed working in a wide range of acute care specialties including emergency medicine, intensive care, anaesthesia.\nWhilst he enjoyed the challenges of Anaesthesia training, he missed the continuity of patient care which led him to achieve his fellowship in the Royal Australian College of General Practice.\nIn addition to his interest in skin cancer medicine, he enjoys performing iron infusions as well as minor procedures including implanon insertion and removal.\nClinic areas of interest: Skin Cancer Medicine, Chronic Disease Management, Preventative healthcare.\nPersonal Interests: Andrew enjoys spending time with his family, exploring the outdoors and eateries. On the odd occasion, he enjoys riding his motorbike on the race track.</p>\n",
+      "position": 5,
+      "earliest_available": "2021-08-09T22:45:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [
+        "MBBS",
+        "FRACGP",
+        "Prof Cert Dermoscopy"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        558974,
+        558975,
+        568121,
+        592083,
+        562514
+      ],
+      "doctor_interest_ids": [
+        96702,
+        96703,
+        96704,
+        96705
+      ]
+    },
+    {
+      "id": 98865,
+      "slug": "dr-angela-hurley",
+      "full_name": "Dr Angela Hurley",
+      "gender": "female",
+      "pre_triage_availability_type_id": "98865-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/98865/profile_b53ee1ce3a0eb6f134289496b9adf8c0.jpeg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Dr Angela Hurley does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "Dr Angela enjoys all aspects of what general practice has to offer and will be gaining her specialist GP fellowship at the end of 2021.\n\nShe completed her medical training in 2016 and went on to work at Western Health in Melbourne before commencing work as a GP in Sydney in 2019. Additionally she has spent time completing a country paediatric term from which she gained a lot of experience and also enjoyed her time\nworking in multiple emergency departments.\n\nPrior to this Dr Angela completed a Bachelor of Science at the University of Sydney before working in medical research whilst pursuing a professional swimming career. She went on to represent Australia at a World Cup level before deciding to pursue medicine.\n\nDr Angela has a special interest in women’s and children’s health, sports medicine, sexual health\nand general family medicine. She enjoys getting to know her patients and building good family relationships. \n\nIn her spare time you can find her reading, swimming and spending time with her nieces and nephew.",
+      "statement_html": "<p>Dr Angela enjoys all aspects of what general practice has to offer and will be gaining her specialist GP fellowship at the end of 2021.</p>\n\n<p>She completed her medical training in 2016 and went on to work at Western Health in Melbourne before commencing work as a GP in Sydney in 2019. Additionally she has spent time completing a country paediatric term from which she gained a lot of experience and also enjoyed her time\nworking in multiple emergency departments.</p>\n\n<p>Prior to this Dr Angela completed a Bachelor of Science at the University of Sydney before working in medical research whilst pursuing a professional swimming career. She went on to represent Australia at a World Cup level before deciding to pursue medicine.</p>\n\n<p>Dr Angela has a special interest in women’s and children’s health, sports medicine, sexual health\nand general family medicine. She enjoys getting to know her patients and building good family relationships. </p>\n\n<p>In her spare time you can find her reading, swimming and spending time with her nieces and nephew.</p>\n",
+      "position": 6,
+      "earliest_available": "2021-08-08T22:15:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [
+        "MBBS"
+      ],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 27
+      },
+      "specialty": "General Practitioner",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        592973,
+        592974,
+        592975,
+        592976,
+        592977,
+        592978,
+        592979
+      ],
+      "doctor_interest_ids": [
+        99944,
+        99945,
+        99946,
+        99947,
+        99948
+      ]
+    },
+    {
+      "id": 96652,
+      "slug": "pfizer-covid-19-vaccine-clinic-2-2",
+      "full_name": "Pfizer COVID-19 Vaccine Clinic 2",
+      "pre_triage_availability_type_id": "96652-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/96652/profile_5c69ffad06fd2108dcb49414beb52194.jpeg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Pfizer COVID-19 Vaccine Clinic 2 does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "<strong>Not available = Fully booked.</strong> DO NOT CALL THE PRACTICE. We cannot provide ANY information. \n\nIf you DO NOT have MEDICARE you cannot book an appointment at Green Square Health.  If you do not have Medicare you'll need to go to a government-funded respiratory clinic.\n\nPlease check regularly as we will add more appointments as vaccine doses arrive. \n\nIf you're eligible please book the correct vaccine appointment type. If you're unsure about your eligibility please check via <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">Health direct eligibility checker</a>\n\nThere are no private fees for COVID-19 vaccination appointments.\n\nPlease remember to bring a mask on the day and have completed both HotDoc forms (New Patient Registration & COVID-19 Consent).",
+      "statement_html": "<p><strong>Not available = Fully booked.</strong> DO NOT CALL THE PRACTICE. We cannot provide ANY information. </p>\n\n<p>If you DO NOT have MEDICARE you cannot book an appointment at Green Square Health.  If you do not have Medicare you'll need to go to a government-funded respiratory clinic.</p>\n\n<p>Please check regularly as we will add more appointments as vaccine doses arrive. </p>\n\n<p>If you're eligible please book the correct vaccine appointment type. If you're unsure about your eligibility please check via <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">Health direct eligibility checker</a></p>\n\n<p>There are no private fees for COVID-19 vaccination appointments.</p>\n\n<p>Please remember to bring a mask on the day and have completed both HotDoc forms (New Patient Registration &amp; COVID-19 Consent).</p>\n",
+      "position": 3,
+      "earliest_available": "2021-08-21T03:45:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 192
+      },
+      "specialty": "Registered Nurse",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        573825,
+        573823,
+        573822,
+        573824
+      ],
+      "doctor_interest_ids": []
+    },
+    {
+      "id": 97491,
+      "slug": "pfizer-covid-19-vaccine-clinic-1-1",
+      "full_name": "Pfizer COVID-19 Vaccine Clinic 1",
+      "pre_triage_availability_type_id": "97491-900",
+      "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/97491/profile_c9eefda0e622c60730db57bc2c6b4bfb.jpeg",
+      "accepts_new_patients": true,
+      "does_not_accept_new_patients_call_to_discuss": true,
+      "does_not_accept_new_patients_message_html": "Pfizer COVID-19 Vaccine Clinic 1 does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+      "statement": "<strong>Not available = Fully booked.</strong> DO NOT CALL THE PRACTICE. We cannot provide ANY information. \n\nIf you DO NOT have MEDICARE you cannot book an appointment at Green Square Health.  If you do not have Medicare you'll need to go to a government-funded respiratory clinic.\n\nPlease check regularly as we will add more appointments as vaccine doses arrive. \n\nIf you're eligible please book the correct vaccine appointment type. If you're unsure about your eligibility please check via <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">Health direct eligibility checker</a>\n\nThere are no private fees for COVID-19 vaccination appointments.\n\nPlease remember to bring a mask on the day and have completed both HotDoc forms (New Patient Registration & COVID-19 Consent).",
+      "statement_html": "<p><strong>Not available = Fully booked.</strong> DO NOT CALL THE PRACTICE. We cannot provide ANY information. </p>\n\n<p>If you DO NOT have MEDICARE you cannot book an appointment at Green Square Health.  If you do not have Medicare you'll need to go to a government-funded respiratory clinic.</p>\n\n<p>Please check regularly as we will add more appointments as vaccine doses arrive. </p>\n\n<p>If you're eligible please book the correct vaccine appointment type. If you're unsure about your eligibility please check via <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">Health direct eligibility checker</a></p>\n\n<p>There are no private fees for COVID-19 vaccination appointments.</p>\n\n<p>Please remember to bring a mask on the day and have completed both HotDoc forms (New Patient Registration &amp; COVID-19 Consent).</p>\n",
+      "position": 2,
+      "earliest_available": "2021-08-14T05:00:00+00:00",
+      "call_to_book": false,
+      "visible_on_hot_doc": true,
+      "has_bookings_support": true,
+      "languages": [],
+      "qualifications": [],
+      "education": [],
+      "detail": true,
+      "segment": {
+        "spec": 192
+      },
+      "specialty": "Registered Nurse",
+      "clinic_id": 1425,
+      "doctor_reason_ids": [
+        580761,
+        580760,
+        580782,
+        580787
+      ],
+      "doctor_interest_ids": []
+    }
+  ],
+  "doctor_reasons": [
+    {
+      "id": 309175,
+      "availability_type_id": 25152,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21039,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309180,
+      "availability_type_id": 25150,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21039,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309214,
+      "availability_type_id": 25150,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21039,
+      "reason_id": 37398,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 568120,
+      "availability_type_id": 25152,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21039,
+      "reason_id": 65829,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 345162,
+      "availability_type_id": 25150,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 21039,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592079,
+      "availability_type_id": 25150,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21039,
+      "reason_id": 69189,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309171,
+      "availability_type_id": 25158,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21038,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309176,
+      "availability_type_id": 25156,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21038,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309212,
+      "availability_type_id": 25156,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21038,
+      "reason_id": 37398,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 568124,
+      "availability_type_id": 25158,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21038,
+      "reason_id": 65829,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 345161,
+      "availability_type_id": 25156,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 21038,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 345145,
+      "availability_type_id": 25156,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \n\nMasks are mandatory for all patients and visitors to GS Health. \n\nCancellation fee applies for bookings cancelled with less than 2 hours’ notice.",
+      "message_html": "<p>Please note: </p>\n\n<p>Masks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>Cancellation fee applies for bookings cancelled with less than 2 hours’ notice.</p>\n",
+      "doctor_id": 21038,
+      "reason_id": 8962,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592077,
+      "availability_type_id": 25156,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 21038,
+      "reason_id": 69189,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309173,
+      "availability_type_id": 25155,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 37277,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309179,
+      "availability_type_id": 25153,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 37277,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309213,
+      "availability_type_id": 25153,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 37277,
+      "reason_id": 37398,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 568123,
+      "availability_type_id": 170935,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 37277,
+      "reason_id": 65829,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 345163,
+      "availability_type_id": 25153,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 37277,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 345147,
+      "availability_type_id": 25153,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \n\nMasks are mandatory for all patients and visitors to GS Health. \n\nCancellation fee applies for bookings cancelled with less than 2 hours’ notice.",
+      "message_html": "<p>Please note: </p>\n\n<p>Masks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>Cancellation fee applies for bookings cancelled with less than 2 hours’ notice.</p>\n",
+      "doctor_id": 37277,
+      "reason_id": 8962,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592082,
+      "availability_type_id": 211339,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 37277,
+      "reason_id": 69189,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309177,
+      "availability_type_id": 25162,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 57994,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309172,
+      "availability_type_id": 25164,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 57994,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309215,
+      "availability_type_id": 25162,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 57994,
+      "reason_id": 37398,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 568125,
+      "availability_type_id": 25164,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 57994,
+      "reason_id": 65829,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 345159,
+      "availability_type_id": 25162,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 57994,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 360630,
+      "availability_type_id": 25162,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: Masks are mandatory for all patients and visitors to GS Health.  If your appointment exceeds 30 mins the fee for Extended Appointment may apply ($255.00). Cancellation fees apply for bookings cancelled within 2 hours of the appointment. ",
+      "message_html": "<p>Please note: Masks are mandatory for all patients and visitors to GS Health.  If your appointment exceeds 30 mins the fee for Extended Appointment may apply ($255.00). Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 57994,
+      "reason_id": 41660,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 359272,
+      "availability_type_id": 25164,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Please note: Masks are mandatory for all patients and visitors to GS Health.  appointments exceeding 15 minutes may attract the longer consultation fee ($145.00). Cancellation fee applies for cancellations within 2 hours of your appointment. ",
+      "message_html": "<p>Please note: Masks are mandatory for all patients and visitors to GS Health.  appointments exceeding 15 minutes may attract the longer consultation fee ($145.00). Cancellation fee applies for cancellations within 2 hours of your appointment. </p>\n",
+      "doctor_id": 57994,
+      "reason_id": 41575,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592080,
+      "availability_type_id": 25162,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 57994,
+      "reason_id": 69189,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309174,
+      "availability_type_id": 25161,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 58224,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309178,
+      "availability_type_id": 25159,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 58224,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 309211,
+      "availability_type_id": 25159,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 58224,
+      "reason_id": 37398,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 568122,
+      "availability_type_id": 25161,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 58224,
+      "reason_id": 65829,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 345160,
+      "availability_type_id": 25159,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 58224,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 345146,
+      "availability_type_id": 25159,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \n\nMasks are mandatory for all patients and visitors to GS Health. \n\nCancellation fee applies for bookings cancelled with less than 2 hours’ notice.",
+      "message_html": "<p>Please note: </p>\n\n<p>Masks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>Cancellation fee applies for bookings cancelled with less than 2 hours’ notice.</p>\n",
+      "doctor_id": 58224,
+      "reason_id": 8962,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592078,
+      "availability_type_id": 25159,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 58224,
+      "reason_id": 69189,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 533628,
+      "availability_type_id": 192305,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Please bring a MASK with you to your vaccination appointment.",
+      "message_html": "<p>Please bring a MASK with you to your vaccination appointment.</p>\n",
+      "doctor_id": 72297,
+      "reason_id": 60844,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 533629,
+      "availability_type_id": 192305,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Please bring a MASK with you to your vaccination appointment.",
+      "message_html": "<p>Please bring a MASK with you to your vaccination appointment.</p>\n",
+      "doctor_id": 72297,
+      "reason_id": 60844,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592224,
+      "availability_type_id": 211413,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 74457,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592230,
+      "availability_type_id": 211413,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \n\nMasks are mandatory for all patients and visitors to GS Health. \n\nCancellation fee applies for bookings cancelled with less than 2 hours’ notice.",
+      "message_html": "<p>Please note: </p>\n\n<p>Masks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>Cancellation fee applies for bookings cancelled with less than 2 hours’ notice.</p>\n",
+      "doctor_id": 74457,
+      "reason_id": 8962,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592235,
+      "availability_type_id": 211413,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: Masks are mandatory for all patients and visitors to GS Health.  If your appointment exceeds 30 mins the fee for Extended Appointment may apply ($255.00). Cancellation fees apply for bookings cancelled within 2 hours of the appointment. ",
+      "message_html": "<p>Please note: Masks are mandatory for all patients and visitors to GS Health.  If your appointment exceeds 30 mins the fee for Extended Appointment may apply ($255.00). Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 74457,
+      "reason_id": 41660,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592236,
+      "availability_type_id": 211414,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Please note: Masks are mandatory for all patients and visitors to GS Health.  appointments exceeding 15 minutes may attract the longer consultation fee ($145.00). Cancellation fee applies for cancellations within 2 hours of your appointment. ",
+      "message_html": "<p>Please note: Masks are mandatory for all patients and visitors to GS Health.  appointments exceeding 15 minutes may attract the longer consultation fee ($145.00). Cancellation fee applies for cancellations within 2 hours of your appointment. </p>\n",
+      "doctor_id": 74457,
+      "reason_id": 41575,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 392377,
+      "availability_type_id": 25145,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 74457,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 392378,
+      "availability_type_id": 25144,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 74457,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 392379,
+      "availability_type_id": 25144,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 74457,
+      "reason_id": 37398,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 568118,
+      "availability_type_id": 25145,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 74457,
+      "reason_id": 65829,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592076,
+      "availability_type_id": 25144,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 74457,
+      "reason_id": 69189,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 554446,
+      "availability_type_id": 82253,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. ",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 63233,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 481110,
+      "availability_type_id": 82253,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Please note:\nMasks are mandatory for all patients and visitors of GS Health. \nIf your appointment exceeds 15 minutes the fee for a long appointment may be charged. \nCancellation fees apply for cancellations of less than 2 hours' notice. ",
+      "message_html": "<p>Please note:\nMasks are mandatory for all patients and visitors of GS Health. \nIf your appointment exceeds 15 minutes the fee for a long appointment may be charged. \nCancellation fees apply for cancellations of less than 2 hours' notice. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 51654,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 481111,
+      "availability_type_id": 82254,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for patients and visitors of GS Health.\nIf your consultation exceeds 30 mins the fee for our Extended consultation may apply ($255). \nCancellation fees apply for cancellations made within 2 hours of your appointment. ",
+      "message_html": "<p>Please note: \nMasks are mandatory for patients and visitors of GS Health.\nIf your consultation exceeds 30 mins the fee for our Extended consultation may apply ($255). \nCancellation fees apply for cancellations made within 2 hours of your appointment. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 51655,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 481112,
+      "availability_type_id": 82253,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 481113,
+      "availability_type_id": 82254,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 462329,
+      "availability_type_id": 82253,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Please note:\n\nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your consultation exceeds 15 minutes the fee for our Long Appointment may apply(Mon-Fri $145.00/Sat $160.00). \n\nCancellation fees apply for bookings cancelled with less than 2 hours’ notice.",
+      "message_html": "<p>Please note:</p>\n\n<p>Masks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your consultation exceeds 15 minutes the fee for our Long Appointment may apply(Mon-Fri $145.00/Sat $160.00). </p>\n\n<p>Cancellation fees apply for bookings cancelled with less than 2 hours’ notice.</p>\n",
+      "doctor_id": 82358,
+      "reason_id": 41050,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 462330,
+      "availability_type_id": 82254,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. ",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 41657,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 462331,
+      "availability_type_id": 82254,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 462332,
+      "availability_type_id": 82254,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \n\nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: </p>\n\n<p>Masks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 40597,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 462333,
+      "availability_type_id": 82254,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \n\nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: </p>\n\n<p>Masks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 41662,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 462334,
+      "availability_type_id": 82254,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \n\nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: </p>\n\n<p>Masks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 41659,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 532222,
+      "availability_type_id": 146646,
+      "duration": 2700,
+      "is_for_new": false,
+      "message": "Please note:\nMasks are mandatory for all patients and visitors to GS Health. \n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. ",
+      "message_html": "<p>Please note:\nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 82358,
+      "reason_id": 41658,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 515668,
+      "availability_type_id": 217986,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms or if you are pregnant, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare card for this service to be bulk billed. If you do NOT have a Medicare card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://www.healthdirect.gov.au/\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms or if you are pregnant, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare card for this service to be bulk billed. If you do NOT have a Medicare card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://www.healthdirect.gov.au/\">here.</a></p>\n",
+      "doctor_id": 87490,
+      "reason_id": 55921,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 515669,
+      "availability_type_id": 217986,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms or if you are pregnant, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare card for this service to be bulk billed. If you do NOT have a Medicare card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://www.healthdirect.gov.au/\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms or if you are pregnant, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare card for this service to be bulk billed. If you do NOT have a Medicare card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://www.healthdirect.gov.au/\">here.</a></p>\n",
+      "doctor_id": 87490,
+      "reason_id": 55921,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 515601,
+      "availability_type_id": 217988,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms or if you are pregnant, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare card for this service to be bulk billed. If you do NOT have a Medicare card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://www.healthdirect.gov.au/\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms or if you are pregnant, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare card for this service to be bulk billed. If you do NOT have a Medicare card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://www.healthdirect.gov.au/\">here.</a></p>\n",
+      "doctor_id": 87490,
+      "reason_id": 55924,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 515600,
+      "availability_type_id": 217988,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms or if you are pregnant, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare card for this service to be bulk billed. If you do NOT have a Medicare card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://www.healthdirect.gov.au/\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms or if you are pregnant, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare card for this service to be bulk billed. If you do NOT have a Medicare card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://www.healthdirect.gov.au/\">here.</a></p>\n",
+      "doctor_id": 87490,
+      "reason_id": 55924,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 558974,
+      "availability_type_id": 175161,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 95016,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 558975,
+      "availability_type_id": 175163,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 95016,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 568121,
+      "availability_type_id": 175164,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 95016,
+      "reason_id": 65829,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592083,
+      "availability_type_id": 211340,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 95016,
+      "reason_id": 69189,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 562514,
+      "availability_type_id": 175163,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 95016,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592973,
+      "availability_type_id": 212101,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 98865,
+      "reason_id": 37394,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592974,
+      "availability_type_id": 212102,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 98865,
+      "reason_id": 37398,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592975,
+      "availability_type_id": 212102,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 98865,
+      "reason_id": 37395,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592976,
+      "availability_type_id": 212103,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 98865,
+      "reason_id": 65829,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592977,
+      "availability_type_id": 212104,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  ",
+      "message_html": "<p>Your doctor will aim to call you within 30 minutes of your scheduled consultation time. Payment can be arranged via sms link or by phoning the practice after your appointment. Surcharges apply for sms and phone payments.  </p>\n",
+      "doctor_id": 98865,
+      "reason_id": 69189,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592978,
+      "availability_type_id": 212102,
+      "duration": 1800,
+      "is_for_new": true,
+      "message": "Please note: Masks are mandatory for all patients and visitors to GS Health. If your consultation exceeds 30 minutes the fee for our Extended Appointment may apply ($255.00). Cancellation fee applies for bookings cancelled with less than 2 hours’ notice. For more information call 9699 8111.",
+      "message_html": "<p>Please note: Masks are mandatory for all patients and visitors to GS Health. If your consultation exceeds 30 minutes the fee for our Extended Appointment may apply ($255.00). Cancellation fee applies for bookings cancelled with less than 2 hours’ notice. For more information call <a href=\"tel:9699%208111\" target=\"_blank\">9699 8111</a>.</p>\n",
+      "doctor_id": 98865,
+      "reason_id": 40594,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 592979,
+      "availability_type_id": 212102,
+      "duration": 1800,
+      "is_for_new": false,
+      "message": "Please note: \nMasks are mandatory for all patients and visitors to GS Health. \n\nIf your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).\n\nCancellation fees apply for bookings cancelled within 2 hours of the appointment. \n",
+      "message_html": "<p>Please note: \nMasks are mandatory for all patients and visitors to GS Health. </p>\n\n<p>If your appointment exceeds 30 mins the fee for the Extended Appointment may apply ($255.00).</p>\n\n<p>Cancellation fees apply for bookings cancelled within 2 hours of the appointment. </p>\n",
+      "doctor_id": 98865,
+      "reason_id": 8964,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 573825,
+      "availability_type_id": 220044,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 96652,
+      "reason_id": 65767,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 573823,
+      "availability_type_id": 220043,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 96652,
+      "reason_id": 65763,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 573822,
+      "availability_type_id": 220043,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 96652,
+      "reason_id": 65763,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 573824,
+      "availability_type_id": 220134,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 96652,
+      "reason_id": 65767,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580761,
+      "availability_type_id": 220042,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 97491,
+      "reason_id": 65763,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580760,
+      "availability_type_id": 220042,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 97491,
+      "reason_id": 65763,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580782,
+      "availability_type_id": 220045,
+      "duration": 900,
+      "is_for_new": false,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 97491,
+      "reason_id": 65767,
+      "deleted_at": null,
+      "has_stipulations": true
+    },
+    {
+      "id": 580787,
+      "availability_type_id": 220133,
+      "duration": 900,
+      "is_for_new": true,
+      "message": "• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\" rel=\"noopener noreferrer\">here.</a>",
+      "message_html": "<p>• Only people eligible under the current phase will be able to receive the vaccine.<br>\n• If you are unwell with flu-like symptoms, you will not be able to receive the vaccine at this stage.<br>\n• You will need to have a Medicare or Department of Veteran Affairs (DVA) card for this service to be bulk billed. If you do NOT have a Medicare or DVA card, please book your vaccination at one of the Government Vaccination Hubs instead <a href=\"https://covid-vaccine.healthdirect.gov.au/eligibility\">here.</a></p>\n",
+      "doctor_id": 97491,
+      "reason_id": 65767,
+      "deleted_at": null,
+      "has_stipulations": true
+    }
+  ],
+  "doctor_interests": [
+    {
+      "id": 21246,
+      "name": "Implanon insertion and removal",
+      "doctor_id": 21039
+    },
+    {
+      "id": 21249,
+      "name": "Psychological medicine and mental health",
+      "doctor_id": 21039
+    },
+    {
+      "id": 14591,
+      "name": "Men's health",
+      "doctor_id": 21039
+    },
+    {
+      "id": 14590,
+      "name": "Chronic Disease Care",
+      "doctor_id": 21039
+    },
+    {
+      "id": 14592,
+      "name": "Women's health",
+      "doctor_id": 21039
+    },
+    {
+      "id": 14593,
+      "name": "Travel medicine",
+      "doctor_id": 21039
+    },
+    {
+      "id": 47432,
+      "name": "PrEP",
+      "doctor_id": 21039
+    },
+    {
+      "id": 47433,
+      "name": "Sexual Health",
+      "doctor_id": 21039
+    },
+    {
+      "id": 60632,
+      "name": "Weight loss and nutrition",
+      "doctor_id": 21039
+    },
+    {
+      "id": 14610,
+      "name": "Pregnancy care",
+      "doctor_id": 21038
+    },
+    {
+      "id": 14611,
+      "name": "Paediatrics",
+      "doctor_id": 21038
+    },
+    {
+      "id": 21240,
+      "name": "Implanon insertion and removal",
+      "doctor_id": 21038
+    },
+    {
+      "id": 14587,
+      "name": "Family planning",
+      "doctor_id": 21038
+    },
+    {
+      "id": 14588,
+      "name": "Women's health",
+      "doctor_id": 21038
+    },
+    {
+      "id": 30349,
+      "name": "Sexual health",
+      "doctor_id": 21038
+    },
+    {
+      "id": 86431,
+      "name": "Women and Children's health",
+      "doctor_id": 21038
+    },
+    {
+      "id": 86432,
+      "name": "Chronic Disease Care",
+      "doctor_id": 21038
+    },
+    {
+      "id": 86433,
+      "name": "Contraception",
+      "doctor_id": 21038
+    },
+    {
+      "id": 86434,
+      "name": "Preventative medicine",
+      "doctor_id": 21038
+    },
+    {
+      "id": 29436,
+      "name": "Women's health",
+      "doctor_id": 37277
+    },
+    {
+      "id": 29439,
+      "name": "Paediatric medicine",
+      "doctor_id": 37277
+    },
+    {
+      "id": 30347,
+      "name": "Pregnancy care",
+      "doctor_id": 37277
+    },
+    {
+      "id": 30348,
+      "name": "Implanon insertion & removal",
+      "doctor_id": 37277
+    },
+    {
+      "id": 30350,
+      "name": "Sexual health",
+      "doctor_id": 37277
+    },
+    {
+      "id": 30351,
+      "name": "PrEP",
+      "doctor_id": 37277
+    },
+    {
+      "id": 30352,
+      "name": "Chronic disease care",
+      "doctor_id": 37277
+    },
+    {
+      "id": 60611,
+      "name": "Sexual health",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60612,
+      "name": "Implanon insertion and removal",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60613,
+      "name": "Pregnancy care",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60614,
+      "name": "Women's health",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60615,
+      "name": "Sexual Health",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60616,
+      "name": "PrEP",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60617,
+      "name": "Chronic Disease Care",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60618,
+      "name": "Travel medicine",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60619,
+      "name": "Implanon insertion & removal",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60620,
+      "name": "Skin checks",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60621,
+      "name": "Women and Children's health",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60622,
+      "name": "Men's health",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60623,
+      "name": "Psychological medicine and mental health",
+      "doctor_id": 57994
+    },
+    {
+      "id": 60624,
+      "name": "Paediatrics",
+      "doctor_id": 57994
+    },
+    {
+      "id": 51909,
+      "name": "Women and Children's health",
+      "doctor_id": 58224
+    },
+    {
+      "id": 51910,
+      "name": "Skin checks",
+      "doctor_id": 58224
+    },
+    {
+      "id": 51911,
+      "name": "Sexual health",
+      "doctor_id": 58224
+    },
+    {
+      "id": 51912,
+      "name": "Antenatal shared care",
+      "doctor_id": 58224
+    },
+    {
+      "id": 51913,
+      "name": "Implanon insertion & removal",
+      "doctor_id": 58224
+    },
+    {
+      "id": 70683,
+      "name": "Men's health",
+      "doctor_id": 74457
+    },
+    {
+      "id": 70684,
+      "name": "Sexual health",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86413,
+      "name": "Antenatal shared care",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86414,
+      "name": "Skin cancer medicine",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86415,
+      "name": "Sports medicine",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86416,
+      "name": "Nutritional Medicine",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86417,
+      "name": "Contraception",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86418,
+      "name": "Implanon insertion & removal",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86419,
+      "name": "Weight management",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86420,
+      "name": "PrEP",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86421,
+      "name": "Psychological medicine and mental health",
+      "doctor_id": 74457
+    },
+    {
+      "id": 86422,
+      "name": "Chronic Disease Care",
+      "doctor_id": 82358
+    },
+    {
+      "id": 86423,
+      "name": "Women's health",
+      "doctor_id": 82358
+    },
+    {
+      "id": 86424,
+      "name": "Sexual Health",
+      "doctor_id": 82358
+    },
+    {
+      "id": 86425,
+      "name": "Paediatric medicine",
+      "doctor_id": 82358
+    },
+    {
+      "id": 86426,
+      "name": "Women and Children's health",
+      "doctor_id": 82358
+    },
+    {
+      "id": 86427,
+      "name": "Family planning",
+      "doctor_id": 82358
+    },
+    {
+      "id": 96702,
+      "name": "Skin cancer medicine",
+      "doctor_id": 95016
+    },
+    {
+      "id": 96703,
+      "name": "Sexual and reproductive health",
+      "doctor_id": 95016
+    },
+    {
+      "id": 96704,
+      "name": "Men's & Women's Health",
+      "doctor_id": 95016
+    },
+    {
+      "id": 96705,
+      "name": "Paediatric medicine",
+      "doctor_id": 95016
+    },
+    {
+      "id": 99944,
+      "name": "Women's health",
+      "doctor_id": 98865
+    },
+    {
+      "id": 99945,
+      "name": "Paediatric medicine",
+      "doctor_id": 98865
+    },
+    {
+      "id": 99946,
+      "name": "Sports medicine",
+      "doctor_id": 98865
+    },
+    {
+      "id": 99947,
+      "name": "Sexual health",
+      "doctor_id": 98865
+    },
+    {
+      "id": 99948,
+      "name": "Family medicine",
+      "doctor_id": 98865
+    }
+  ],
+  "reasons": [
+    {
+      "id": 8995,
+      "name": "New Patient: Skin Cancer Check (30 Mins)",
+      "position": 28,
+      "bookable": false,
+      "message": "Please book a telehealth appointment instead.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New Patient: Skin Cancer Check (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 65763,
+      "name": "Pfizer COVID-19 Vaccine Dose 1 - Under 60 Years",
+      "position": 3,
+      "bookable": false,
+      "message": "We aren't taking online bookings for this appointment type, please check back later.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Does not perform 'Pfizer COVID-19 Vaccine Dose 1 - Under 60 Years'",
+      "does_not_perform_call_to_discuss": false,
+      "reason_group_id": -998
+    },
+    {
+      "id": 57950,
+      "name": "Childhood Immunisation - 6 Months (30 Mins)",
+      "position": 36,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nThis appointment type allows up to 30 minutes for developmental check and vaccination with nurse. Please bring any forms required with you. Fee of $145.00 with Medicare rebate of $75.05.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Childhood Immunisation - 6 Months (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 57953,
+      "name": "Childhood Immunisation - 4 Years (30 Mins)",
+      "position": 38,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nThis appointment type allows up to 30 minutes for developmental check and vaccination with nurse. Please bring any forms required with you. Fee of $145.00 with Medicare rebate of $75.05.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Childhood Immunisation - 4 Years (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 57954,
+      "name": "Care Plan Review",
+      "position": 39,
+      "bookable": false,
+      "message": "3 months",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Care Plan Review'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 51657,
+      "name": "New Patient: Mental Health Care Consultation (30 Mins) (Telehealth)",
+      "position": 32,
+      "bookable": false,
+      "message": "Please book a telehealth appointment instead.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New Patient: Mental Health Care Consultation (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -999
+    },
+    {
+      "id": 41575,
+      "name": "Spot Check (15 Mins)",
+      "position": 21,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\n\nA spot check is a 15 minute appointment to review a spot that was flagged as suspicious during your last skin check. Please do not book this if you need a full skin check. Fee Mon-Fri $85.00/Sat $95.00 with Medicare rebate of $38.75.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Spot Check (15 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 57937,
+      "name": "Women's Health Check  (30 Mins)",
+      "position": 22,
+      "bookable": false,
+      "message": null,
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Women's Health Check  (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 57951,
+      "name": "Childhood Immunisation -  12 Months (30 Mins)",
+      "position": 33,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nThis appointment type allows up to 30 minutes for developmental check and vaccination with nurse. Please bring any forms required with you. Fee of $145.00 with Medicare rebate of $75.05.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Childhood Immunisation -  12 Months (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 60844,
+      "name": "Influenza Vaccination",
+      "position": 5,
+      "bookable": false,
+      "message": "If you are eligible for a NSW Health sponsored Flu Vaccine - you will not be charged after your appointment - only for those who require a private Flu Vaccine",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Does not perform 'Influenza Vaccination'",
+      "does_not_perform_call_to_discuss": false,
+      "reason_group_id": null
+    },
+    {
+      "id": 41660,
+      "name": "Skin Cancer Check (30 Mins)",
+      "position": 20,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis appointment type allows up to 30 minutes for a full skin check consultation with the GP. Fee Mon-Fri $145.00/Sat $160.00 with Medicare rebate of $75.05. Please note: a different fee schedule will apply if a biopsy or minor procedure is performed in addition to the consultation fee. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Skin Cancer Check (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 37394,
+      "name": "Telehealth Consultation Standard  (15 Mins)",
+      "position": 6,
+      "bookable": false,
+      "message": "This video/phone consultation is an opportunity to discuss 1-2 simple concerns with your GP. Consultation fee of $85, with a medicare rebate of $38.75. Consults exceeding 15 minutes may attract a higher fee ($145.00).",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Telehealth Consultation Standard  (15 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -999
+    },
+    {
+      "id": 8964,
+      "name": "Cervical Screening  (30 Mins)",
+      "position": 9,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please reschedule your appointment. \n\nThis appointment type allows up to 30 minutes with the GP for a cervical screening test (CST, previously known as pap smear). Consultation fee of Mon-Fri $145.00/Sat $160.00 with Medicare rebate of $75.05. If your consultation exceeds 30 minutes the fee for our Extended Appointment may apply ($255.00). \n\nPlease note that the consultation fee does not cover pathology testing. These will be invoiced by Laverty pathology, if you do not have a Medicare card or Medicare does not cover the test. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Cervical Screening  (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 41050,
+      "name": "Standard Consultation (15 Mins)",
+      "position": 10,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nA standard appointment allows up to 15 minutes with the GP and discussion of 1-2 simple matters or review of an ongoing concern. Fee Mon-Fri $85.00/Sat $95.00 with Medicare rebate of $38.75.  If you have multiple issues to discuss,  forms to be completed by the GP, or require a driver’s licence medical we ask that you book a long appointment of 30 minutes.\n\n",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Standard Consultation (15 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 41658,
+      "name": "Extended Consultation (45 Mins)",
+      "position": 12,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis appointment type allows up to 45 minutes for all complex medical issues, forms, drivers licence medicals, health assessments or when numerous issues need to be discussed. Please bring all forms with you. Fee $255.00 with Medicare rebate of $110.50.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Extended Consultation (45 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40594,
+      "name": "New Patient: Cervical Screening (Pap Smear)",
+      "position": 26,
+      "bookable": false,
+      "message": "Please book a telehealth appointment instead.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New Patient: Cervical Screening (Pap Smear)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 8996,
+      "name": "New Patient: Pregnancy Care (30 Mins)",
+      "position": 27,
+      "bookable": false,
+      "message": "Please book a telehealth appointment instead.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New Patient: Pregnancy Care (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 41927,
+      "name": "New Patient: Consultation (30 Mins)",
+      "position": 25,
+      "bookable": false,
+      "message": "Please book a telehealth appointment instead.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New Patient: Consultation (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 41667,
+      "name": "New Patient: Men's Health Check (30 Mins)",
+      "position": 29,
+      "bookable": false,
+      "message": "Please book a telehealth appointment instead.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New Patient: Men's Health Check (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 47896,
+      "name": "New Patient: Cosmetic Consultation",
+      "position": 31,
+      "bookable": false,
+      "message": "This appointment type cannot be booked due to COVID-19 lock down. Please check back later",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Does not perform 'New Patient: Cosmetic Consultation'",
+      "does_not_perform_call_to_discuss": false,
+      "reason_group_id": null
+    },
+    {
+      "id": 37395,
+      "name": "Telehealth Consultation Long (30 Mins)",
+      "position": 7,
+      "bookable": false,
+      "message": "This 30 minute telehealth consultation is an opportunity for you to discuss 2 or more complex concerns with the GP.  Consultation fee of $145, with a medicare rebate of $75.05. Consultations exceeding 30 minutes may attract a higher fee.\n",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Telehealth Consultation Long (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -999
+    },
+    {
+      "id": 37398,
+      "name": "Telehealth Mental Health Care Plan  (30 Mins)",
+      "position": 8,
+      "bookable": false,
+      "message": "Please use this appointment type if you require a Mental Health Care Plan. Mental health care plans are at the discretion of your doctor. It can take several consults to establish a clear plan. The cost for this consultation is $185, with a medicare rebate of $92.50. If you do not require a Mental Health Care Plan but wish to discuss concerns around mental health please return to the menu and book a Telehealth consultation- Long. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Telehealth Mental Health Care Plan  (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -999
+    },
+    {
+      "id": 41657,
+      "name": "Long Consultation (30 Mins)",
+      "position": 11,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis appointment type allows up to 30 minutes for all complex medical issues, forms, and drivers licence medicals, or when numerous issues need to be discussed. Please bring any forms required with you. Fee Mon-Fri $145.00/Sat $160.00 with Medicare rebate of $75.05.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Long Consultation (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 41662,
+      "name": "Men's Health Check (30 Mins) ",
+      "position": 13,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis 30 minute appointment allows for discussion of issues relating to men's health. Common issues include erectile dysfunction, premature ejaculation, prostate cancer, testicular cancer, and preventative health strategies. Fee Mon-Fri $145.00/Sat $160.00 with medicare rebate of $75.05.  ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Men's Health Check (30 Mins) '",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 40597,
+      "name": "Mental Health Care Consultation (30 Mins)",
+      "position": 14,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis 30 minute consultation gives you the opportunity to discuss your mental health and any concerns with the GP. Fee Mon-Fri $145.00/Sat $160.00 with $73.95 rebate.\n\nPlease note: If you require a mental health care plan please speak with the receptionist as different fees apply.\n",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Mental Health Care Consultation (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 8962,
+      "name": "Pregnancy Care (45 Mins)",
+      "position": 15,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis appointment type allows up to 45 minutes with the GP  for initial pregnancy care appointments. Fee $255.00 with $110.50 rebate.  If you are seeing the doctor for a subsequent pregnancy care visit and do not require a 45 minute consultation please book a Long Appointment.\n",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Pregnancy Care (45 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 51654,
+      "name": "Results Follow Up (15 Mins)",
+      "position": 16,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis 15 minute appointment allows for discussion of your test results with the GP. Fee Mon-Fri $85.00/Sat $95.00. If you have any other concerns  to discuss or require more time please return to the menu to book a longer appointment. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Results Follow Up (15 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 51655,
+      "name": "Results Follow Up (30 Mins)",
+      "position": 17,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis 30 minute appointment allows time for discussion of your results with the GP.  Fee Mon-Fri $145/Sat $160.00.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Results Follow Up (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 63233,
+      "name": "Sexual health/STI check (15 mins)",
+      "position": 18,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis 15 minute appointment allows for a discussion regarding sexual health and/or STI screening. Fee Mon-Fri $85.00/Sat $95.00. Medicare rebate $38.75 If you require cervical screening and discussion around contraception please book in for a long appointment of 30 mins. \n\nPlease note: for patients without Medicare there are additional costs for investigations (pathology testing) not included as part of the consultation fee.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Sexual health/STI check (15 mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 41659,
+      "name": "Sexual Health/STI check  (30 Mins)",
+      "position": 19,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. \n\nThis appointment type allows up to 30 minutes with the GP to discuss any questions or concerns relating to sexual health. Consultation fee Mon-Fri $145.00/Sat $160.00 with  Medicare rebate $75.05.  \n\nPlease note: for patients without Medicare there are additional costs for investigations (pathology testing) not included as part of the consultation fee.\n",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Sexual Health/STI check  (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 41665,
+      "name": "New patient: Sexual Health Check Up (30 Mins)",
+      "position": 30,
+      "bookable": false,
+      "message": "Please book a telehealth appointment instead.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New patient: Sexual Health Check Up (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 65829,
+      "name": "New patient: Telehealth (15 mins)",
+      "position": 23,
+      "bookable": false,
+      "message": "This video/phone consultation is an opportunity to discuss your concern with your GP. Consultation fee of $85.00.  Please note: consultations exceeding 15 minutes may attract a higher fee ($145.00).\n\nIf necessary, the GP may arrange an in-person consultation for physical exam after your TELEHEALTH consultation. If you feel this is needed please discuss this with the GP. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New patient: Telehealth (15 mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -999
+    },
+    {
+      "id": 65767,
+      "name": "Pfizer COVID-19 Vaccine Dose 2",
+      "position": 4,
+      "bookable": false,
+      "message": "We aren't taking online bookings for this appointment type, please check back later.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Does not perform 'Pfizer COVID-19 Vaccine Dose 2'",
+      "does_not_perform_call_to_discuss": false,
+      "reason_group_id": -998
+    },
+    {
+      "id": 69189,
+      "name": "New Patient: Telehealth (30 mins)",
+      "position": 24,
+      "bookable": false,
+      "message": "This video/phone consultation is an opportunity to discuss your concern with your GP. Consultation fee of $145.00.  Please note: consultations exceeding 30 minutes may attract a higher fee.\n\nIf necessary, the GP may arrange an in-person consultation for physical exam after your TELEHEALTH consultation. If you feel this is needed please discuss this with the GP. ",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'New Patient: Telehealth (30 mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": -999
+    },
+    {
+      "id": 8963,
+      "name": "Childhood Immunisation - 6 Weeks (30 Mins)",
+      "position": 34,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nThis appointment type allows up to 30 minutes for developmental check and vaccination with nurse. Please bring any forms required with you. Fee of $145.00 with Medicare rebate of $75.05.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Childhood Immunisation - 6 Weeks (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 57949,
+      "name": "Childhood Immunisation - 4 Months (30 Mins)",
+      "position": 35,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nThis appointment type allows up to 30 minutes for developmental check and vaccination with nurse. Please bring any forms required with you. Fee of $145.00 with Medicare rebate of $75.05.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Childhood Immunisation - 4 Months (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 57952,
+      "name": "Childhood Immunisation - 18 Months (30 Mins)",
+      "position": 37,
+      "bookable": false,
+      "message": "Please bring a MASK with you to your consultation.\n\nThis appointment type allows up to 30 minutes for developmental check and vaccination with nurse. Please bring any forms required with you. Fee of $145.00 with Medicare rebate of $75.05.",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Call to discuss 'Childhood Immunisation - 18 Months (30 Mins)'",
+      "does_not_perform_call_to_discuss": true,
+      "reason_group_id": null
+    },
+    {
+      "id": 55924,
+      "name": "AstraZeneca COVID-19 Vaccine Dose 2",
+      "position": 2,
+      "bookable": false,
+      "message": "",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Does not perform 'AstraZeneca COVID-19 Vaccine Dose 2'",
+      "does_not_perform_call_to_discuss": false,
+      "reason_group_id": -998
+    },
+    {
+      "id": 55921,
+      "name": "AstraZeneca COVID-19 Vaccine Dose 1",
+      "position": 1,
+      "bookable": false,
+      "message": "",
+      "message_html": "<p>Due to extra screening measures, we cannot complete your booking at this time. Please clear your browser cache and refresh the page before trying again.</p>\n",
+      "deleted_at": null,
+      "clinic_id": 1425,
+      "referral_prompted": false,
+      "referral_required": false,
+      "referral_collect": false,
+      "referral_collect_required": true,
+      "referral_upload": false,
+      "referral_upload_required": false,
+      "referral_absent_message_html": null,
+      "does_not_perform_message_html": "Does not perform 'AstraZeneca COVID-19 Vaccine Dose 1'",
+      "does_not_perform_call_to_discuss": false,
+      "reason_group_id": -998
+    }
+  ],
+  "reason_groups": [
+    {
+      "id": -998,
+      "name": "COVID Vaccine",
+      "slug": "covid-vaccine",
+      "purpose": "covid-vaccine",
+      "only_show_with_purpose": false
+    },
+    {
+      "id": -999,
+      "name": "Telehealth",
+      "slug": "telehealth",
+      "purpose": "telehealth",
+      "only_show_with_purpose": false
+    }
+  ],
+  "themes": [],
+  "clinic": {
+    "id": 1425,
+    "name": "Green Square Health",
+    "slug": "green-square-health",
+    "street_address": "4/965 Bourke Street",
+    "phone": "02 9699 8111",
+    "website": "www.gshealth.com.au",
+    "latitude": -33.9024951628284,
+    "longitude": 151.207694335864,
+    "timezone": "Australia/Sydney",
+    "blurb": "How is Green Square Health unique?\n\nWe spend the time to get to know our patients.\n\nOur team of GPs work hard to not only make you feel better when you're sick, but also to keep you healthy and happy the rest of the time. So if you haven't found that clinic you feel comfortable with yet, we'd like to welcome you to your new medical home.",
+    "blurb_html": "<p>How is Green Square Health unique?</p>\n\n<p>We spend the time to get to know our patients.</p>\n\n<p>Our team of GPs work hard to not only make you feel better when you're sick, but also to keep you healthy and happy the rest of the time. So if you haven't found that clinic you feel comfortable with yet, we'd like to welcome you to your new medical home.</p>\n",
+    "alert_message": "Please do not use online bookings for emergencies or urgent medical care. For all emergencies please call 000 or present to your nearest emergency department. \n\nRE: COVID-19 / SARS-COV-2\n\nIf you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. For the safety of our staff, patients and community we ask that patients with fever, cough, cold or flu-like symptoms stay home and consult with the GP over the phone or via video. \n\nPlease note our practice policy: we do not prescribe S4/S8 medications to new patients. ",
+    "alert_message_html": "<p>Please do not use online bookings for emergencies or urgent medical care. For all emergencies please call <a href=\"tel:000\" target=\"_blank\">000</a> or present to your nearest emergency department. </p>\n\n<p>RE: COVID-19 / SARS-COV-2</p>\n\n<p>If you have a fever, cough, cold or flu-like symptoms please book a TELEHEALTH consultation with the GP. For the safety of our staff, patients and community we ask that patients with fever, cough, cold or flu-like symptoms stay home and consult with the GP over the phone or via video. </p>\n\n<p>Please note our practice policy: we do not prescribe S4/S8 medications to new patients. </p>\n",
+    "thumb_image_url": "https://d3sjaxzllw9rho.cloudfront.net/clinic_images/clinic_profiles/2684/thumb_e0256a07fd00aa736ebe54e0cef9cda9.png",
+    "active": true,
+    "hidden": false,
+    "company_name": null,
+    "has_mobile_check_in": false,
+    "uses_repeats_product": true,
+    "google_maps_url": "https://www.google.com/maps/search/?api=1&ll=-33.9024951628284%2C151.207694335864&query=4%2F965+Bourke+Street%2C+Waterloo%2C+NSW+2017&z=13",
+    "google_maps_image_url": "https://maps.googleapis.com/maps/api/staticmap?center=-33.9024951628284,151.207694335864&markers=-33.9024951628284,151.207694335864&zoom=12&size=218x172&key=AIzaSyC0zx8HubR-fxICSH2GcOEyC5umqsPVnwQ&signature=oQXVcp5s75r-nCxOBrgr9bF9Afs=",
+    "has_remote_walk_ins_support": false,
+    "has_remote_walk_ins_availability": false,
+    "remote_walk_ins_wait_time_min": null,
+    "remote_walk_ins_wait_time_max": null,
+    "remote_walk_ins_wait_time_urgency": null,
+    "remote_walk_ins_contact_time_min": null,
+    "remote_walk_ins_contact_time_max": null,
+    "flags": [
+      "new_booking_flow",
+      "new_booking_flow_native",
+      "new_triage_flow"
+    ],
+    "detail": true,
+    "maintenance_message_html": null,
+    "opening_hours": {
+      "recurring": [
+        {
+          "label": "Monday",
+          "hours": [
+            {
+              "label": "8:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Tuesday",
+          "hours": [
+            {
+              "label": "8:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Wednesday",
+          "hours": [
+            {
+              "label": "8:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Thursday",
+          "hours": [
+            {
+              "label": "8:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Friday",
+          "hours": [
+            {
+              "label": "8:00am—7:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Saturday",
+          "hours": [
+            {
+              "label": "9:00am—1:00pm"
+            }
+          ]
+        },
+        {
+          "label": "Sunday",
+          "hours": [
+            {
+              "label": "Closed"
+            }
+          ]
+        }
+      ],
+      "seldom": []
+    },
+    "segment": {
+      "pms": 2
+    },
+    "accepts_dva_card": false,
+    "accepts_healthcare_card": false,
+    "billing_policy": "We are a private billing practice. Please see our website for more information on our fees. ",
+    "billing_type": "private_billing",
+    "facebook": "https://www.facebook.com/greensquarehealth",
+    "instagram": "https://www.instagram.com/greensquarehealth",
+    "transport_info": "Parking is available underneath the clinic, entering from Powell Street.  Please ring the intercom, and inform staff who you are seeing today.",
+    "wheelchair_access": true,
+    "payment_methods": [
+      "EFTPOS",
+      "Visa",
+      "Mastercard"
+    ],
+    "facilities": [
+      "Onsite Allied Health",
+      "Pharmacy Nearby",
+      "Onsite Pathology"
+    ],
+    "accreditations": [
+      "Quality Practice Accreditation"
+    ],
+    "suburb_id": 13344,
+    "doctor_ids": [
+      21039,
+      21038,
+      37277,
+      57994,
+      58224,
+      72297,
+      74457,
+      21183,
+      82358,
+      87490,
+      95016,
+      98865,
+      96652,
+      97491
+    ],
+    "reason_ids": [
+      8995,
+      65763,
+      57950,
+      57953,
+      57954,
+      51657,
+      41575,
+      57937,
+      57951,
+      60844,
+      41660,
+      37394,
+      8964,
+      41050,
+      41658,
+      40594,
+      8996,
+      41927,
+      41667,
+      47896,
+      37395,
+      37398,
+      41657,
+      41662,
+      40597,
+      8962,
+      51654,
+      51655,
+      63233,
+      41659,
+      41665,
+      65829,
+      65767,
+      69189,
+      8963,
+      57949,
+      57952,
+      55924,
+      55921
+    ],
+    "theme_id": null
+  }
+}

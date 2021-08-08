@@ -1,0 +1,34 @@
+{
+  "name": "gp-vaccine-search-frontend",
+  "version": "1.0.0",
+  "main": "dist/dist.js",
+  "author": "Jake Coppinger <jake@jakecoppinger.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jakecoppinger/gp-vaccine-search/issues"
+  },
+  "homepage": "https://gpvaccinesearch.com/",
+  "dependencies": {
+    "@types/node": "^12.0.0",
+    "browserify": "^16.2.3",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
+    "moment": "^2.24.0",
+    "sass": "^1.32.7",
+    "ts-debounce": "^3.0.0",
+    "tsify": "^4.0.1",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/mocha": "^8.0.4",
+    "mocha": "^6.1.4",
+    "prettier": "2.2.1",
+    "ts-mocha": "^6.0.0"
+  },
+  "scripts": {
+    "build": "./build.sh",
+    "watch": "./watch-build.sh",
+    "prettify": "yarn prettier --write .",
+    "test": "ts-mocha test/**/*.ts"
+  }
+}
