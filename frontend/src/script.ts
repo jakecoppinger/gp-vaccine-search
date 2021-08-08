@@ -5,7 +5,7 @@ I promise I write better usually. It's open source on Github.
 
 Please don't try and abuse the backend server - I just want to help people get vaccinated :)
 */
-const showNumberGps = 10;
+const showNumberGps = 20;
 
 export async function setElementTextIfExists(selector: string, text: string) {
   const element = document.querySelector(selector);
@@ -116,11 +116,14 @@ async function fetchNearbyClinics(latitude: number, longitude: number) {
     setElementTextIfExists('#clinic-fetch-status','');
     await findAppointments();
   } catch(e) {
-    setElementTextIfExists('#clinic-fetch-status','Failed to check GPs. ');
+    setElementTextIfExists('#clinic-fetch-status','Failed to check GPs. Likely a bug, please check HotDoc manually.');
     // What errors happened?
     // @ts-ignore
     heap.track('clinic_fetch_failed');
   }
+}
+function sleep(ms: number) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 function updateView() {
@@ -177,6 +180,8 @@ async function findAppointments() {
       exceptionErrors += 1;
     }
     updateView();
+    // On top of backend rate limiting
+    await sleep(2000);
   }
 
   // What errors happened?
