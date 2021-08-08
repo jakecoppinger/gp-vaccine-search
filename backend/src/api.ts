@@ -3,8 +3,6 @@ import fetch from 'node-fetch';
 import * as querystring from "querystring";
 
 export async function getClinicInfo(slug:string): Promise<RootObject> {
-  https://www.hotdoc.com.au/api/patient/clinics?slug=montrose-medical-practice
-
   const result = await fetch(`https://www.hotdoc.com.au/api/patient/clinics?slug=${slug}`, {
   "headers": {
     "accept": "application/au.com.hotdoc.v5",
