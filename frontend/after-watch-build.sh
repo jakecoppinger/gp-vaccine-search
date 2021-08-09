@@ -14,7 +14,7 @@ echo "Compiling ts..."
 ./node_modules/.bin/browserify src/script.ts --fast -p tsify --debug > dist/dist.js
 
 # Copy everything else
-cp -r static/ dist/
+cp -r static/* dist/
 
 # Compile SCSS to CSS
 ./node_modules/.bin/sass src/scss/styles.scss > dist/css/styles.css
