@@ -1,5 +1,5 @@
 import * as express from 'express';
-import {getNearbyClinics, getSoonestClinicAppointments} from './api';
+import {fetchSuburbs, getNearbyClinics, getSoonestClinicAppointments} from './api';
 
 const whereAmI = process.env.WHEREAMI;
 console.log(`WHEREAMI: ${whereAmI}`);
@@ -33,6 +33,23 @@ app.post('/get_soonest_clinic_appintment', async (req, res) => {
 
   const soonestAppointment = await getSoonestClinicAppointments(clinic_id_string);
   res.json({status: 'success', soonest_appointment: soonestAppointment});
+});
+
+app.post('/search_suburbs', async (req,res) => {
+  if(req.body === undefined) {
+    res.status(400);
+    res.send(`no body!`);
+    return;
+  }
+  const query = req.body.query;
+  if(typeof query !== 'string' || query.length === 0) {
+    res.status(400);
+    res.send(`empty or missing query`);
+    return;
+  }
+
+  const result = await fetchSuburbs(query);
+  res.json(result);
 });
 
 app.post('/nearby_clinics', async (req, res) => {

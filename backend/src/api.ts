@@ -205,3 +205,16 @@ export async function getNearbyClinics(
     }
   });
 }
+
+export async function fetchSuburbs(query: string): Promise<Object> {
+  const url = `https://www.hotdoc.com.au/api/patient/suburbs/search?query=${query}`
+  const result = await fetch(url, {
+      "headers": {
+        "accept": "application/au.com.hotdoc.v5",
+        "content-type": "application/json; charset=utf-8",
+      },
+      "method": "GET",
+    });
+  const jsonText = await result.text();
+  return JSON.parse(jsonText);
+}
