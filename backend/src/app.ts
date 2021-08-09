@@ -80,8 +80,25 @@ app.post('/nearby_clinics', async (req, res) => {
     res.send(`can't parse lat and lon into floats`);
     return;
   }
-  const nearbyClinics = await getNearbyClinics(latitude,longitude);
+  const nearbyClinics = await getNearbyClinics(latitude,longitude, undefined);
   res.json(nearbyClinics);
 });
 
+app.post('/nearby_clinics_suburb', async (req, res) => {
+  if(req.body === undefined) {
+    res.status(400);
+    res.send(`no body!`);
+    return;
+  }
+  const suburb = req.body.suburb;
+
+  if(typeof suburb !== 'string' || suburb === undefined || suburb.length < 1) {
+    res.status(400);
+    res.send(`suburb isn't in body`);
+    return;
+  }
+
+  const nearbyClinics = await getNearbyClinics(undefined,undefined, suburb);
+  res.json(nearbyClinics);
+});
 export default app;

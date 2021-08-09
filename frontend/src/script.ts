@@ -11,21 +11,16 @@ Please don't try and abuse the backend server - I just want to help people get v
 // when format is called.
 const format = require('date-fns/format');
 
+import { whereAmI, apiHostname } from './constants';
+import { blurSearch, debouncedSearch, focusSearch, oninputSearch } from './search';
+import { postcodeSearchSelector } from './selectors';
+
 // Set to true to use hardcoded coordinates (Central station)
 const debugPosition = {
   latitude: -33.8893375,
   longitude: 151.197442
 };
 
-const whereAmI: 'production' | 'dev' | 'local' = 'dev';
-
-// @ts-ignore
-const apiHostname = whereAmI === 'dev'
-  ? 'https://pxlb07iq0m.execute-api.ap-southeast-2.amazonaws.com/dev/'
-  // @ts-ignore
-  : (whereAmI === 'local'
-    ? 'http://localhost:3000/'
-    : 'https://ytmw05y6di.execute-api.ap-southeast-2.amazonaws.com/production/');
 
 const showNumberGps = 20;
 
@@ -59,26 +54,26 @@ export interface BackendClinicShape {
 }
 
 let state: Clinic[] = [];
-function statusToText(status: 'pending' | 'found' | 'call-clinic'| 'error') {
-  if(status === 'pending') {
+function statusToText(status: 'pending' | 'found' | 'call-clinic' | 'error') {
+  if (status === 'pending') {
     // return "...";
     return `<img class='loading' src="/img/Spinning arrows.gif">`;
-  } else if(status == 'found') {
+  } else if (status == 'found') {
     return "✓";
-  } else if(status === 'call-clinic') {
+  } else if (status === 'call-clinic') {
     return "Call clinic.";
   }
   return "Error";
 }
 
 function compareClinic(a: Clinic, b: Clinic): number {
-  if(a.next_appointment === undefined && b.next_appointment === undefined) {
+  if (a.next_appointment === undefined && b.next_appointment === undefined) {
     return 0;
   }
-  if(a.next_appointment === undefined) {
+  if (a.next_appointment === undefined) {
     return 1;
   }
-  if(b.next_appointment === undefined) {
+  if (b.next_appointment === undefined) {
     return -1;
   }
 
@@ -105,42 +100,50 @@ function stateToJSON() {
     'Book on HotDoc': `<a target="_blank" href="${clinic.url}">Book</a>`,
   }))
 
-  const firstXClinics = mappedClinincs.slice(0,Math.min(showNumberGps, mappedClinincs.length));
+  const firstXClinics = mappedClinincs.slice(0, Math.min(showNumberGps, mappedClinincs.length));
   return firstXClinics;
 }
 
 
 function responseToState(response: BackendClinicShape[]): Clinic[] {
   return response.map(clinic => {
-    return {...clinic, next_appointment: undefined, appointment_status: 'pending'}
+    return { ...clinic, next_appointment: undefined, appointment_status: 'pending' }
   });
 }
 
 document.addEventListener("DOMContentLoaded", async (event) => {
+  const searchInput = document.querySelector(postcodeSearchSelector);
+  if (searchInput === null) {
+    throw new Error("One of the frontend controls is null :(");
+  }
+  searchInput.addEventListener("focus", focusSearch);
+  searchInput.addEventListener("blur", blurSearch);
+  searchInput.addEventListener("keyup", debouncedSearch);
+
   // Show clinics near central station for local debug,
   // when can't do geolocation because localhost isn't HTTPS
   // @ts-ignore
-  if(whereAmI === 'local') {
+  if (whereAmI === 'local') {
     let lat = debugPosition.latitude;
     let long = debugPosition.longitude;
-  
-    setElementTextIfExists('#location-status','')
-  
+
+    setElementTextIfExists('#location-status', '')
+
     await fetchNearbyClinics(lat, long);
   }
 });
 
 async function fetchNearbyClinics(latitude: number, longitude: number) {
 
-  setElementTextIfExists('#clinic-fetch-status','Finding nearby GPs...');
+  setElementTextIfExists('#clinic-fetch-status', 'Finding nearby GPs...');
 
   try {
     const getClinicsUrl = `${apiHostname}nearby_clinics`;
-    const response = await fetch(getClinicsUrl,{
+    const response = await fetch(getClinicsUrl, {
       method: 'POST',
       body: new URLSearchParams({
         latitude: latitude.toString(),
-        longitude:longitude.toString()
+        longitude: longitude.toString()
       })
     })
     const jsonString: string = await response.text();
@@ -148,10 +151,10 @@ async function fetchNearbyClinics(latitude: number, longitude: number) {
     state = responseToState(responseJson)
 
     updateView();
-    setElementTextIfExists('#clinic-fetch-status','');
+    setElementTextIfExists('#clinic-fetch-status', '');
     await findAppointments();
-  } catch(e) {
-    setElementTextIfExists('#clinic-fetch-status','Failed to check GPs. Likely a bug, please check HotDoc manually.');
+  } catch (e) {
+    setElementTextIfExists('#clinic-fetch-status', 'Failed to check GPs. Likely a bug, please check HotDoc manually.');
     // What errors happened?
     // @ts-ignore
     heap.track('clinic_fetch_failed');
@@ -173,20 +176,21 @@ async function findAppointments() {
   let exceptionErrors = 0;
   let successes = 0;
 
-  for(let i = 0; i < Math.min(showNumberGps,state.length); i++) {
+  for (let i = 0; i < Math.min(showNumberGps, state.length); i++) {
     const clinic_id_string = state[i].id_string;
     try {
       const reqUrl = `${apiHostname}get_soonest_clinic_appintment`;
-      const response = await fetch(reqUrl,{
+      const response = await fetch(reqUrl, {
         method: 'POST',
         body: new URLSearchParams({
           clinic_id_string: clinic_id_string,
-      })});
+        })
+      });
 
       const jsonString: string = await response.text();
       const responseJson = JSON.parse(jsonString);
-      if(responseJson.status === 'error') {
-        if(responseJson.error === 'call-clinic') {
+      if (responseJson.status === 'error') {
+        if (responseJson.error === 'call-clinic') {
           state[i].appointment_status = 'call-clinic';
           callClinicErrors += 1;
         } else {
@@ -195,7 +199,7 @@ async function findAppointments() {
           state[i].appointment_status = 'error';
           serverReturnedErrorErrors += 1;
         }
-      } else if(responseJson.status === 'success') {
+      } else if (responseJson.status === 'success') {
         state[i].next_appointment = responseJson.soonest_appointment;
         state[i].appointment_status = 'found';
         successes += 1;
@@ -206,7 +210,7 @@ async function findAppointments() {
         state[i].appointment_status = 'error';
         unknownErrors += 1;
       }
-    } catch(e) {
+    } catch (e) {
       console.error('Error making request.')
       console.error('Likely a lambda error, returning "message": "Internal server error", which fails CORS');
       console.error('TODO: Better logging & error handling');
@@ -221,7 +225,7 @@ async function findAppointments() {
 
   // What errors happened?
   // @ts-ignore
-  heap.track('api_errors', {callClinicErrors,serverReturnedErrorErrors,unknownErrors,exceptionErrors,successes});
+  heap.track('api_errors', { callClinicErrors, serverReturnedErrorErrors, unknownErrors, exceptionErrors, successes });
 }
 
 
@@ -287,21 +291,23 @@ function createTable(inputJson: any, containerId: string) {
 /////
 
 let button = document.getElementById("get-location");
-if(button) {
-  button.addEventListener("click", function() {
+if (button) {
+  button.addEventListener("click", function () {
     console.log("getting location!");
-    
-    setElementTextIfExists('#location-status','Checking location...')
-    navigator.geolocation.getCurrentPosition(async function(position) {
+
+    setElementTextIfExists('#location-status', 'Checking location...')
+    navigator.geolocation.getCurrentPosition(async function (position) {
       let lat = position.coords.latitude;
       let long = position.coords.longitude;
-      console.log({lat,long});
+      console.log({ lat, long });
 
-      setElementTextIfExists('#location-status','')
-      setElementValueIfExists('#latitude',lat.toString())
-      setElementValueIfExists('#longitude',long.toString())
+      setElementTextIfExists('#location-status', '')
+      setElementValueIfExists('#latitude', lat.toString())
+      setElementValueIfExists('#longitude', long.toString())
 
       await fetchNearbyClinics(lat, long);
     });
   });
 }
+
+

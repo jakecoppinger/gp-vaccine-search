@@ -144,7 +144,15 @@ export async function getSoonestClinicAppointments(
   }
   const clinicId: number = clinicInfo.clinic.id;
   // console.log(prettified);
-  const availabilityIds: number[] = clinicInfoToAvailabilityIds(clinicInfo);
+  let availabilityIds: number[];
+  try {
+    availabilityIds = clinicInfoToAvailabilityIds(clinicInfo);
+  } catch(e) {
+    console.error("Failed to get availability IDs");
+    console.error(e);
+    return undefined;
+  }
+
 
   const rawTimeslots = mockRawTimeslots !== undefined
     ? mockRawTimeslots
@@ -155,13 +163,19 @@ export async function getSoonestClinicAppointments(
 }
 
 
-async function makeNearbyClinicsRequest(latitude: number, longitude: number): Promise<ClinicSearchRootObject> {
-  const params = {
-   entities: 'clinics',
-   filters:'covid_vaccine-available',
-   latitude: latitude,
-   longitude: longitude
-  }
+async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
+  const params = latitude !== undefined
+    ? {
+    entities: 'clinics',
+    filters:'covid_vaccine-available',
+    latitude: latitude,
+    longitude: longitude,
+    }
+    : {
+      entities: 'clinics',
+      filters:'covid_vaccine-available',
+      suburb:suburb
+    }
 
   const qs = querystring.stringify(params);
   const url = `https://www.hotdoc.com.au/api/patient/search?${qs}`
@@ -182,13 +196,14 @@ async function makeNearbyClinicsRequest(latitude: number, longitude: number): Pr
 }
 
 export async function getNearbyClinics(
-    latitude: number,
-    longitude: number,
+    latitude?: number,
+    longitude?: number,
+    suburb?:string,
     mockData?: ClinicSearchRootObject
   ): Promise<FrontendClinicData[]> {
   const nearbyClinics = mockData !== undefined
     ? mockData
-    : await makeNearbyClinicsRequest(latitude, longitude);
+    : await makeNearbyClinicsRequest(latitude, longitude, suburb);
 
   return nearbyClinics.clinics.map(clinic => {
     const {name, slug, street_address} = clinic;
