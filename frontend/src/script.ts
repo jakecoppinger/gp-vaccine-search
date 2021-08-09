@@ -14,6 +14,7 @@ const format = require('date-fns/format');
 import { whereAmI, apiHostname } from './constants';
 import { blurSearch, debouncedSearch, focusSearch, oninputSearch } from './search';
 import { postcodeSearchSelector } from './selectors';
+import { OurWindow, Clinic } from './interfaces';
 
 // Set to true to use hardcoded coordinates (Central station)
 const debugPosition = {
@@ -37,14 +38,6 @@ export async function setElementValueIfExists(selector: string, text: string) {
   }
 }
 
-interface Clinic {
-  url: string;
-  name: string;
-  id_string: string;
-  street_address: string;
-  next_appointment?: string;
-  appointment_status: 'pending' | 'found' | 'call-clinic' | 'error';
-}
 
 export interface BackendClinicShape {
   name: string,
@@ -53,7 +46,8 @@ export interface BackendClinicShape {
   id_string: string
 }
 
-let state: Clinic[] = [];
+(window as OurWindow).state = [];
+
 function statusToText(status: 'pending' | 'found' | 'call-clinic' | 'error') {
   if (status === 'pending') {
     // return "...";
@@ -88,6 +82,7 @@ function formatIsoDate(isoDate: string): string {
 }
 
 function stateToJSON() {
+  const {state} = (window as OurWindow);
   let sortedClinics = [
     ...state
   ];
@@ -148,7 +143,7 @@ async function fetchNearbyClinics(latitude: number, longitude: number) {
     })
     const jsonString: string = await response.text();
     const responseJson: BackendClinicShape[] = JSON.parse(jsonString);
-    state = responseToState(responseJson)
+    (window as OurWindow).state = responseToState(responseJson)
 
     updateView();
     setElementTextIfExists('#clinic-fetch-status', '');
@@ -176,8 +171,8 @@ async function findAppointments() {
   let exceptionErrors = 0;
   let successes = 0;
 
-  for (let i = 0; i < Math.min(showNumberGps, state.length); i++) {
-    const clinic_id_string = state[i].id_string;
+  for (let i = 0; i < Math.min(showNumberGps, (window as OurWindow).state.length); i++) {
+    const clinic_id_string = (window as OurWindow).state[i].id_string;
     try {
       const reqUrl = `${apiHostname}get_soonest_clinic_appintment`;
       const response = await fetch(reqUrl, {
@@ -191,23 +186,23 @@ async function findAppointments() {
       const responseJson = JSON.parse(jsonString);
       if (responseJson.status === 'error') {
         if (responseJson.error === 'call-clinic') {
-          state[i].appointment_status = 'call-clinic';
+          (window as OurWindow).state[i].appointment_status = 'call-clinic';
           callClinicErrors += 1;
         } else {
           console.log("Server returned error for url:");
           console.log(reqUrl);
-          state[i].appointment_status = 'error';
+          (window as OurWindow).state[i].appointment_status = 'error';
           serverReturnedErrorErrors += 1;
         }
       } else if (responseJson.status === 'success') {
-        state[i].next_appointment = responseJson.soonest_appointment;
-        state[i].appointment_status = 'found';
+        (window as OurWindow).state[i].next_appointment = responseJson.soonest_appointment;
+        (window as OurWindow).state[i].appointment_status = 'found';
         successes += 1;
       } else {
         console.log("Unknown error for fetchUrl:");
         console.log(reqUrl);
-        console.log(state[i]);
-        state[i].appointment_status = 'error';
+        console.log((window as OurWindow).state[i]);
+        (window as OurWindow).state[i].appointment_status = 'error';
         unknownErrors += 1;
       }
     } catch (e) {
@@ -215,7 +210,7 @@ async function findAppointments() {
       console.error('Likely a lambda error, returning "message": "Internal server error", which fails CORS');
       console.error('TODO: Better logging & error handling');
       console.error(e);
-      state[i].appointment_status = 'error';
+      (window as OurWindow).state[i].appointment_status = 'error';
       exceptionErrors += 1;
     }
     updateView();

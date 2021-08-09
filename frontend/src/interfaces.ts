@@ -16,3 +16,17 @@ export interface SuburbSearchObject {
     suburbs: Suburb[];
     matches: Match[];
 }
+
+interface GlobalState {
+  state: Clinic[];
+}
+
+export interface Clinic {
+  url: string;
+  name: string;
+  id_string: string;
+  street_address: string;
+  next_appointment?: string;
+  appointment_status: 'pending' | 'found' | 'call-clinic' | 'error';
+}
+export type OurWindow = Window & GlobalState & typeof globalThis;

@@ -80,7 +80,6 @@ export async function oninputSearch(): Promise<void> {
     a.href = "#";
     a.onmousedown = selectSuburb;
     a.setAttribute("data", suburb.slug);
-    // a.setAttribute("data-slug", );
 
     const linkText = document.createTextNode(
       `${suburb.name}, ${suburb.postcode}`
