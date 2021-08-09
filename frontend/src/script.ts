@@ -16,6 +16,7 @@ const whereAmI: 'production' | 'dev' | 'local' = 'production';
 // @ts-ignore
 const apiHostname = whereAmI === 'dev'
   ? 'https://pxlb07iq0m.execute-api.ap-southeast-2.amazonaws.com/dev/'
+  // @ts-ignore
   : (whereAmI === 'local'
     ? 'http://localhost:3000/'
     : 'https://ytmw05y6di.execute-api.ap-southeast-2.amazonaws.com/production/');
