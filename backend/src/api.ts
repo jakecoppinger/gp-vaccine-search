@@ -2,14 +2,9 @@ import {Clinic,ClinicSearch,ClinicSearchRootObject,FrontendClinicData,Reason,Roo
 import fetch from 'node-fetch';
 import * as querystring from "querystring";
 
-const gpVaccineSearchHeader = {
-    "wp":'gpvaccinesearch'
-}
-
 export async function getClinicInfo(slug:string): Promise<RootObject> {
   const params = {
-    slug,
-    ...gpVaccineSearchHeader
+    slug
   }
   const qs = querystring.stringify(params);
   const url = `https://www.hotdoc.com.au/api/patient/clinics?${qs}`
@@ -57,7 +52,7 @@ export function clinicInfoToAvailabilityIds(clinicInfo: RootObject): number[] {
   /*
   Rough idea:
   - Go to "reasons"
-  - find one with "name": "COVID-19 Astrazeneca Vaccine Dose 1", 
+  - find one with "name": "COVID-19 Astrazeneca Vaccine Dose 1",
   - get id: 59096
   - in "doctor_reasons", for each record with "reason_id" = that id, get the availability_type_id
   - put all those availability ids into the request!
@@ -92,8 +87,7 @@ export async function getRawTimeslots(availabilityIds: number[], clinicId: numbe
     // See comment in rawTimeslotsToSoonestTimestamp();
     start_time: '2021-07-08T08%3A06%3A10.828Z',
     end_time: '2021-07-12T13%3A59%3A59.999Z',
-    clinic_id: clinicId,
-    ...gpVaccineSearchHeader
+    clinic_id: clinicId
   }
 
   // Gotta make this separately as there are multiple!
@@ -166,8 +160,7 @@ async function makeNearbyClinicsRequest(latitude: number, longitude: number): Pr
    entities: 'clinics',
    filters:'covid_vaccine-available',
    latitude: latitude,
-   longitude:longitude,
-    ...gpVaccineSearchHeader
+   longitude: longitude
   }
 
   const qs = querystring.stringify(params);
@@ -208,7 +201,7 @@ export async function getNearbyClinics(
       // TODO!
       // Like this, will need to mash the data to get suburb:
       // 'https://www.hotdoc.com.au/medical-centres/sydney-NSW-2000/world-square-medical-centre/doctors?purpose=covid-vaccine'
-      url: `https://www.hotdoc.com.au/search?query=${urlEncodedName}`
+      url: `https://www.hotdoc.com.au/search?wp=gpvaccinesearch&query=${urlEncodedName}`
     }
   });
 }
