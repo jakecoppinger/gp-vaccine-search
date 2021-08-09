@@ -51,6 +51,7 @@ export async function findAppointments() {
   let unknownErrors = 0;
   let exceptionErrors = 0;
   let successes = 0;
+  let inPastErrors = 0;
 
   for (let i = 0; i < Math.min(showNumberGps, (window as OurWindow).state.length); i++) {
     const clinic_id_string = (window as OurWindow).state[i].id_string;
@@ -76,9 +77,16 @@ export async function findAppointments() {
           serverReturnedErrorErrors += 1;
         }
       } else if (responseJson.status === 'success') {
-        (window as OurWindow).state[i].next_appointment = responseJson.soonest_appointment;
-        (window as OurWindow).state[i].appointment_status = 'found';
-        successes += 1;
+        const appointmentTime = new Date(responseJson.soonest_appointment);
+        const now = new Date();
+        if(appointmentTime.getTime() <= now.getTime()) {
+          (window as OurWindow).state[i].appointment_status = 'bad-time';
+          inPastErrors += 1;
+        } else {
+          (window as OurWindow).state[i].next_appointment = responseJson.soonest_appointment;
+          (window as OurWindow).state[i].appointment_status = 'found';
+          successes += 1;
+        }
       } else {
         console.log("Unknown error for fetchUrl:");
         console.log(reqUrl);
@@ -99,7 +107,7 @@ export async function findAppointments() {
 
   // What errors happened?
   // @ts-ignore
-  heap.track('api_errors', { callClinicErrors, serverReturnedErrorErrors, unknownErrors, exceptionErrors, successes });
+  heap.track('api_errors', { callClinicErrors, serverReturnedErrorErrors, unknownErrors, exceptionErrors,inPastErrors, successes });
 }
 
 export function updateView() {
@@ -112,13 +120,15 @@ export function stateToJSON() {
     ...state
   ];
   sortedClinics.sort(compareClinic);
-  const mappedClinincs = sortedClinics.map((clinic: Clinic) => ({
-    name: clinic.name,
-    Date: clinic.next_appointment !== undefined ? formatIsoDate(clinic.next_appointment) : '',
-    Status: statusToText(clinic.appointment_status),
-    Address: `<a target="_blank" href="https://maps.google.com/?q=${clinic.street_address}">${clinic.street_address}</a>`,
-    'Book on HotDoc': `<a target="_blank" href="${clinic.url}">Book</a>`,
-  }))
+
+  const mappedClinincs = sortedClinics
+    .map((clinic: Clinic) => ({
+      name: clinic.name,
+      Date: clinic.next_appointment !== undefined ? formatIsoDate(clinic.next_appointment) : '',
+      Status: statusToText(clinic.appointment_status),
+      Address: `<a target="_blank" href="https://maps.google.com/?q=${clinic.street_address}">${clinic.street_address}</a>`,
+      'Book on HotDoc': `<a target="_blank" href="${clinic.url}">Book</a>`,
+    }))
 
   const firstXClinics = mappedClinincs.slice(0, Math.min(showNumberGps, mappedClinincs.length));
   return firstXClinics;
