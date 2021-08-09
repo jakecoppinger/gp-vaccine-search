@@ -87,14 +87,16 @@ export function compareClinic(a: Clinic, b: Clinic): number {
   return date1 - date2;
 }
 
-export function statusToText(status: 'pending' | 'found' | 'call-clinic' | 'error') {
+export function statusToText(status: 'pending' | 'found' | 'call-clinic' | 'error' | 'bad-time') {
   if (status === 'pending') {
     // return "...";
     return `<img class='loading' src="/img/Spinning arrows.gif">`;
   } else if (status == 'found') {
     return "✓";
+  } else if (status == 'bad-time') {
+    return "Time in past";
   } else if (status === 'call-clinic') {
-    return "Call clinic.";
+    return "Call clinic";
   }
   return "Error";
 }
