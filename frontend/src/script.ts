@@ -216,7 +216,7 @@ async function findAppointments() {
     }
     updateView();
     // On top of backend rate limiting
-    await sleep(2000);
+    await sleep(500);
   }
 
   // What errors happened?
