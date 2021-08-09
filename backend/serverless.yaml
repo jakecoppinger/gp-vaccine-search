@@ -1,4 +1,4 @@
-service: nextaz 
+service: nextaz
 
 provider:
   name: aws
@@ -6,6 +6,8 @@ provider:
   memorySize: 128
   stage: dev
   region: ap-southeast-2
+  environment:
+    WHEREAMI: ${opt:stage} # not using env or stage in case overwritten somewhere
 functions:
   backend:
     timeout: 20

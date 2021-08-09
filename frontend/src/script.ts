@@ -6,14 +6,19 @@ I promise I write better usually. It's open source on Github.
 Please don't try and abuse the backend server - I just want to help people get vaccinated :)
 */
 // Set to true to use hardcoded coordinates (Central station)
-const debug = true;
 const debugPosition = {
   latitude: -33.8893375,
   longitude: 151.197442
 };
-const apiHostname = debug === true
-  ? 'http://localhost:3000/' // local dev to get past Lambda CORS which I haven't fixed yet.
-  : 'https://pxlb07iq0m.execute-api.ap-southeast-2.amazonaws.com/dev/'; // AWS Lambda, rate limited
+
+const whereAmI: 'production' | 'dev' | 'local' = 'production';
+
+// @ts-ignore
+const apiHostname = whereAmI === 'dev'
+  ? 'https://pxlb07iq0m.execute-api.ap-southeast-2.amazonaws.com/dev/'
+  : (whereAmI === 'local'
+    ? 'http://localhost:3000/'
+    : 'https://ytmw05y6di.execute-api.ap-southeast-2.amazonaws.com/production/');
 
 const showNumberGps = 20;
 
@@ -101,7 +106,8 @@ function responseToState(response: BackendClinicShape[]): Clinic[] {
 document.addEventListener("DOMContentLoaded", async (event) => {
   // Show clinics near central station for local debug,
   // when can't do geolocation because localhost isn't HTTPS
-  if(debug === true) {
+  // @ts-ignore
+  if(whereAmI === 'local') {
     let lat = debugPosition.latitude;
     let long = debugPosition.longitude;
   

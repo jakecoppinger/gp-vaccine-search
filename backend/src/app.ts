@@ -1,13 +1,18 @@
 import * as express from 'express';
 import {getNearbyClinics, getSoonestClinicAppointments} from './api';
 
-const areWeDebugging = process.env.ARE_WE_DEBUGGING;
-console.log(`Are we debugging? process.env.ARE_WE_DEBUGGING is ${areWeDebugging}`);
+const whereAmI = process.env.WHEREAMI;
+console.log(`WHEREAMI: ${whereAmI}`);
 
-const allowReqDomain = areWeDebugging === 'true' ? 'http://localhost:8000' : 'https://gpvaccinesearch.com';
+const corsOrigin = whereAmI === 'dev'
+  ? 'https://beta.gpvaccinesearch.com'
+  : (whereAmI === 'local' ? 'http://localhost:8000' : 'https://gpvaccinesearch.com')
+
+console.log(`corsOrigin is: ${corsOrigin}`);
+
 var allowCrossDomain = function(req: any, res: any, next: any) {
   req;
-  res.header('Access-Control-Allow-Origin', allowReqDomain);
+  res.header('Access-Control-Allow-Origin', corsOrigin);
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   next();
