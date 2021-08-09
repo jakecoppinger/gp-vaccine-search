@@ -10,7 +10,8 @@ p,
 ul,
 li,
 td,
-th {
+th,
+span {
   font-family: "Helvetica", "Arial", sans-serif;
 }
 #container {
@@ -67,6 +68,7 @@ th {
   padding: 14px 20px 12px 45px;
   border: none;
   border-bottom: 1px solid #ddd;
+  width: 15em;
 }
 
 /* The search field when it gets focus/clicked on */
