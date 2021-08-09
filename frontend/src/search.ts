@@ -18,6 +18,7 @@ export function blurSearch() {
   console.log("Called blur");
   const options = document.getElementById("options");
   if (options) {
+    // Remove this line to always show dropdown for debugging!
     options.classList.remove("show");
   }
 }
