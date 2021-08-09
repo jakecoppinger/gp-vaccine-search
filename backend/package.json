@@ -8,12 +8,12 @@
     "build": "./node_modules/typescript/bin/tsc",
     "test": "ts-mocha test/*.ts",
     "dev": "node -r source-map-support/register dist/server.js",
-    "deploy": "yarn build && serverless deploy",
+    "deploy-dev": "yarn build && serverless deploy --stage dev",
     "deploy-production": "yarn build && serverless deploy --stage production",
     "serverless-dev": "serverless offline start  --httpPort=5000 --host 0.0.0.0",
     "logs": "serverless logs --function backend",
     "logs:production": "serverless logs --function backend --stage=production",
-    "logs:tail:dev": "serverless logs --function backend -t",
+    "logs:tail:dev": "serverless logs --function backend -t --stage=dev",
     "logs:tail:production": "serverless logs --function backend -t --stage=production"
   },
   "repository": {
