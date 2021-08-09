@@ -17,58 +17,59 @@
   </head>
   <body>
 
-    <h1>GPVaccineSearch.com</h1>
-    <h2>Unofficial Australian GP AstraZeneca Search</h2>
+    <div id="container">
+      <h1>GPVaccineSearch.com</h1>
+      <h2>Unofficial Australian GP AstraZeneca Search</h2>
 
-    <h3>Searches HotDoc for nearby GPs, and ranks them by their next available appointment for
-      first AstraZeneca dose.
-    </h3>
+      <h3>Searches HotDoc for nearby GPs, and ranks them by their next available appointment for
+        first AstraZeneca dose.
+      </h3>
 
-    <h3>More Resources</h3>
-    <ul>
-      <li>Manually search next appointments on <a href="https://www.hotdoc.com.au/search?around=nearby&filters=covid_vaccine-available&purpose=covid-vaccine">HotDoc</a></li>
-      <li>Priceline <a href="https://www.priceline.com.au/pharmacy-services/vaccines/covid-19-vaccination">vaccination booking site</a></li>
-      <li><a href="https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en">
-        Official Aus Gov Eligibility Checker</a></li>
-      <li><a href="https://covidqueue.com/">covidqueue.com</a> - Unofficial Pfizer appointment finder</li>
-      <li><a href="https://covid19nearme.com.au/">covid19nearme.com.au</a> - the best map of COVID cases, built by the legendary <a href="https://twitter.com/jxeeno">ken tsang</a></li>
 
-    </ul>
+      <p>Click 'Get My Location' to find neaby GPs.</p>
+      <p>Privacy note: Your location is not logged or stored. HotDoc receives your location; their
+        privacy policy is <a href="https://practices.hotdoc.com.au/privacy-policy/">here</a>.
+        This website is open source on <a href="https://github.com/jakecoppinger/gp-vaccine-search/">GitHub</a>.
+      </p>
+      <button id="get-location">
+        Get My Location
+      </button>
+      <p id='location-status'></p>
+      <script src="dist.js"></script>
 
-    <p>Click 'Get My Location' to find neaby GPs.</p>
-    <p>Privacy note: Your location is not logged or stored. HotDoc receives your location; their
-      privacy policy is <a href="https://practices.hotdoc.com.au/privacy-policy/">here</a>.
-      This website is open source on <a href="https://github.com/jakecoppinger/gp-vaccine-search/">GitHub,</a> contributions welcome :)
-    </p>
-    <button id="get-location">
-      Get My Location
-    </button>
-    <p id='location-status'></p>
-    <script src="dist.js"></script>
+      <div id="table-container"></div>
+      <h2 id='clinic-fetch-status'></h2>
 
-    <div id="table-container"></div>
-    <h2 id='clinic-fetch-status'></h2>
+      <p id="error-message" style='display:none;'>
+        Failed to query server.
+        <br>
+        This website was built in a weekend, so it's highly likely something broke!
+        <br>
 
-    <p id="error-message" style='display:none;'>
-      Failed to query server.
+        Head to HotDoc to manually check:
+
+        <a href="https://www.hotdoc.com.au/search?around=nearby&filters=covid_vaccine-available&purpose=covid-vaccine">
+          https://www.hotdoc.com.au/search?around=nearby&filters=covid_vaccine-available&purpose=covid-vaccine</a>
+      </p>
+
+      <h3>More Resources</h3>
+      <ul>
+        <li>Manually search next appointments on <a href="https://www.hotdoc.com.au/search?around=nearby&filters=covid_vaccine-available&purpose=covid-vaccine">HotDoc</a></li>
+        <li>Priceline <a href="https://www.priceline.com.au/pharmacy-services/vaccines/covid-19-vaccination">vaccination booking site</a></li>
+        <li><a href="https://covid-vaccine.healthdirect.gov.au/eligibility?lang=en">
+          Official Aus Gov Eligibility Checker</a></li>
+        <li><a href="https://covidqueue.com/">covidqueue.com</a> - Unofficial Pfizer appointment finder</li>
+        <li><a href="https://covid19nearme.com.au/">covid19nearme.com.au</a> - map of COVID cases and vaccination venues, built by the legendary <a href="https://twitter.com/jxeeno">ken tsang</a></li>
+      </ul>
+
       <br>
-      This website was built in a weekend, so it's highly likely something broke!
-      <br>
+      <p>I built this in a weekend so don't expect too much! It is open source on <a href="https://github.com/jakecoppinger/gp-vaccine-search/">
+      GitHub</a>, PRs are very welcome.</p>
+      <p>Rate limited so as not to affect HotDoc.</p>
+      <p>Please add bugs on <a href="https://github.com/jakecoppinger/gp-vaccine-search/issues">GitHub Issues</a>. If you don't have GitHub please <a href="https://twitter.com/jakecoppinger">tweet</a> or email me.</p>
 
-      Head to HotDoc to manually check:
-
-      <a href="https://www.hotdoc.com.au/search?around=nearby&filters=covid_vaccine-available&purpose=covid-vaccine">
-        https://www.hotdoc.com.au/search?around=nearby&filters=covid_vaccine-available&purpose=covid-vaccine</a>
-    </p>
-
-
-    <br>
-    <p>I built this in a weekend so don't expect too much! It is open source on <a href="https://github.com/jakecoppinger/gp-vaccine-search/">
-    GitHub</a>, PRs are very welcome.</p>
-    <p>Rate limited so as not to affect HotDoc.</p>
-    <p>Please add bugs on <a href="https://github.com/jakecoppinger/gp-vaccine-search/issues">GitHub Issues</a>. If you don't have GitHub please <a href="https://twitter.com/jakecoppinger">tweet</a> or email me.</p>
-
-    <p>Built by Jake Coppinger / <a href="https://twitter.com/jakecoppinger">Twitter</a> / <a href="https://jakecoppinger.com">jakecoppinger.com</a> / <a href="mailto:jake@jakecoppinger.com">jake@jakecoppinger.com</a></p>
+      <p>Built by Jake Coppinger / <a href="https://twitter.com/jakecoppinger">Twitter</a> / <a href="https://jakecoppinger.com">jakecoppinger.com</a> / <a href="mailto:jake@jakecoppinger.com">jake@jakecoppinger.com</a></p>
+    </div>
 
   </body></html>
 </html>
