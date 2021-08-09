@@ -5,6 +5,12 @@ I promise I write better usually. It's open source on Github.
 
 Please don't try and abuse the backend server - I just want to help people get vaccinated :)
 */
+
+
+// TODO: Not sure whats up with my tsconfig, using import halts the program
+// when format is called.
+const format = require('date-fns/format');
+
 // Set to true to use hardcoded coordinates (Central station)
 const debugPosition = {
   latitude: -33.8893375,
@@ -55,11 +61,12 @@ export interface BackendClinicShape {
 let state: Clinic[] = [];
 function statusToText(status: 'pending' | 'found' | 'call-clinic'| 'error') {
   if(status === 'pending') {
-    return "Pending...";
+    // return "...";
+    return `<img class='loading' src="/img/Spinning arrows.gif">`;
   } else if(status == 'found') {
-    return "Checked";
+    return "✓";
   } else if(status === 'call-clinic') {
-    return "Unable to check online. Call clinic.";
+    return "Call clinic.";
   }
   return "Error";
 }
@@ -81,6 +88,10 @@ function compareClinic(a: Clinic, b: Clinic): number {
   return date1 - date2;
 }
 
+function formatIsoDate(isoDate: string): string {
+  return format(new Date(isoDate), 'eee dd LLL h:mmaaa').toString();
+}
+
 function stateToJSON() {
   let sortedClinics = [
     ...state
@@ -88,9 +99,10 @@ function stateToJSON() {
   sortedClinics.sort(compareClinic);
   const mappedClinincs = sortedClinics.map((clinic: Clinic) => ({
     name: clinic.name,
-    next_appointment: clinic.next_appointment !== undefined ? clinic.next_appointment : '',
-    appointment_status: statusToText(clinic.appointment_status),
-    url: `<a href="${clinic.url}">Book on HotDoc</a>`
+    Date: clinic.next_appointment !== undefined ? formatIsoDate(clinic.next_appointment) : '',
+    Status: statusToText(clinic.appointment_status),
+    Address: `<a target="_blank" href="https://maps.google.com/?q=${clinic.street_address}">${clinic.street_address}</a>`,
+    'Book on HotDoc': `<a target="_blank" href="${clinic.url}">Book</a>`,
   }))
 
   const firstXClinics = mappedClinincs.slice(0,Math.min(showNumberGps, mappedClinincs.length));
