@@ -95,8 +95,6 @@ export async function findAppointments() {
       exceptionErrors += 1;
     }
     updateView();
-    // On top of backend rate limiting
-    await sleep(2000);
   }
 
   // What errors happened?
