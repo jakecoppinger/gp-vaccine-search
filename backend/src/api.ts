@@ -74,6 +74,10 @@ export function clinicInfoToAvailabilityIds(clinicInfo: RootObject): number[] {
   return availabilityIds;
 }
 
+const gpVaccineSearchHeader = {
+    "wp":'gpvaccinesearch'
+}
+
 export async function getRawTimeslots(availabilityIds: number[], clinicId: number): Promise<TimeSlotRootObject> {
   const params = {
     // We just want the next timestamps, so we've intentionall set to the past, so that
@@ -96,6 +100,7 @@ export async function getRawTimeslots(availabilityIds: number[], clinicId: numbe
   const result = await fetch(url, {
   "headers": {
     "accept": "application/au.com.hotdoc.v5",
+    ...gpVaccineSearchHeader
   },
   "method": "GET",
 });
@@ -166,6 +171,7 @@ async function makeNearbyClinicsRequest(latitude: number, longitude: number): Pr
         "accept-language": "en-GB,en;q=0.9",
         "content-type": "application/json; charset=utf-8",
         "context": "purpose=covid-vaccine;",
+        ...gpVaccineSearchHeader
       },
       "method": "GET",
     });
