@@ -2,8 +2,18 @@ import {Clinic,ClinicSearch,ClinicSearchRootObject,FrontendClinicData,Reason,Roo
 import fetch from 'node-fetch';
 import * as querystring from "querystring";
 
+const gpVaccineSearchHeader = {
+    "wp":'gpvaccinesearch'
+}
+
 export async function getClinicInfo(slug:string): Promise<RootObject> {
-  const result = await fetch(`https://www.hotdoc.com.au/api/patient/clinics?slug=${slug}`, {
+  const params = {
+    slug,
+    ...gpVaccineSearchHeader
+  }
+  const qs = querystring.stringify(params);
+  const url = `https://www.hotdoc.com.au/api/patient/clinics?${qs}`
+  const result = await fetch(url, {
   "headers": {
     "accept": "application/au.com.hotdoc.v5",
   },
@@ -74,9 +84,6 @@ export function clinicInfoToAvailabilityIds(clinicInfo: RootObject): number[] {
   return availabilityIds;
 }
 
-const gpVaccineSearchHeader = {
-    "wp":'gpvaccinesearch'
-}
 
 export async function getRawTimeslots(availabilityIds: number[], clinicId: number): Promise<TimeSlotRootObject> {
   const params = {
@@ -85,7 +92,8 @@ export async function getRawTimeslots(availabilityIds: number[], clinicId: numbe
     // See comment in rawTimeslotsToSoonestTimestamp();
     start_time: '2021-07-08T08%3A06%3A10.828Z',
     end_time: '2021-07-12T13%3A59%3A59.999Z',
-    clinic_id: clinicId
+    clinic_id: clinicId,
+    ...gpVaccineSearchHeader
   }
 
   // Gotta make this separately as there are multiple!
@@ -100,7 +108,6 @@ export async function getRawTimeslots(availabilityIds: number[], clinicId: numbe
   const result = await fetch(url, {
   "headers": {
     "accept": "application/au.com.hotdoc.v5",
-    ...gpVaccineSearchHeader
   },
   "method": "GET",
 });
@@ -159,7 +166,8 @@ async function makeNearbyClinicsRequest(latitude: number, longitude: number): Pr
    entities: 'clinics',
    filters:'covid_vaccine-available',
    latitude: latitude,
-   longitude:longitude
+   longitude:longitude,
+    ...gpVaccineSearchHeader
   }
 
   const qs = querystring.stringify(params);
@@ -171,7 +179,6 @@ async function makeNearbyClinicsRequest(latitude: number, longitude: number): Pr
         "accept-language": "en-GB,en;q=0.9",
         "content-type": "application/json; charset=utf-8",
         "context": "purpose=covid-vaccine;",
-        ...gpVaccineSearchHeader
       },
       "method": "GET",
     });
