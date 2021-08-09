@@ -1,4 +1,5 @@
 
+export const showNumberGps = 20;
 export const whereAmI: 'production' | 'dev' | 'local' = 'local';
 
 // @ts-ignore
