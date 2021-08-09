@@ -2,6 +2,7 @@ import { debounce } from "ts-debounce";
 import { optionsDivSelector, postcodeSearchSelector } from "./selectors";
 import { whereAmI, apiHostname } from './constants';
 import { SuburbSearchObject } from "./interfaces";
+import { fetchNearbyClinics } from "./api";
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -38,7 +39,7 @@ function selectSuburb(ev: MouseEvent) {
   const slug: string = rawSlug;
   console.log({ slug });
 
-  // fetchNearbyClinics
+  fetchNearbyClinics(undefined,undefined,slug);
 
 }
 
