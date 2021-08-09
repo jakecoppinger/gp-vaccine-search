@@ -30,6 +30,12 @@ yarn run dev
 
 Starts express server on `localhost:3000`
 
+For debugging, this might be handy:
+
+`ls src/*.ts | entr -rcs "yarn build && ARE_WE_DEBUGGING=true yarn run dev"`
+
+`ARE_WE_DEBUGGING` sets the `Access-Control-Allow-Origin` to a localhost debug URL.
+
 ## Running frontend
 ```
 cd frontend/
@@ -37,9 +43,15 @@ yarn
 yarn build
 ```
 
-Frontend code is compiled and put into `dist/`. You could `cd dist` and `python -m SimpleHTTPServer` but notice that the geolocation doesn't work without HTTPS.
+For debugging, set `debug = true` at the top of `frontend/src/script.ts`.
 
-You can use `ngrok` as well for HTTPS (`ngrok http 8000`), however you'll hit CORs issues. I'll try and make this dev experience better soon :)
+This uses the coordinates of Central to find clinics, see comment in
+`document.addEventListener("DOMContentLoaded", ...`.
+
+Frontend code is compiled and put into `dist/`. 
+You could `cd dist` and `python -m SimpleHTTPServer` but notice that the geolocation doesn't work without HTTPS.
+
+You can use `ngrok` as well for HTTPS (`ngrok http 8000`), however you'll hit CORs issues.
 
 ## Author
 

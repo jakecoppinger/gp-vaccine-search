@@ -9,9 +9,12 @@
     "test": "ts-mocha test/*.ts",
     "dev": "node -r source-map-support/register dist/server.js",
     "deploy": "yarn build && serverless deploy",
+    "deploy-production": "yarn build && serverless deploy --stage production",
     "serverless-dev": "serverless offline start  --httpPort=5000 --host 0.0.0.0",
     "logs": "serverless logs --function backend",
-    "logs:tail": "serverless logs --function backend -t"
+    "logs:production": "serverless logs --function backend --stage=production",
+    "logs:tail:dev": "serverless logs --function backend -t",
+    "logs:tail:production": "serverless logs --function backend -t --stage=production"
   },
   "repository": {
     "type": "git",
