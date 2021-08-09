@@ -33,5 +33,5 @@ plugins:
 custom:
   # Configures throttling settings for all http endpoints
   apiGatewayThrottling:
-    maxRequestsPerSecond: 20
-    maxConcurrentRequests: 20
+    maxRequestsPerSecond: 5
+    maxConcurrentRequests: 5
