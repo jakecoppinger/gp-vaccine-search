@@ -1,9 +1,13 @@
 import * as express from 'express';
 import {getNearbyClinics, getSoonestClinicAppointments} from './api';
 
+const areWeDebugging = process.env.ARE_WE_DEBUGGING;
+console.log(`Are we debugging? process.env.ARE_WE_DEBUGGING is ${areWeDebugging}`);
+
+const allowReqDomain = areWeDebugging === 'true' ? 'http://localhost:8000' : 'https://gpvaccinesearch.com';
 var allowCrossDomain = function(req: any, res: any, next: any) {
   req;
-  res.header('Access-Control-Allow-Origin', 'https://gpvaccinesearch.com');
+  res.header('Access-Control-Allow-Origin', allowReqDomain);
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.header('Access-Control-Allow-Headers', 'Content-Type');
   next();
@@ -13,14 +17,6 @@ const app = express();
 app.use(allowCrossDomain);
 app.use(express.urlencoded({ extended: true }));
 app.set('json spaces', 2);
-
-// async function main() {
-//   const soonestTimestamp = await getSoonestClinicAppointments('montrose-medical-practice');
-// // 1425
-//   // const soonestTimestamp = await getSoonestClinicAppointments(1264);
-// }
-// main();
-
 
 app.post('/get_soonest_clinic_appintment', async (req, res) => {
   const clinic_id_string = req.body.clinic_id_string;

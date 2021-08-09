@@ -5,6 +5,16 @@ I promise I write better usually. It's open source on Github.
 
 Please don't try and abuse the backend server - I just want to help people get vaccinated :)
 */
+// Set to true to use hardcoded coordinates (Central station)
+const debug = true;
+const debugPosition = {
+  latitude: -33.8893375,
+  longitude: 151.197442
+};
+const apiHostname = debug === true
+  ? 'http://localhost:3000/' // local dev to get past Lambda CORS which I haven't fixed yet.
+  : 'https://pxlb07iq0m.execute-api.ap-southeast-2.amazonaws.com/dev/'; // AWS Lambda, rate limited
+
 const showNumberGps = 20;
 
 export async function setElementTextIfExists(selector: string, text: string) {
@@ -88,13 +98,19 @@ function responseToState(response: BackendClinicShape[]): Clinic[] {
   });
 }
 
-
 document.addEventListener("DOMContentLoaded", async (event) => {
-
+  // Show clinics near central station for local debug,
+  // when can't do geolocation because localhost isn't HTTPS
+  if(debug === true) {
+    let lat = debugPosition.latitude;
+    let long = debugPosition.longitude;
+  
+    setElementTextIfExists('#location-status','')
+  
+    await fetchNearbyClinics(lat, long);
+  }
 });
 
-
-const apiHostname = 'https://pxlb07iq0m.execute-api.ap-southeast-2.amazonaws.com/dev/';
 async function fetchNearbyClinics(latitude: number, longitude: number) {
 
   setElementTextIfExists('#clinic-fetch-status','Finding nearby GPs...');
@@ -242,7 +258,6 @@ function createTable(inputJson: any, containerId: string) {
 /////
 
 let button = document.getElementById("get-location");
-
 if(button) {
   button.addEventListener("click", function() {
     console.log("getting location!");
