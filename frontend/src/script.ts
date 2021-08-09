@@ -72,7 +72,7 @@ function stateToJSON() {
   sortedClinics.sort(compareClinic);
   const mappedClinincs = sortedClinics.map((clinic: Clinic) => ({
     name: clinic.name,
-    next_appointment: clinic.next_appointment !== undefined ? clinic.next_appointment : '',
+    next_appointment: clinic.next_appointment !== undefined ? new Date(clinic.next_appointment).toDateString() : '',
     appointment_status: statusToText(clinic.appointment_status),
     url: `<a href="${clinic.url}">Book on HotDoc</a>`
   }))
