@@ -1,5 +1,5 @@
 import * as express from 'express';
-import {getNearbyClinics, getSoonestClinicAppointments} from './api';
+import {fetchSuburbs, getNearbyClinics, getSoonestClinicAppointments} from './api';
 
 const whereAmI = process.env.WHEREAMI;
 console.log(`WHEREAMI: ${whereAmI}`);
@@ -35,6 +35,23 @@ app.post('/get_soonest_clinic_appintment', async (req, res) => {
   res.json({status: 'success', soonest_appointment: soonestAppointment});
 });
 
+app.post('/search_suburbs', async (req,res) => {
+  if(req.body === undefined) {
+    res.status(400);
+    res.send(`no body!`);
+    return;
+  }
+  const query = req.body.query;
+  if(typeof query !== 'string' || query.length === 0) {
+    res.status(400);
+    res.send(`empty or missing query`);
+    return;
+  }
+
+  const result = await fetchSuburbs(query);
+  res.json(result);
+});
+
 app.post('/nearby_clinics', async (req, res) => {
   if(req.body === undefined) {
     res.status(400);
@@ -63,8 +80,25 @@ app.post('/nearby_clinics', async (req, res) => {
     res.send(`can't parse lat and lon into floats`);
     return;
   }
-  const nearbyClinics = await getNearbyClinics(latitude,longitude);
+  const nearbyClinics = await getNearbyClinics(latitude,longitude, undefined);
   res.json(nearbyClinics);
 });
 
+app.post('/nearby_clinics_suburb', async (req, res) => {
+  if(req.body === undefined) {
+    res.status(400);
+    res.send(`no body!`);
+    return;
+  }
+  const suburb = req.body.suburb;
+
+  if(typeof suburb !== 'string' || suburb === undefined || suburb.length < 1) {
+    res.status(400);
+    res.send(`suburb isn't in body`);
+    return;
+  }
+
+  const nearbyClinics = await getNearbyClinics(undefined,undefined, suburb);
+  res.json(nearbyClinics);
+});
 export default app;

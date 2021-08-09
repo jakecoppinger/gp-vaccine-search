@@ -144,7 +144,15 @@ export async function getSoonestClinicAppointments(
   }
   const clinicId: number = clinicInfo.clinic.id;
   // console.log(prettified);
-  const availabilityIds: number[] = clinicInfoToAvailabilityIds(clinicInfo);
+  let availabilityIds: number[];
+  try {
+    availabilityIds = clinicInfoToAvailabilityIds(clinicInfo);
+  } catch(e) {
+    console.error("Failed to get availability IDs");
+    console.error(e);
+    return undefined;
+  }
+
 
   const rawTimeslots = mockRawTimeslots !== undefined
     ? mockRawTimeslots
@@ -155,13 +163,19 @@ export async function getSoonestClinicAppointments(
 }
 
 
-async function makeNearbyClinicsRequest(latitude: number, longitude: number): Promise<ClinicSearchRootObject> {
-  const params = {
-   entities: 'clinics',
-   filters:'covid_vaccine-available',
-   latitude: latitude,
-   longitude: longitude
-  }
+async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
+  const params = latitude !== undefined
+    ? {
+    entities: 'clinics',
+    filters:'covid_vaccine-available',
+    latitude: latitude,
+    longitude: longitude,
+    }
+    : {
+      entities: 'clinics',
+      filters:'covid_vaccine-available',
+      suburb:suburb
+    }
 
   const qs = querystring.stringify(params);
   const url = `https://www.hotdoc.com.au/api/patient/search?${qs}`
@@ -182,13 +196,14 @@ async function makeNearbyClinicsRequest(latitude: number, longitude: number): Pr
 }
 
 export async function getNearbyClinics(
-    latitude: number,
-    longitude: number,
+    latitude?: number,
+    longitude?: number,
+    suburb?:string,
     mockData?: ClinicSearchRootObject
   ): Promise<FrontendClinicData[]> {
   const nearbyClinics = mockData !== undefined
     ? mockData
-    : await makeNearbyClinicsRequest(latitude, longitude);
+    : await makeNearbyClinicsRequest(latitude, longitude, suburb);
 
   return nearbyClinics.clinics.map(clinic => {
     const {name, slug, street_address} = clinic;
@@ -204,4 +219,17 @@ export async function getNearbyClinics(
       url: `https://www.hotdoc.com.au/search?wp=gpvaccinesearch&query=${urlEncodedName}`
     }
   });
+}
+
+export async function fetchSuburbs(query: string): Promise<Object> {
+  const url = `https://www.hotdoc.com.au/api/patient/suburbs/search?query=${query}`
+  const result = await fetch(url, {
+      "headers": {
+        "accept": "application/au.com.hotdoc.v5",
+        "content-type": "application/json; charset=utf-8",
+      },
+      "method": "GET",
+    });
+  const jsonText = await result.text();
+  return JSON.parse(jsonText);
 }
