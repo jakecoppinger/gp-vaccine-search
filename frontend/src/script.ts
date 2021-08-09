@@ -11,7 +11,7 @@ const debugPosition = {
   longitude: 151.197442
 };
 
-const whereAmI: 'production' | 'dev' | 'local' = 'production';
+const whereAmI: 'production' | 'dev' | 'local' = 'dev';
 
 // @ts-ignore
 const apiHostname = whereAmI === 'dev'
@@ -212,11 +212,18 @@ async function findAppointments() {
   heap.track('api_errors', {callClinicErrors,serverReturnedErrorErrors,unknownErrors,exceptionErrors,successes});
 }
 
+
 /**
  * StackOverflow code :D
  */
 function createTable(inputJson: any, containerId: string) {
   const myBooks = inputJson;
+  const headerLookup = {
+    'name': "GP",
+    'next_appointment': "Next",
+    'appointment_status': "Status",
+    'url': ''
+  }
 
   // EXTRACT VALUE FOR HTML HEADER. 
   // ('Book ID', 'Book Name', 'Category' and 'Price')
@@ -238,7 +245,10 @@ function createTable(inputJson: any, containerId: string) {
 
   for (var i = 0; i < col.length; i++) {
     var th = document.createElement("th");      // TABLE HEADER.
-    th.innerHTML = col[i];
+    const rawCellText = col[i]
+    // @ts-ignore
+    const cellText = rawCellText in headerLookup ? headerLookup[rawCellText] : rawCellText;
+    th.innerHTML = cellText;
     tr.appendChild(th);
   }
 

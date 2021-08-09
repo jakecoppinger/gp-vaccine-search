@@ -32,7 +32,7 @@ Starts express server on `localhost:3000`
 
 For debugging, this might be handy:
 
-`ls src/*.ts | entr -rcs "yarn build && ARE_WE_DEBUGGING=true yarn run dev"`
+`ls src/*.ts | entr -rcs "yarn build && WHEREAMI=local yarn run dev"`
 
 `ARE_WE_DEBUGGING` sets the `Access-Control-Allow-Origin` to a localhost debug URL.
 
