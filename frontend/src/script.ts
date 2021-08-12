@@ -30,6 +30,7 @@ export async function setElementValueIfExists(selector: string, text: string) {
 export interface BackendClinicShape {
   name: string,
   street_address: string,
+  suburb_name: string,
   url: string,
   id_string: string
 }

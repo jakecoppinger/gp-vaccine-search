@@ -205,18 +205,21 @@ export async function getNearbyClinics(
     ? mockData
     : await makeNearbyClinicsRequest(latitude, longitude, suburb);
 
+  const suburbs = {};
+  nearbyClinics.suburbs.forEach(suburb => {
+    suburbs[suburb.id] = suburb;
+  });
+
   return nearbyClinics.clinics.map(clinic => {
-    const {name, slug, street_address} = clinic;
+    const {name, slug, street_address, suburb_id} = clinic;
     const urlEncodedName = encodeURIComponent(name);
+    const suburb = suburbs[suburb_id];
     return {
       name,
       id_string: slug,
       street_address,
-
-      // TODO!
-      // Like this, will need to mash the data to get suburb:
-      // 'https://www.hotdoc.com.au/medical-centres/sydney-NSW-2000/world-square-medical-centre/doctors?purpose=covid-vaccine'
-      url: `https://www.hotdoc.com.au/search?wp=gpvaccinesearch&query=${urlEncodedName}`
+      suburb_name: street_address.includes(suburb.name) ? '' : suburb.name,
+      url: `https://www.hotdoc.com.au/medical-centres/${suburb.slug}/${slug}/doctors?purpose=covid-vaccine`,
     }
   });
 }
