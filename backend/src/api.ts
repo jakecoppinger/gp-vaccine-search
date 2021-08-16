@@ -162,7 +162,10 @@ export async function getSoonestClinicAppointments(
   return soonestTimestamp;
 }
 
-
+/**
+ * Make request to HotDoc API to get nearby clinics
+ * @param suburb Must be defined if latitude and longitude not defined
+ */
 async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
   const params = latitude !== undefined
     ? {
@@ -195,6 +198,9 @@ async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, s
   return jsonObj;
 }
 
+/**
+ * Create nearby clinics object ready to send to frontend
+ */
 export async function getNearbyClinics(
     latitude?: number,
     longitude?: number,
@@ -205,6 +211,7 @@ export async function getNearbyClinics(
     ? mockData
     : await makeNearbyClinicsRequest(latitude, longitude, suburb);
 
+  // Create map of suburb IDs to suburb objects
   const suburbs: { [key:number]:SuburbSearch } = {};
   nearbyClinics.suburbs.forEach(suburb => {
     suburbs[suburb.id] = suburb;
@@ -212,14 +219,17 @@ export async function getNearbyClinics(
 
   return nearbyClinics.clinics.map(clinic => {
     const {name, slug, street_address, suburb_id} = clinic;
-    const urlEncodedName = encodeURIComponent(name);
+
+    // Look up suburb object
     const suburb = suburbs[suburb_id];
+
     return {
       name,
       id_string: slug,
       street_address,
+      /** Include the suburb if not already included in the address */
       suburb_name: street_address.includes(suburb.name) ? '' : suburb.name,
-      url: `https://www.hotdoc.com.au/medical-centres/${suburb.slug}/${slug}/doctors?purpose=covid-vaccine`,
+      url: `https://www.hotdoc.com.au/medical-centres/${suburb.slug}/${slug}/doctors?purpose=covid-vaccine?wp=gpvaccinesearch`,
     }
   });
 }
