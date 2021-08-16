@@ -26,6 +26,7 @@ export interface Clinic {
   name: string;
   id_string: string;
   street_address: string;
+  suburb_name: string;
   next_appointment?: string;
   appointment_status: 'pending' | 'found' | 'call-clinic' | 'error' | 'bad-time';
 }

@@ -1,4 +1,4 @@
-import {Clinic,ClinicSearch,ClinicSearchRootObject,FrontendClinicData,Reason,RootObject, TimeSlotRootObject} from './interfaces';
+import {Clinic,ClinicSearch,ClinicSearchRootObject,FrontendClinicData,Reason,RootObject, SuburbSearch, TimeSlotRootObject} from './interfaces';
 import fetch from 'node-fetch';
 import * as querystring from "querystring";
 
@@ -162,7 +162,10 @@ export async function getSoonestClinicAppointments(
   return soonestTimestamp;
 }
 
-
+/**
+ * Make request to HotDoc API to get nearby clinics
+ * @param suburb Must be defined if latitude and longitude not defined
+ */
 async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
   const params = latitude !== undefined
     ? {
@@ -195,6 +198,9 @@ async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, s
   return jsonObj;
 }
 
+/**
+ * Create nearby clinics object ready to send to frontend
+ */
 export async function getNearbyClinics(
     latitude?: number,
     longitude?: number,
@@ -205,18 +211,25 @@ export async function getNearbyClinics(
     ? mockData
     : await makeNearbyClinicsRequest(latitude, longitude, suburb);
 
+  // Create map of suburb IDs to suburb objects
+  const suburbs: { [key:number]:SuburbSearch } = {};
+  nearbyClinics.suburbs.forEach(suburb => {
+    suburbs[suburb.id] = suburb;
+  });
+
   return nearbyClinics.clinics.map(clinic => {
-    const {name, slug, street_address} = clinic;
-    const urlEncodedName = encodeURIComponent(name);
+    const {name, slug, street_address, suburb_id} = clinic;
+
+    // Look up suburb object
+    const suburb = suburbs[suburb_id];
+
     return {
       name,
       id_string: slug,
       street_address,
-
-      // TODO!
-      // Like this, will need to mash the data to get suburb:
-      // 'https://www.hotdoc.com.au/medical-centres/sydney-NSW-2000/world-square-medical-centre/doctors?purpose=covid-vaccine'
-      url: `https://www.hotdoc.com.au/search?wp=gpvaccinesearch&query=${urlEncodedName}`
+      /** Include the suburb if not already included in the address */
+      suburb_name: street_address.includes(suburb.name) ? '' : suburb.name,
+      url: `https://www.hotdoc.com.au/medical-centres/${suburb.slug}/${slug}/doctors?purpose=covid-vaccine?wp=gpvaccinesearch`,
     }
   });
 }

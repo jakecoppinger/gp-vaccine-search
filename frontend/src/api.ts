@@ -126,7 +126,7 @@ export function stateToJSON() {
       name: clinic.name,
       Date: clinic.next_appointment !== undefined ? formatIsoDate(clinic.next_appointment) : '',
       Status: statusToText(clinic.appointment_status),
-      Address: `<a target="_blank" href="https://maps.google.com/?q=${clinic.street_address}">${clinic.street_address}</a>`,
+      Address: `<a target="_blank" href="https://maps.google.com/?q=${clinic.street_address}+${clinic.suburb_name}">${clinic.street_address} ${clinic.suburb_name}</a>`,
       'Book on HotDoc': `<a target="_blank" href="${clinic.url}">Book</a>`,
     }))
 

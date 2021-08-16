@@ -28,15 +28,15 @@ describe("#getSoonestClinicAppointments()", async function () {
 
 describe("#getNearbyClinics()", async function () {
   it("finds clinics near central", async () => {
-    const nearbyClinics = await getNearbyClinics(-33.8834805, 151.2058995, clincsNearCentral);
+    const nearbyClinics = await getNearbyClinics(-33.8834805, 151.2058995, undefined, clincsNearCentral);
 
     const expected = {
       name: 'World Square Medical Centre',
       id_string: 'world-square-medical-centre',
       street_address: 'Shop 9.09c, 644 George St, Sydney',
-      url: 'https://www.hotdoc.com.au/search?query=World%20Square%20Medical%20Centre'
+      suburb_name: '',
+      url: 'https://www.hotdoc.com.au/medical-centres/sydney-NSW-2000/world-square-medical-centre/doctors?purpose=covid-vaccine?wp=gpvaccinesearch',
     }
-    console.log(nearbyClinics);
     assert(JSON.stringify(nearbyClinics[0]) === JSON.stringify(expected));
   });
 });
