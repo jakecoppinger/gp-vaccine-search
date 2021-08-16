@@ -1,4 +1,4 @@
-import {Clinic,ClinicSearch,ClinicSearchRootObject,FrontendClinicData,Reason,RootObject, TimeSlotRootObject} from './interfaces';
+import {Clinic,ClinicSearch,ClinicSearchRootObject,FrontendClinicData,Reason,RootObject, SuburbSearch, TimeSlotRootObject} from './interfaces';
 import fetch from 'node-fetch';
 import * as querystring from "querystring";
 
@@ -205,7 +205,7 @@ export async function getNearbyClinics(
     ? mockData
     : await makeNearbyClinicsRequest(latitude, longitude, suburb);
 
-  const suburbs = {};
+  const suburbs: { [key:number]:SuburbSearch } = {};
   nearbyClinics.suburbs.forEach(suburb => {
     suburbs[suburb.id] = suburb;
   });
