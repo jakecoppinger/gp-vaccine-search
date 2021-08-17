@@ -9,12 +9,56 @@ import * as crownStMedicalCentre from './mocks/crown-st-medical-centre.json'
 import * as crownStMedicalCentreTimeSlots from './mocks/crown-st-medical-centre-time-slots.json'
 
 import * as clincsNearCentral from './mocks/clinics-near-central.json'
-import {getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason} from '../src/api'
+import {getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason, isFirstDosePfizerReason} from '../src/api'
 process.on("unhandledRejection", (reason, p) => {
   console.log("Unhandled Rejection at: Promise", p, "reason:", reason);
   // @ts-ignore
   console.log(reason.stack);
   // application specific logging, throwing an error, or other logic here
+});
+
+describe('#isFirstDosePfizerReason()', function() {
+  it('returns false for standard consultation', () => {
+    const reasonName = 'Standard Consult -  Children & Concession Card, 10am to 3.45pm - Mon-Fri';
+    const result = isFirstDosePfizerReason(reasonName);
+    assert(result === false);
+  });
+  it('returns false for Astra Zeneca dose 1', () => {
+    const reasonName = 'Astra Zeneca COVID-19 Vaccine Dose 1  - Bulk Billed';
+    const result = isFirstDosePfizerReason(reasonName);
+    assert(result === false);
+  });
+  it('returns false for AstraZeneca dose 1', () => {
+    const reasonName = 'AstraZeneca COVID-19 Vaccine Dose 1  - Bulk Billed';
+    const result = isFirstDosePfizerReason(reasonName);
+    assert(result === false);
+  });
+  it('returns false for AstraZeneca dose 2', () => {
+    const reasonName = 'AstraZeneca COVID-19 Vaccine Dose 2  - Bulk Billed';
+    const result = isFirstDosePfizerReason(reasonName);
+    assert(result === false);
+  });
+  it('returns false for COVID dose 1', () => {
+    const reasonName = 'COVID-19 Vaccine Dose 1  - Bulk Billed';
+    const result = isFirstDosePfizerReason(reasonName);
+    assert(result === false);
+  });
+  it('returns true for Pfizer COVID dose 1', () => {
+    const reasonName = 'Pfizer COVID-19 Vaccine Dose 1  - Bulk Billed';
+    const result = isFirstDosePfizerReason(reasonName);
+    assert(result === true);
+  });
+  it('returns false for Flu vaccine', () => {
+    const reasonName = 'Flu Vaccine - Bulk Billed Appointment';
+    const result = isFirstDosePfizerReason(reasonName);
+    assert(result === false);
+  });
+  it('returns false for Flu symptoms consult', () => {
+    const reasonName = 'PHONE Consult - Cold & Flu Symptoms (Bulk-Billed During Covid 19 Lockdown)';
+    const result = isFirstDosePfizerReason(reasonName);
+    assert(result === false);
+  });
+
 });
 
 describe("#isFirstDoseAZReason()", function() {

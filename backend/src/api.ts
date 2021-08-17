@@ -41,6 +41,27 @@ export function isFirstDoseAZReason(reasonName: string): boolean {
   return false;
 }
 
+/**
+ * Returns true if the appointment reason is to get 1st dose of Pfizer
+ */
+export function isFirstDosePfizerReason(reasonName: string): boolean {
+  const name = reasonName.toLowerCase();
+  const nameWithout19 = name.replace('19', '');
+
+  if(name.includes('astra') || name.includes('zeneca') || name.includes('AZ')) {
+    return false;
+  }
+
+  if (!(nameWithout19.includes('1') || nameWithout19.includes('first'))) {
+    // Looking for first dose!
+    return false;
+  }
+  if (name.includes('pfizer')) {
+    return true;
+  }
+  return false;
+}
+
 
 
 /**
