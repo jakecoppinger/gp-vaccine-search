@@ -168,6 +168,7 @@ export function rawTimeslotsToSoonestTimestamp(vaccine: 'astrazeneca' | 'pfizer'
   const timeslots = rawTimeslots.doctors
     .filter((doctor:TimeSlotDoctor) => {
       const doctorInfo: Doctor = doctors.find(doctor_search => doctor_search.id === doctor.id);
+      console.log({doctor});
       return vaccine === 'astrazeneca'
         ? isAZClinic(doctorInfo.full_name)
         : isPfizerClinic(doctorInfo.full_name)
@@ -212,6 +213,7 @@ export async function getSoonestClinicAppointments(
     console.error(e);
     return undefined;
   }
+  console.log({availabilityIds});
 
   const clinicId: number = clinicInfo.clinic.id;
   const rawTimeslots = mockRawTimeslots !== undefined

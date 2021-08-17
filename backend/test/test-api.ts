@@ -8,6 +8,10 @@ import * as montroseMedicalPracticeTimeSlots from './mocks/montrose-medical-prac
 import * as crownStMedicalCentre from './mocks/crown-st-medical-centre.json'
 import * as crownStMedicalCentreTimeSlots from './mocks/crown-st-medical-centre-time-slots.json'
 
+import * as mirandaSkinCancerClinic from './mocks/miranda-skin-cancer-clinic.json';
+import * as mirandaSkinCancerClinicTimeSlots from './mocks/miranda-skin-cancer-clinic-time-slots.json';
+
+
 import * as clincsNearCentral from './mocks/clinics-near-central.json'
 import {getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason, isFirstDosePfizerReason} from '../src/api'
 process.on("unhandledRejection", (reason, p) => {
@@ -105,23 +109,37 @@ describe("#isFirstDoseAZReason()", function() {
 });
 
 describe("#getSoonestClinicAppointments()", async function () {
-  it("Green Square Health (1425): returns earliest time", async () => {
-    const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'green-square-health', greenSquareHealth, greenSquareHealthTimeSlots);
-    assert(soonestTimestamp === '2021-08-23T15:15:00+10:00');
-  });
+  describe("pfizer", async function () {
+    it("Green Square Health (1425): returns earliest time", async () => {
+      const soonestTimestamp = await getSoonestClinicAppointments('pfizer', 'green-square-health', greenSquareHealth, greenSquareHealthTimeSlots);
+      assert(soonestTimestamp === '2021-08-14T15:00:00+10:00');
+    });
 
-  it("Montrose Medical Practice: returns earliest time", async () => {
-    const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'montrose-medical-practice', montroseMedicalPractice, montroseMedicalPracticeTimeSlots);
-    assert(soonestTimestamp === '2021-08-19T11:40:00+10:00');
+    it.skip("mirandaSkinCancerClinic: returns Wed 10th nov 3:20pm", async() => {
+      const soonestTimestamp = await getSoonestClinicAppointments('pfizer', 'miranda-skin-cancer-clinic', mirandaSkinCancerClinic, mirandaSkinCancerClinicTimeSlots);
+      console.log({soonestTimestamp});
+      assert(soonestTimestamp === '2021-11-10T15:20:00+10:00');
+    });
   });
+  describe("astrazeneca", async function () {
+    it("Green Square Health (1425): returns earliest time", async () => {
+      const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'green-square-health', greenSquareHealth, greenSquareHealthTimeSlots);
+      assert(soonestTimestamp === '2021-08-23T15:15:00+10:00');
+    });
 
-  // TODO: Fix getSoonestClinicAppointments
-  it("Crowd St Medical Centre: returns earliest time", async () => {
-    // TODO: Fix this type error
-    // @ts-ignore
-    const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'crown-st-medical-centre', crownStMedicalCentre, crownStMedicalCentreTimeSlots);
-    // 24 Aug, 1:45 according to the website a few mins after data capture
-    assert(soonestTimestamp === '2021-08-24T13:45:00+10:00');
+    it("Montrose Medical Practice: returns earliest time", async () => {
+      const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'montrose-medical-practice', montroseMedicalPractice, montroseMedicalPracticeTimeSlots);
+      assert(soonestTimestamp === '2021-08-19T11:40:00+10:00');
+    });
+
+    // TODO: Fix getSoonestClinicAppointments
+    it("Crowd St Medical Centre: returns earliest time", async () => {
+      // TODO: Fix this type error
+      // @ts-ignore
+      const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'crown-st-medical-centre', crownStMedicalCentre, crownStMedicalCentreTimeSlots);
+      // 24 Aug, 1:45 according to the website a few mins after data capture
+      assert(soonestTimestamp === '2021-08-24T13:45:00+10:00');
+    });
   });
 });
 
