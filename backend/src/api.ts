@@ -1,34 +1,41 @@
-import {Clinic,ClinicSearch,ClinicSearchRootObject,FrontendClinicData,Reason,RootObject, SuburbSearch, TimeSlotRootObject} from './interfaces';
+import { Clinic, ClinicSearch, ClinicSearchRootObject, Doctor, DoctorReason, FrontendClinicData, Reason, RootObject, SuburbSearch, TimeSlotDoctor, TimeSlotRootObject } from './interfaces';
 import fetch from 'node-fetch';
 import * as querystring from "querystring";
 
-export async function getClinicInfo(slug:string): Promise<RootObject> {
+export async function getClinicInfo(slug: string): Promise<RootObject> {
   const params = {
     slug
   }
   const qs = querystring.stringify(params);
   const url = `https://www.hotdoc.com.au/api/patient/clinics?${qs}`
   const result = await fetch(url, {
-  "headers": {
-    "accept": "application/au.com.hotdoc.v5",
-  },
-  "method": "GET",
-});
+    "headers": {
+      "accept": "application/au.com.hotdoc.v5",
+    },
+    "method": "GET",
+  });
   const jsonText = await result.text();
   const jsonObj = JSON.parse(jsonText);
   // console.log(JSON.stringify(jsonObj,null,2));
   return jsonObj;
 }
 
-export function firstDoseReason(reason: Reason): boolean {
-  const name = reason.name.toLowerCase();
-  const nameWithout19 = name.replace('19','');
+/**
+ * Returns true if the appointment reason is to get 1st dose of AZ
+ */
+export function isFirstDoseAZReason(reasonName: string): boolean {
+  const name = reasonName.toLowerCase();
+  const nameWithout19 = name.replace('19', '');
 
-  if(!(nameWithout19.includes('1') || nameWithout19.includes('first'))) {
+  if(name.includes('pfizer')) {
+    return false;
+  }
+
+  if (!(nameWithout19.includes('1') || nameWithout19.includes('first'))) {
     // Looking for first dose!
     return false;
   }
-  if(name.includes('COVID') || name.includes('astra') || name.includes('vaccine')) {
+  if (name.includes('covid') || name.includes('astra') || name.includes('vaccine')) {
     return true;
   }
   return false;
@@ -41,14 +48,14 @@ export function firstDoseReason(reason: Reason): boolean {
  * It returns a list of ids which are the availability ids, which get passed to the availability
  * search.
  */
-function getAvailabilityIdsForAzFirstDoseReasonId(firstDoseReasonId: number, clinicInfo: RootObject): number[] {
-  const availabilityIdsDuplicates: number[] = clinicInfo.doctor_reasons
+function getAvailabilityIdsForAzFirstDoseReasonId(firstDoseReasonId: number, doctor_reasons: DoctorReason[]): number[] {
+  const availabilityIdsDuplicates: number[] = doctor_reasons
     .filter(doctor_reason => doctor_reason.reason_id === firstDoseReasonId)
     .map(doctor_reason => doctor_reason.availability_type_id)
-    return availabilityIdsDuplicates;
+  return availabilityIdsDuplicates;
 }
 
-export function clinicInfoToAvailabilityIds(clinicInfo: RootObject): number[] {
+export function clinicInfoToAvailabilityIds(reasons: Reason[], doctor_reasons: DoctorReason[]): number[] {
   /*
   Rough idea:
   - Go to "reasons"
@@ -57,25 +64,24 @@ export function clinicInfoToAvailabilityIds(clinicInfo: RootObject): number[] {
   - in "doctor_reasons", for each record with "reason_id" = that id, get the availability_type_id
   - put all those availability ids into the request!
   */
-  const reasons = clinicInfo.reasons
-  const azFirstDoseReasons = reasons.filter(firstDoseReason);
-  if(azFirstDoseReasons.length === 0) {
+  const azFirstDoseReasons = reasons.filter(reason => isFirstDoseAZReason(reason.name));
+
+  if (azFirstDoseReasons.length === 0) {
     console.error(azFirstDoseReasons);
     throw Error("doesn't have 1st dose AZ apparently. Check firstDoseReason()");
     return undefined;
-  }
-  //  else if(azFirstDoseReasons.length > 1){
+  } 
+  // else if(azFirstDoseReasons.length > 1){
   //   console.error(azFirstDoseReasons);
   //   throw Error("has more than one type of 1st dose AZ apparently. Check firstDoseReason()");
   //   return undefined;
   // }
 
   const allAvailabilityIds: number[][] = azFirstDoseReasons.map(
-    reason => getAvailabilityIdsForAzFirstDoseReasonId(reason.id, clinicInfo));
+    reason => getAvailabilityIdsForAzFirstDoseReasonId(reason.id, doctor_reasons));
   const flatAllAvailabilityIds: number[] = allAvailabilityIds.reduce((acc, val) => acc.concat(val), []);
 
   const availabilityIds: number[] = Array.from(new Set(flatAllAvailabilityIds));
-  // console.log({azFirstDoseReasons,  allAvailabilityIds, flatAllAvailabilityIds, availabilityIds});
   return availabilityIds;
 }
 
@@ -100,65 +106,90 @@ export async function getRawTimeslots(availabilityIds: number[], clinicId: numbe
 
   const url = `https://www.hotdoc.com.au/api/patient/time_slots?${qs}${availabilityParam}`
   const result = await fetch(url, {
-  "headers": {
-    "accept": "application/au.com.hotdoc.v5",
-  },
-  "method": "GET",
-});
+    "headers": {
+      "accept": "application/au.com.hotdoc.v5",
+    },
+    "method": "GET",
+  });
   const jsonText = await result.text();
   const jsonObj = JSON.parse(jsonText);
   // console.log(JSON.stringify(jsonObj,null,2));
   return jsonObj;
 }
 
-export function rawTimeslotsToSoonestTimestamp(rawTimeslots: TimeSlotRootObject): undefined | string {
+export function isAZClinic(clinic_name: string) {
+  const name = clinic_name.toLowerCase();
+  const nameWithout19 = name.replace('19', '');
+  if(name.includes('pfizer')) {
+    return false;
+  }
+  if (name.includes('covid') || name.includes('astra') || name.includes('vaccine')) {
+    return true;
+  }
+  return false;
+}
 
-  // Use this logic if the appointments are in the selected range of the query.
+export function rawTimeslotsToSoonestTimestamp(rawTimeslots: TimeSlotRootObject, doctors: Doctor[]): undefined | string {
   // We just want the next timestamps, so we've intentionall set to the past, so that
   // we only have to handle one logic path.
-  ////
-  // const timeslots = rawTimeslots.time_slots.map(timeslot => timeslot.start_time);
-  // if(timeslots.length === 0) {
-  //   return undefined;
-  // }
-
-  const timeslots = rawTimeslots.doctors.map(doctor => doctor.next_available)
+  const timeslots = rawTimeslots.doctors
+    .filter((doctor:TimeSlotDoctor) => {
+      const doctorInfo: Doctor = doctors.find(doctor_search => doctor_search.id === doctor.id);
+      return isAZClinic(doctorInfo.full_name)
+    })
+    .map(doctor => doctor.next_available)
 
   let sortedTimeslots = [...timeslots];
   sortedTimeslots.sort()
   return sortedTimeslots[0];
 }
 
+/**
+ * Get the soonest appointments for a given clinic
+ * @param slug Clinic identifier - human readable name with dashes
+ * @param mockClinicInfo Mock data if being tested
+ * @param mockRawTimeslots Mock data if being tested
+ * @returns ISO8601 string of earliest appointment time
+ */
 export async function getSoonestClinicAppointments(
   slug: string,
   mockClinicInfo?: RootObject,
   mockRawTimeslots?: TimeSlotRootObject
-  ): Promise<string | undefined> {
+): Promise<string | undefined> {
   const clinicInfo: RootObject = mockClinicInfo !== undefined
     ? mockClinicInfo
     : await getClinicInfo(slug);
-  // clinic);
-  const prettified = JSON.stringify(clinicInfo,null,2);
-  if(clinicInfo.errors !== undefined) {
-    throw Error(JSON.stringify(clinicInfo.errors, null,2));
+  // if(slug === 'crown-st-medical-centre') {
+  //   console.log("Slug:");
+  //   console.log(slug)
+  //   console.log("clinicInfo:");
+  //   console.log(JSON.stringify(clinicInfo,null,2));
+  // }
+  if (clinicInfo.errors !== undefined) {
+    throw Error(JSON.stringify(clinicInfo.errors, null, 2));
   }
-  const clinicId: number = clinicInfo.clinic.id;
-  // console.log(prettified);
   let availabilityIds: number[];
   try {
-    availabilityIds = clinicInfoToAvailabilityIds(clinicInfo);
-  } catch(e) {
+    availabilityIds = clinicInfoToAvailabilityIds(clinicInfo.reasons, clinicInfo.doctor_reasons);
+  } catch (e) {
     console.error("Failed to get availability IDs");
     console.error(e);
     return undefined;
   }
 
-
+  const clinicId: number = clinicInfo.clinic.id;
   const rawTimeslots = mockRawTimeslots !== undefined
     ? mockRawTimeslots
     : await getRawTimeslots(availabilityIds, clinicId);
+
+  // if(slug === 'crown-st-medical-centre') {
+  //   console.log("Slug:");
+  //   console.log(slug)
+  //   console.log("timeslots:");
+  //   console.log(JSON.stringify(rawTimeslots,null,2));
+  // }
   // console.log(JSON.stringify(rawTimeslots,null,2));
-  const soonestTimestamp: string | undefined = rawTimeslotsToSoonestTimestamp(rawTimeslots);
+  const soonestTimestamp: string | undefined = rawTimeslotsToSoonestTimestamp(rawTimeslots, clinicInfo.doctors);
   return soonestTimestamp;
 }
 
@@ -169,29 +200,29 @@ export async function getSoonestClinicAppointments(
 async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
   const params = latitude !== undefined
     ? {
-    entities: 'clinics',
-    filters:'covid_vaccine-available',
-    latitude: latitude,
-    longitude: longitude,
+      entities: 'clinics',
+      filters: 'covid_vaccine-available',
+      latitude: latitude,
+      longitude: longitude,
     }
     : {
       entities: 'clinics',
-      filters:'covid_vaccine-available',
-      suburb:suburb
+      filters: 'covid_vaccine-available',
+      suburb: suburb
     }
 
   const qs = querystring.stringify(params);
   const url = `https://www.hotdoc.com.au/api/patient/search?${qs}`
 
   const result = await fetch(url, {
-      "headers": {
-        "accept": "application/au.com.hotdoc.v5",
-        "accept-language": "en-GB,en;q=0.9",
-        "content-type": "application/json; charset=utf-8",
-        "context": "purpose=covid-vaccine;",
-      },
-      "method": "GET",
-    });
+    "headers": {
+      "accept": "application/au.com.hotdoc.v5",
+      "accept-language": "en-GB,en;q=0.9",
+      "content-type": "application/json; charset=utf-8",
+      "context": "purpose=covid-vaccine;",
+    },
+    "method": "GET",
+  });
   const jsonText = await result.text();
   const jsonObj = JSON.parse(jsonText);
   // console.log(JSON.stringify(jsonObj,null,2));
@@ -202,23 +233,23 @@ async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, s
  * Create nearby clinics object ready to send to frontend
  */
 export async function getNearbyClinics(
-    latitude?: number,
-    longitude?: number,
-    suburb?:string,
-    mockData?: ClinicSearchRootObject
-  ): Promise<FrontendClinicData[]> {
+  latitude?: number,
+  longitude?: number,
+  suburb?: string,
+  mockData?: ClinicSearchRootObject
+): Promise<FrontendClinicData[]> {
   const nearbyClinics = mockData !== undefined
     ? mockData
     : await makeNearbyClinicsRequest(latitude, longitude, suburb);
 
   // Create map of suburb IDs to suburb objects
-  const suburbs: { [key:number]:SuburbSearch } = {};
+  const suburbs: { [key: number]: SuburbSearch } = {};
   nearbyClinics.suburbs.forEach(suburb => {
     suburbs[suburb.id] = suburb;
   });
 
   return nearbyClinics.clinics.map(clinic => {
-    const {name, slug, street_address, suburb_id} = clinic;
+    const { name, slug, street_address, suburb_id } = clinic;
 
     // Look up suburb object
     const suburb = suburbs[suburb_id];
@@ -237,12 +268,12 @@ export async function getNearbyClinics(
 export async function fetchSuburbs(query: string): Promise<Object> {
   const url = `https://www.hotdoc.com.au/api/patient/suburbs/search?query=${query}`
   const result = await fetch(url, {
-      "headers": {
-        "accept": "application/au.com.hotdoc.v5",
-        "content-type": "application/json; charset=utf-8",
-      },
-      "method": "GET",
-    });
+    "headers": {
+      "accept": "application/au.com.hotdoc.v5",
+      "content-type": "application/json; charset=utf-8",
+    },
+    "method": "GET",
+  });
   const jsonText = await result.text();
   return JSON.parse(jsonText);
 }

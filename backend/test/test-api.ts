@@ -5,8 +5,11 @@ import * as greenSquareHealthTimeSlots from './mocks/green-square-health-time-sl
 import * as montroseMedicalPractice from './mocks/montrose-medical-practice.json'
 import * as montroseMedicalPracticeTimeSlots from './mocks/montrose-medical-practice-time-slots.json'
 
+import * as crownStMedicalCentre from './mocks/crown-st-medical-centre.json'
+import * as crownStMedicalCentreTimeSlots from './mocks/crown-st-medical-centre-time-slots.json'
+
 import * as clincsNearCentral from './mocks/clinics-near-central.json'
-import {getNearbyClinics, getSoonestClinicAppointments} from '../src/api'
+import {getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason} from '../src/api'
 process.on("unhandledRejection", (reason, p) => {
   console.log("Unhandled Rejection at: Promise", p, "reason:", reason);
   // @ts-ignore
@@ -14,15 +17,67 @@ process.on("unhandledRejection", (reason, p) => {
   // application specific logging, throwing an error, or other logic here
 });
 
+describe("#isFirstDoseAZReason()", function() {
+    it('returns false for standard consultation', () => {
+      const reasonName = 'Standard Consult -  Children & Concession Card, 10am to 3.45pm - Mon-Fri';
+      const result = isFirstDoseAZReason(reasonName);
+      assert(result === false);
+    });
+    it('returns true for Astra Zeneca dose 1', () => {
+      const reasonName = 'Astra Zeneca COVID-19 Vaccine Dose 1  - Bulk Billed';
+      const result = isFirstDoseAZReason(reasonName);
+      assert(result === true);
+    });
+    it('returns true for AstraZeneca dose 1', () => {
+      const reasonName = 'AstraZeneca COVID-19 Vaccine Dose 1  - Bulk Billed';
+      const result = isFirstDoseAZReason(reasonName);
+      assert(result === true);
+    });
+    it('returns false for AstraZeneca dose 2', () => {
+      const reasonName = 'AstraZeneca COVID-19 Vaccine Dose 2  - Bulk Billed';
+      const result = isFirstDoseAZReason(reasonName);
+      assert(result === false);
+    });
+    it('returns true for COVID dose 1', () => {
+      const reasonName = 'COVID-19 Vaccine Dose 1  - Bulk Billed';
+      const result = isFirstDoseAZReason(reasonName);
+      assert(result === true);
+    });
+    it('returns false for Pfizer COVID dose 1', () => {
+      const reasonName = 'Pfizer COVID-19 Vaccine Dose 1  - Bulk Billed';
+      const result = isFirstDoseAZReason(reasonName);
+      assert(result === false);
+    });
+    it('returns false for Flu vaccine', () => {
+      const reasonName = 'Flu Vaccine - Bulk Billed Appointment';
+      const result = isFirstDoseAZReason(reasonName);
+      assert(result === false);
+    });
+    it('returns false for Flu symptoms consult', () => {
+      const reasonName = 'PHONE Consult - Cold & Flu Symptoms (Bulk-Billed During Covid 19 Lockdown)';
+      const result = isFirstDoseAZReason(reasonName);
+      assert(result === false);
+    });
+});
+
 describe("#getSoonestClinicAppointments()", async function () {
   it("Green Square Health (1425): returns earliest time", async () => {
     const soonestTimestamp = await getSoonestClinicAppointments('green-square-health', greenSquareHealth, greenSquareHealthTimeSlots);
-    assert(soonestTimestamp === '2021-08-14T15:00:00+10:00');
+    assert(soonestTimestamp === '2021-08-23T15:15:00+10:00');
   });
 
   it("Montrose Medical Practice: returns earliest time", async () => {
     const soonestTimestamp = await getSoonestClinicAppointments('montrose-medical-practice', montroseMedicalPractice, montroseMedicalPracticeTimeSlots);
     assert(soonestTimestamp === '2021-08-19T11:40:00+10:00');
+  });
+
+  // TODO: Fix getSoonestClinicAppointments
+  it("Crowd St Medical Centre: returns earliest time", async () => {
+    // TODO: Fix this type error
+    // @ts-ignore
+    const soonestTimestamp = await getSoonestClinicAppointments('crown-st-medical-centre', crownStMedicalCentre, crownStMedicalCentreTimeSlots);
+    // 24 Aug, 1:45 according to the website a few mins after data capture
+    assert(soonestTimestamp === '2021-08-24T13:45:00+10:00');
   });
 });
 

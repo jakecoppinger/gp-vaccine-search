@@ -1,0 +1,46 @@
+{
+  "time_slots": [],
+  "days": [
+    {
+      "date": "2021-07-08"
+    },
+    {
+      "date": "2021-07-09"
+    },
+    {
+      "date": "2021-07-10"
+    },
+    {
+      "date": "2021-07-11"
+    },
+    {
+      "date": "2021-07-12"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 97162,
+      "detail": false,
+      "next_available": "2021-09-17T14:00:00+10:00",
+      "prev_available": null
+    },
+    {
+      "id": 96311,
+      "detail": false,
+      "next_available": "2021-08-17T14:00:00+10:00",
+      "prev_available": null
+    },
+    {
+      "id": 98135,
+      "detail": false,
+      "next_available": "2021-08-24T13:45:00+10:00",
+      "prev_available": null
+    },
+    {
+      "id": 88978,
+      "detail": false,
+      "next_available": "2021-08-30T10:45:00+10:00",
+      "prev_available": null
+    }
+  ]
+}
