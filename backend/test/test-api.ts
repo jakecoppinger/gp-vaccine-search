@@ -115,10 +115,9 @@ describe("#getSoonestClinicAppointments()", async function () {
       assert(soonestTimestamp === '2021-08-14T15:00:00+10:00');
     });
 
-    it.skip("mirandaSkinCancerClinic: returns Wed 10th nov 3:20pm", async() => {
+    it("mirandaSkinCancerClinic: returns Wed 10th nov 3:20pm", async() => {
       const soonestTimestamp = await getSoonestClinicAppointments('pfizer', 'miranda-skin-cancer-clinic', mirandaSkinCancerClinic, mirandaSkinCancerClinicTimeSlots);
-      console.log({soonestTimestamp});
-      assert(soonestTimestamp === '2021-11-10T15:20:00+10:00');
+      assert(soonestTimestamp === '2021-11-10T15:20:00+11:00');
     });
   });
   describe("astrazeneca", async function () {

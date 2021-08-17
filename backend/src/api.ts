@@ -21,6 +21,24 @@ export async function getClinicInfo(slug: string): Promise<RootObject> {
 }
 
 /**
+ * Returns true if the appointment reason is for any type of vaccine
+ */
+export function isVaccineReason(reasonName: string): boolean {
+  const name = reasonName.toLowerCase();
+  const nameWithout19 = name.replace('19', '');
+  if(name.includes('pfizer')) {
+    return true;
+  }
+  if(name.includes('flu')) {
+    return false;
+  }
+
+  if (name.includes('covid') || name.includes('astra') || name.includes('vaccine')) {
+    return true;
+  }
+  return false;
+}
+/**
  * Returns true if the appointment reason is to get 1st dose of AZ
  */
 export function isFirstDoseAZReason(reasonName: string): boolean {
@@ -86,9 +104,10 @@ export function clinicInfoToAvailabilityIds(vaccine: 'pfizer' | 'astrazeneca', r
   - put all those availability ids into the request!
   */
   const selectedFirstDoseReasons: Reason[] = reasons.filter(reason =>
-    vaccine === 'astrazeneca'
-      ? isFirstDoseAZReason(reason.name)
-      : isFirstDosePfizerReason(reason.name)
+    isVaccineReason(reason.name)
+    // vaccine === 'astrazeneca'
+    //   ? isFirstDoseAZReason(reason.name)
+    //   : isFirstDosePfizerReason(reason.name)
     );
 
   if (selectedFirstDoseReasons.length === 0) {
@@ -168,7 +187,6 @@ export function rawTimeslotsToSoonestTimestamp(vaccine: 'astrazeneca' | 'pfizer'
   const timeslots = rawTimeslots.doctors
     .filter((doctor:TimeSlotDoctor) => {
       const doctorInfo: Doctor = doctors.find(doctor_search => doctor_search.id === doctor.id);
-      console.log({doctor});
       return vaccine === 'astrazeneca'
         ? isAZClinic(doctorInfo.full_name)
         : isPfizerClinic(doctorInfo.full_name)
@@ -213,7 +231,6 @@ export async function getSoonestClinicAppointments(
     console.error(e);
     return undefined;
   }
-  console.log({availabilityIds});
 
   const clinicId: number = clinicInfo.clinic.id;
   const rawTimeslots = mockRawTimeslots !== undefined
