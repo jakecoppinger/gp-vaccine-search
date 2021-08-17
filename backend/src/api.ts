@@ -1,19 +1,19 @@
-import {Clinic,ClinicSearch,ClinicSearchRootObject,FrontendClinicData,Reason,RootObject, SuburbSearch, TimeSlotRootObject} from './interfaces';
+import { Clinic, ClinicSearch, ClinicSearchRootObject, FrontendClinicData, Reason, RootObject, SuburbSearch, TimeSlotRootObject } from './interfaces';
 import fetch from 'node-fetch';
 import * as querystring from "querystring";
 
-export async function getClinicInfo(slug:string): Promise<RootObject> {
+export async function getClinicInfo(slug: string): Promise<RootObject> {
   const params = {
     slug
   }
   const qs = querystring.stringify(params);
   const url = `https://www.hotdoc.com.au/api/patient/clinics?${qs}`
   const result = await fetch(url, {
-  "headers": {
-    "accept": "application/au.com.hotdoc.v5",
-  },
-  "method": "GET",
-});
+    "headers": {
+      "accept": "application/au.com.hotdoc.v5",
+    },
+    "method": "GET",
+  });
   const jsonText = await result.text();
   const jsonObj = JSON.parse(jsonText);
   // console.log(JSON.stringify(jsonObj,null,2));
@@ -22,13 +22,13 @@ export async function getClinicInfo(slug:string): Promise<RootObject> {
 
 export function firstDoseReason(reason: Reason): boolean {
   const name = reason.name.toLowerCase();
-  const nameWithout19 = name.replace('19','');
+  const nameWithout19 = name.replace('19', '');
 
-  if(!(nameWithout19.includes('1') || nameWithout19.includes('first'))) {
+  if (!(nameWithout19.includes('1') || nameWithout19.includes('first'))) {
     // Looking for first dose!
     return false;
   }
-  if(name.includes('COVID') || name.includes('astra') || name.includes('vaccine')) {
+  if (name.includes('covid') || name.includes('astra') || name.includes('vaccine')) {
     return true;
   }
   return false;
@@ -45,7 +45,7 @@ function getAvailabilityIdsForAzFirstDoseReasonId(firstDoseReasonId: number, cli
   const availabilityIdsDuplicates: number[] = clinicInfo.doctor_reasons
     .filter(doctor_reason => doctor_reason.reason_id === firstDoseReasonId)
     .map(doctor_reason => doctor_reason.availability_type_id)
-    return availabilityIdsDuplicates;
+  return availabilityIdsDuplicates;
 }
 
 export function clinicInfoToAvailabilityIds(clinicInfo: RootObject): number[] {
@@ -59,7 +59,7 @@ export function clinicInfoToAvailabilityIds(clinicInfo: RootObject): number[] {
   */
   const reasons = clinicInfo.reasons
   const azFirstDoseReasons = reasons.filter(firstDoseReason);
-  if(azFirstDoseReasons.length === 0) {
+  if (azFirstDoseReasons.length === 0) {
     console.error(azFirstDoseReasons);
     throw Error("doesn't have 1st dose AZ apparently. Check firstDoseReason()");
     return undefined;
@@ -100,11 +100,11 @@ export async function getRawTimeslots(availabilityIds: number[], clinicId: numbe
 
   const url = `https://www.hotdoc.com.au/api/patient/time_slots?${qs}${availabilityParam}`
   const result = await fetch(url, {
-  "headers": {
-    "accept": "application/au.com.hotdoc.v5",
-  },
-  "method": "GET",
-});
+    "headers": {
+      "accept": "application/au.com.hotdoc.v5",
+    },
+    "method": "GET",
+  });
   const jsonText = await result.text();
   const jsonObj = JSON.parse(jsonText);
   // console.log(JSON.stringify(jsonObj,null,2));
@@ -133,21 +133,24 @@ export async function getSoonestClinicAppointments(
   slug: string,
   mockClinicInfo?: RootObject,
   mockRawTimeslots?: TimeSlotRootObject
-  ): Promise<string | undefined> {
+): Promise<string | undefined> {
   const clinicInfo: RootObject = mockClinicInfo !== undefined
     ? mockClinicInfo
     : await getClinicInfo(slug);
-  // clinic);
-  const prettified = JSON.stringify(clinicInfo,null,2);
-  if(clinicInfo.errors !== undefined) {
-    throw Error(JSON.stringify(clinicInfo.errors, null,2));
+  // if(slug === 'crown-st-medical-centre') {
+  //   console.log("Slug:");
+  //   console.log(slug)
+  //   console.log("clinicInfo:");
+  //   console.log(JSON.stringify(clinicInfo,null,2));
+  // }
+  if (clinicInfo.errors !== undefined) {
+    throw Error(JSON.stringify(clinicInfo.errors, null, 2));
   }
   const clinicId: number = clinicInfo.clinic.id;
-  // console.log(prettified);
   let availabilityIds: number[];
   try {
     availabilityIds = clinicInfoToAvailabilityIds(clinicInfo);
-  } catch(e) {
+  } catch (e) {
     console.error("Failed to get availability IDs");
     console.error(e);
     return undefined;
@@ -157,6 +160,13 @@ export async function getSoonestClinicAppointments(
   const rawTimeslots = mockRawTimeslots !== undefined
     ? mockRawTimeslots
     : await getRawTimeslots(availabilityIds, clinicId);
+
+  // if(slug === 'crown-st-medical-centre') {
+  //   console.log("Slug:");
+  //   console.log(slug)
+  //   console.log("timeslots:");
+  //   console.log(JSON.stringify(rawTimeslots,null,2));
+  // }
   // console.log(JSON.stringify(rawTimeslots,null,2));
   const soonestTimestamp: string | undefined = rawTimeslotsToSoonestTimestamp(rawTimeslots);
   return soonestTimestamp;
@@ -169,29 +179,29 @@ export async function getSoonestClinicAppointments(
 async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
   const params = latitude !== undefined
     ? {
-    entities: 'clinics',
-    filters:'covid_vaccine-available',
-    latitude: latitude,
-    longitude: longitude,
+      entities: 'clinics',
+      filters: 'covid_vaccine-available',
+      latitude: latitude,
+      longitude: longitude,
     }
     : {
       entities: 'clinics',
-      filters:'covid_vaccine-available',
-      suburb:suburb
+      filters: 'covid_vaccine-available',
+      suburb: suburb
     }
 
   const qs = querystring.stringify(params);
   const url = `https://www.hotdoc.com.au/api/patient/search?${qs}`
 
   const result = await fetch(url, {
-      "headers": {
-        "accept": "application/au.com.hotdoc.v5",
-        "accept-language": "en-GB,en;q=0.9",
-        "content-type": "application/json; charset=utf-8",
-        "context": "purpose=covid-vaccine;",
-      },
-      "method": "GET",
-    });
+    "headers": {
+      "accept": "application/au.com.hotdoc.v5",
+      "accept-language": "en-GB,en;q=0.9",
+      "content-type": "application/json; charset=utf-8",
+      "context": "purpose=covid-vaccine;",
+    },
+    "method": "GET",
+  });
   const jsonText = await result.text();
   const jsonObj = JSON.parse(jsonText);
   // console.log(JSON.stringify(jsonObj,null,2));
@@ -202,23 +212,23 @@ async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, s
  * Create nearby clinics object ready to send to frontend
  */
 export async function getNearbyClinics(
-    latitude?: number,
-    longitude?: number,
-    suburb?:string,
-    mockData?: ClinicSearchRootObject
-  ): Promise<FrontendClinicData[]> {
+  latitude?: number,
+  longitude?: number,
+  suburb?: string,
+  mockData?: ClinicSearchRootObject
+): Promise<FrontendClinicData[]> {
   const nearbyClinics = mockData !== undefined
     ? mockData
     : await makeNearbyClinicsRequest(latitude, longitude, suburb);
 
   // Create map of suburb IDs to suburb objects
-  const suburbs: { [key:number]:SuburbSearch } = {};
+  const suburbs: { [key: number]: SuburbSearch } = {};
   nearbyClinics.suburbs.forEach(suburb => {
     suburbs[suburb.id] = suburb;
   });
 
   return nearbyClinics.clinics.map(clinic => {
-    const {name, slug, street_address, suburb_id} = clinic;
+    const { name, slug, street_address, suburb_id } = clinic;
 
     // Look up suburb object
     const suburb = suburbs[suburb_id];
@@ -237,12 +247,12 @@ export async function getNearbyClinics(
 export async function fetchSuburbs(query: string): Promise<Object> {
   const url = `https://www.hotdoc.com.au/api/patient/suburbs/search?query=${query}`
   const result = await fetch(url, {
-      "headers": {
-        "accept": "application/au.com.hotdoc.v5",
-        "content-type": "application/json; charset=utf-8",
-      },
-      "method": "GET",
-    });
+    "headers": {
+      "accept": "application/au.com.hotdoc.v5",
+      "content-type": "application/json; charset=utf-8",
+    },
+    "method": "GET",
+  });
   const jsonText = await result.text();
   return JSON.parse(jsonText);
 }

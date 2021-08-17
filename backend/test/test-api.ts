@@ -5,6 +5,9 @@ import * as greenSquareHealthTimeSlots from './mocks/green-square-health-time-sl
 import * as montroseMedicalPractice from './mocks/montrose-medical-practice.json'
 import * as montroseMedicalPracticeTimeSlots from './mocks/montrose-medical-practice-time-slots.json'
 
+import * as crownStMedicalCentre from './mocks/crown-st-medical-centre.json'
+import * as crownStMedicalCentreTimeSlots from './mocks/crown-st-medical-centre-time-slots.json'
+
 import * as clincsNearCentral from './mocks/clinics-near-central.json'
 import {getNearbyClinics, getSoonestClinicAppointments} from '../src/api'
 process.on("unhandledRejection", (reason, p) => {
@@ -23,6 +26,16 @@ describe("#getSoonestClinicAppointments()", async function () {
   it("Montrose Medical Practice: returns earliest time", async () => {
     const soonestTimestamp = await getSoonestClinicAppointments('montrose-medical-practice', montroseMedicalPractice, montroseMedicalPracticeTimeSlots);
     assert(soonestTimestamp === '2021-08-19T11:40:00+10:00');
+  });
+
+  // TODO: Fix getSoonestClinicAppointments
+  it.skip("Crowd St Medical Centre: returns earliest time", async () => {
+    // TODO: Fix this type error
+    // @ts-ignore
+    const soonestTimestamp = await getSoonestClinicAppointments('crown-st-medical-centre', crownStMedicalCentre, crownStMedicalCentreTimeSlots);
+    // 24 Aug, 1:45 according to the website a few mins after data capture
+    console.log({soonestTimestamp});
+    assert(soonestTimestamp === '2021-08-24T13:45:00+10:00');
   });
 });
 

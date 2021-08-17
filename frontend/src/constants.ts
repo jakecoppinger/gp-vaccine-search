@@ -1,6 +1,6 @@
 
 export const showNumberGps = 20;
-export const whereAmI: 'production' | 'dev' | 'local' = 'production';
+export const whereAmI: 'production' | 'dev' | 'local' = 'local';
 
 // @ts-ignore
 export const apiHostname = whereAmI === 'dev'
