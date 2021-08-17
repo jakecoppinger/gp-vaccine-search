@@ -31,7 +31,7 @@ app.post('/get_soonest_clinic_appintment', async (req, res) => {
     return;
   }
 
-  const soonestAppointment = await getSoonestClinicAppointments(clinic_id_string);
+  const soonestAppointment = await getSoonestClinicAppointments('astrazeneca', clinic_id_string);
   res.json({status: 'success', soonest_appointment: soonestAppointment});
 });
 

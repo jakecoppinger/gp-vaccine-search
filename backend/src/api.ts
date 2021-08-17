@@ -69,14 +69,14 @@ export function isFirstDosePfizerReason(reasonName: string): boolean {
  * It returns a list of ids which are the availability ids, which get passed to the availability
  * search.
  */
-function getAvailabilityIdsForAzFirstDoseReasonId(firstDoseReasonId: number, doctor_reasons: DoctorReason[]): number[] {
+function getAvailabilityIdsForReason(firstDoseReasonId: number, doctor_reasons: DoctorReason[]): number[] {
   const availabilityIdsDuplicates: number[] = doctor_reasons
     .filter(doctor_reason => doctor_reason.reason_id === firstDoseReasonId)
     .map(doctor_reason => doctor_reason.availability_type_id)
   return availabilityIdsDuplicates;
 }
 
-export function clinicInfoToAvailabilityIds(reasons: Reason[], doctor_reasons: DoctorReason[]): number[] {
+export function clinicInfoToAvailabilityIds(vaccine: 'pfizer' | 'astrazeneca', reasons: Reason[], doctor_reasons: DoctorReason[]): number[] {
   /*
   Rough idea:
   - Go to "reasons"
@@ -85,12 +85,15 @@ export function clinicInfoToAvailabilityIds(reasons: Reason[], doctor_reasons: D
   - in "doctor_reasons", for each record with "reason_id" = that id, get the availability_type_id
   - put all those availability ids into the request!
   */
-  const azFirstDoseReasons = reasons.filter(reason => isFirstDoseAZReason(reason.name));
+  const selectedFirstDoseReasons: Reason[] = reasons.filter(reason =>
+    vaccine === 'astrazeneca'
+      ? isFirstDoseAZReason(reason.name)
+      : isFirstDosePfizerReason(reason.name)
+    );
 
-  if (azFirstDoseReasons.length === 0) {
-    console.error(azFirstDoseReasons);
-    throw Error("doesn't have 1st dose AZ apparently. Check firstDoseReason()");
-    return undefined;
+  if (selectedFirstDoseReasons.length === 0) {
+    console.error(selectedFirstDoseReasons);
+    throw Error(`doesn't have 1st dose of ${vaccine} apparently. Check function`);
   } 
   // else if(azFirstDoseReasons.length > 1){
   //   console.error(azFirstDoseReasons);
@@ -98,8 +101,8 @@ export function clinicInfoToAvailabilityIds(reasons: Reason[], doctor_reasons: D
   //   return undefined;
   // }
 
-  const allAvailabilityIds: number[][] = azFirstDoseReasons.map(
-    reason => getAvailabilityIdsForAzFirstDoseReasonId(reason.id, doctor_reasons));
+  const allAvailabilityIds: number[][] = selectedFirstDoseReasons.map(
+    reason => getAvailabilityIdsForReason(reason.id, doctor_reasons));
   const flatAllAvailabilityIds: number[] = allAvailabilityIds.reduce((acc, val) => acc.concat(val), []);
 
   const availabilityIds: number[] = Array.from(new Set(flatAllAvailabilityIds));
@@ -140,7 +143,6 @@ export async function getRawTimeslots(availabilityIds: number[], clinicId: numbe
 
 export function isAZClinic(clinic_name: string) {
   const name = clinic_name.toLowerCase();
-  const nameWithout19 = name.replace('19', '');
   if(name.includes('pfizer')) {
     return false;
   }
@@ -149,14 +151,26 @@ export function isAZClinic(clinic_name: string) {
   }
   return false;
 }
+export function isPfizerClinic(clinic_name: string) {
+  const name = clinic_name.toLowerCase();
+  if (name.includes('astra') || name.includes('zeneca') || name.includes('AZ')) {
+    return false;
+  }
+  if(name.includes('pfizer')) {
+    return true;
+  }
+  return false;
+}
 
-export function rawTimeslotsToSoonestTimestamp(rawTimeslots: TimeSlotRootObject, doctors: Doctor[]): undefined | string {
+export function rawTimeslotsToSoonestTimestamp(vaccine: 'astrazeneca' | 'pfizer', rawTimeslots: TimeSlotRootObject, doctors: Doctor[]): undefined | string {
   // We just want the next timestamps, so we've intentionall set to the past, so that
   // we only have to handle one logic path.
   const timeslots = rawTimeslots.doctors
     .filter((doctor:TimeSlotDoctor) => {
       const doctorInfo: Doctor = doctors.find(doctor_search => doctor_search.id === doctor.id);
-      return isAZClinic(doctorInfo.full_name)
+      return vaccine === 'astrazeneca'
+        ? isAZClinic(doctorInfo.full_name)
+        : isPfizerClinic(doctorInfo.full_name)
     })
     .map(doctor => doctor.next_available)
 
@@ -173,6 +187,7 @@ export function rawTimeslotsToSoonestTimestamp(rawTimeslots: TimeSlotRootObject,
  * @returns ISO8601 string of earliest appointment time
  */
 export async function getSoonestClinicAppointments(
+  vaccine: 'astrazeneca' | 'pfizer',
   slug: string,
   mockClinicInfo?: RootObject,
   mockRawTimeslots?: TimeSlotRootObject
@@ -191,7 +206,7 @@ export async function getSoonestClinicAppointments(
   }
   let availabilityIds: number[];
   try {
-    availabilityIds = clinicInfoToAvailabilityIds(clinicInfo.reasons, clinicInfo.doctor_reasons);
+    availabilityIds = clinicInfoToAvailabilityIds(vaccine,clinicInfo.reasons, clinicInfo.doctor_reasons);
   } catch (e) {
     console.error("Failed to get availability IDs");
     console.error(e);
@@ -210,7 +225,7 @@ export async function getSoonestClinicAppointments(
   //   console.log(JSON.stringify(rawTimeslots,null,2));
   // }
   // console.log(JSON.stringify(rawTimeslots,null,2));
-  const soonestTimestamp: string | undefined = rawTimeslotsToSoonestTimestamp(rawTimeslots, clinicInfo.doctors);
+  const soonestTimestamp: string | undefined = rawTimeslotsToSoonestTimestamp(vaccine, rawTimeslots, clinicInfo.doctors);
   return soonestTimestamp;
 }
 

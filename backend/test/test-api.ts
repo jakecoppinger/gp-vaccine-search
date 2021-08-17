@@ -106,12 +106,12 @@ describe("#isFirstDoseAZReason()", function() {
 
 describe("#getSoonestClinicAppointments()", async function () {
   it("Green Square Health (1425): returns earliest time", async () => {
-    const soonestTimestamp = await getSoonestClinicAppointments('green-square-health', greenSquareHealth, greenSquareHealthTimeSlots);
+    const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'green-square-health', greenSquareHealth, greenSquareHealthTimeSlots);
     assert(soonestTimestamp === '2021-08-23T15:15:00+10:00');
   });
 
   it("Montrose Medical Practice: returns earliest time", async () => {
-    const soonestTimestamp = await getSoonestClinicAppointments('montrose-medical-practice', montroseMedicalPractice, montroseMedicalPracticeTimeSlots);
+    const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'montrose-medical-practice', montroseMedicalPractice, montroseMedicalPracticeTimeSlots);
     assert(soonestTimestamp === '2021-08-19T11:40:00+10:00');
   });
 
@@ -119,7 +119,7 @@ describe("#getSoonestClinicAppointments()", async function () {
   it("Crowd St Medical Centre: returns earliest time", async () => {
     // TODO: Fix this type error
     // @ts-ignore
-    const soonestTimestamp = await getSoonestClinicAppointments('crown-st-medical-centre', crownStMedicalCentre, crownStMedicalCentreTimeSlots);
+    const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'crown-st-medical-centre', crownStMedicalCentre, crownStMedicalCentreTimeSlots);
     // 24 Aug, 1:45 according to the website a few mins after data capture
     assert(soonestTimestamp === '2021-08-24T13:45:00+10:00');
   });
