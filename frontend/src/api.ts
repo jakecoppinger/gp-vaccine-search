@@ -19,6 +19,7 @@ export async function fetchNearbyClinics(vaccine: 'astrazeneca' | 'pfizer', lati
     }
   } else if(suburb !== undefined) {
     params = {
+      vaccine,
       suburb
     };
   } else {
@@ -42,6 +43,8 @@ export async function fetchNearbyClinics(vaccine: 'astrazeneca' | 'pfizer', lati
     setElementTextIfExists('#clinic-fetch-status', '');
     await findAppointments(vaccine);
   } catch (e) {
+    console.log("Error getting nearby clinics:");
+    console.error(e);
     setElementTextIfExists('#clinic-fetch-status', 'Failed to check GPs. Likely a bug, please check HotDoc manually.');
     // What errors happened?
     // @ts-ignore

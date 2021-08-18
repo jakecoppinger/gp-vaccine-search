@@ -209,7 +209,6 @@ export async function getSoonestClinicAppointments(
   vaccine: 'astrazeneca' | 'pfizer',
   clinic_code_string: string,
 ): Promise<string | undefined> {
-  console.log({vaccine});
   const clinicInfo: RootObject = await getClinicInfo(clinic_code_string);
   if (clinicInfo.errors !== undefined) {
     throw Error(JSON.stringify(clinicInfo.errors, null, 2));
