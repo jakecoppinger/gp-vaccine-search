@@ -10,7 +10,8 @@
     "sourceRoot": "./src/",
     "rootDir": "./src/",
     "allowSyntheticDefaultImports": true,
-    "strict": true
+    "strict": true,
+    "strictNullChecks": true
   },
   "files": ["src/script.ts"]
 }

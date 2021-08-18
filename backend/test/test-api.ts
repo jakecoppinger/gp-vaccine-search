@@ -11,9 +11,13 @@ import * as crownStMedicalCentreTimeSlots from './mocks/crown-st-medical-centre-
 import * as mirandaSkinCancerClinic from './mocks/miranda-skin-cancer-clinic.json';
 import * as mirandaSkinCancerClinicTimeSlots from './mocks/miranda-skin-cancer-clinic-time-slots.json';
 
+import * as concordFamilyDoctors from './mocks/concord-family-doctors.json';
+import * as concordFamilyDoctorsTimeSlots from './mocks/concord-family-doctors-time-slots.json';
 
 import * as clincsNearCentral from './mocks/clinics-near-central.json'
-import {getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason, isFirstDosePfizerReason} from '../src/api'
+import {getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason, isFirstDosePfizerReason, rawTimeslotsToSoonestTimestamp} from '../src/api'
+import { Doctor } from '../src/interfaces';
+import { concordFamilyDoctorsDoctors } from './mocks/objects';
 process.on("unhandledRejection", (reason, p) => {
   console.log("Unhandled Rejection at: Promise", p, "reason:", reason);
   // @ts-ignore
@@ -119,6 +123,11 @@ describe("#getSoonestClinicAppointments()", async function () {
       const soonestTimestamp = await getSoonestClinicAppointments('pfizer', 'miranda-skin-cancer-clinic', mirandaSkinCancerClinic, mirandaSkinCancerClinicTimeSlots);
       assert(soonestTimestamp === '2021-11-10T15:20:00+11:00');
     });
+
+    it("concordFamilyDoctors: doesn't have appointments", async() => {
+      const soonestTimestamp = await getSoonestClinicAppointments('pfizer', 'concord-family-doctors', concordFamilyDoctors, concordFamilyDoctorsTimeSlots);
+      assert(soonestTimestamp === undefined);
+    });
   });
   describe("astrazeneca", async function () {
     it("Green Square Health (1425): returns earliest time", async () => {
@@ -155,4 +164,17 @@ describe("#getNearbyClinics()", async function () {
     }
     assert(JSON.stringify(nearbyClinics[0]) === JSON.stringify(expected));
   });
+});
+
+describe("#rawTimeslotsToSoonestTimestamp()", async function() {
+  it("finds correct timeslots for concordFamilyDoctors", async () => {
+    const soonestTimestamp = await rawTimeslotsToSoonestTimestamp(
+      'pfizer',concordFamilyDoctorsTimeSlots,concordFamilyDoctorsDoctors
+    );
+    
+    assert(soonestTimestamp === undefined);
+  });
+
+
+
 });

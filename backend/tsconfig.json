@@ -11,7 +11,8 @@
       "rootDir": "./src/",
       "outDir": "dist/",
       "noUnusedParameters": true,
-      "incremental": true
+      "incremental": true,
+      "strictNullChecks": true
   },
   "files": [
       "src/app.ts",

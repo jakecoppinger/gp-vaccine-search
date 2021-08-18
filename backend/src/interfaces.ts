@@ -34,8 +34,8 @@ export interface Doctor {
     doctor_interest_ids: any[];
     earliest_available?: string;
     has_bookings_support?: boolean;
-    education: any[];
-    specialty: string;
+    education?: any[];
+    specialty?: string;
 }
 
 export interface DoctorReason {
@@ -215,7 +215,9 @@ export interface TimeSlotDay {
 export interface TimeSlotDoctor {
     id: number;
     detail: boolean;
-    next_available?: string;
+    next_available?: string | null;
+    /** Not sure if accurate */
+    prev_available?: string | null;
 }
 
 export interface TimeSlotRootObject {

@@ -181,18 +181,33 @@ export function isPfizerClinic(clinic_name: string) {
   return false;
 }
 
-export function rawTimeslotsToSoonestTimestamp(vaccine: 'astrazeneca' | 'pfizer', rawTimeslots: TimeSlotRootObject, doctors: Doctor[]): undefined | string {
+export function rawTimeslotsToSoonestTimestamp(vaccine: 'astrazeneca' | 'pfizer', rawTimeslots: TimeSlotRootObject, doctors: Doctor[]): string | undefined {
+
+  function isString(o: string | undefined | null): o is string {
+    return o !== undefined && o !== null;
+  }
+
   // We just want the next timestamps, so we've intentionall set to the past, so that
   // we only have to handle one logic path.
   const timeslots = rawTimeslots.doctors
     .filter((doctor:TimeSlotDoctor) => {
-      const doctorInfo: Doctor = doctors.find(doctor_search => doctor_search.id === doctor.id);
+      const doctorInfo: Doctor | undefined = doctors.find(doctor_search => doctor_search.id === doctor.id);
+      if(doctorInfo === undefined) {
+        return false;
+      }
       return vaccine === 'astrazeneca'
         ? isAZClinic(doctorInfo.full_name)
         : isPfizerClinic(doctorInfo.full_name)
     })
     .map(doctor => doctor.next_available)
+    .filter((o: string | undefined | null): o is string => {
+      return o !== undefined && o !== null;
+    });
 
+  if(timeslots.length === 0) {
+    console.log("Zero timestamps");
+    return undefined;
+  }
   let sortedTimeslots = [...timeslots];
   sortedTimeslots.sort()
   return sortedTimeslots[0];
@@ -214,12 +229,12 @@ export async function getSoonestClinicAppointments(
   const clinicInfo: RootObject = mockClinicInfo !== undefined
     ? mockClinicInfo
     : await getClinicInfo(slug);
-  // if(slug === 'crown-st-medical-centre') {
-  //   console.log("Slug:");
-  //   console.log(slug)
-  //   console.log("clinicInfo:");
-  //   console.log(JSON.stringify(clinicInfo,null,2));
-  // }
+  if(slug === 'concord-family-doctors') {
+    console.log("Slug:");
+    console.log(slug)
+    console.log("clinicInfo:");
+    console.log(JSON.stringify(clinicInfo,null,2));
+  }
   if (clinicInfo.errors !== undefined) {
     throw Error(JSON.stringify(clinicInfo.errors, null, 2));
   }
@@ -237,14 +252,13 @@ export async function getSoonestClinicAppointments(
     ? mockRawTimeslots
     : await getRawTimeslots(availabilityIds, clinicId);
 
-  // if(slug === 'crown-st-medical-centre') {
-  //   console.log("Slug:");
-  //   console.log(slug)
-  //   console.log("timeslots:");
-  //   console.log(JSON.stringify(rawTimeslots,null,2));
-  // }
-  // console.log(JSON.stringify(rawTimeslots,null,2));
-  const soonestTimestamp: string | undefined = rawTimeslotsToSoonestTimestamp(vaccine, rawTimeslots, clinicInfo.doctors);
+  if(slug === 'concord-family-doctors') {
+    console.log("Slug:");
+    console.log(slug)
+    console.log("timeslots:");
+    console.log(JSON.stringify(rawTimeslots,null,2));
+  }
+  const soonestTimestamp = rawTimeslotsToSoonestTimestamp(vaccine, rawTimeslots, clinicInfo.doctors);
   return soonestTimestamp;
 }
 
