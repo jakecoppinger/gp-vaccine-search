@@ -3,6 +3,7 @@ import { optionsDivSelector, postcodeSearchSelector } from "./selectors";
 import { whereAmI, apiHostname } from './constants';
 import { SuburbSearchObject } from "./interfaces";
 import { fetchNearbyClinics } from "./api";
+import { getVaccineFromRadioButtons } from "./utils";
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -40,8 +41,9 @@ function selectSuburb(ev: MouseEvent) {
   const slug: string = rawSlug;
   console.log({ slug });
 
-  fetchNearbyClinics(undefined,undefined,slug);
-
+  const vaccine = getVaccineFromRadioButtons();
+  console.log(`Fetching nearby clinics for ${vaccine}`);
+  fetchNearbyClinics(vaccine, undefined,undefined,slug);
 }
 
 export const debouncedSearch = debounce(oninputSearch, 100, {

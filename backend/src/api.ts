@@ -252,18 +252,29 @@ export async function getSoonestClinicAppointments(
  * Make request to HotDoc API to get nearby clinics
  * @param suburb Must be defined if latitude and longitude not defined
  */
-async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
+async function makeNearbyClinicsRequest(vaccine: 'astrazeneca' | 'pfizer', latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
+
+    /* Currently
+    filters=covid_vaccine-astrazeneca_under_60 and &filters=covid_vaccine-astrazeneca_60_plus
+    are the only AZ filter options. Seeing as AZ is pretty popular, it should be *very* likely
+    clinics that give any vaccine give AZ.
+    */
+    const filterParams = vaccine === 'astrazeneca'
+      ? {} : {filters: 'covid_vaccine-pfizer'}
+
   const params = latitude !== undefined
     ? {
       entities: 'clinics',
       filters: 'covid_vaccine-available',
       latitude: latitude,
       longitude: longitude,
+      ...filterParams
     }
     : {
       entities: 'clinics',
       filters: 'covid_vaccine-available',
-      suburb: suburb
+      suburb: suburb,
+      ...filterParams
     }
 
   const qs = querystring.stringify(params);
@@ -288,6 +299,7 @@ async function makeNearbyClinicsRequest(latitude?: number, longitude?: number, s
  * Create nearby clinics object ready to send to frontend
  */
 export async function getNearbyClinics(
+  vaccine: 'astrazeneca' | 'pfizer',
   latitude?: number,
   longitude?: number,
   suburb?: string,
@@ -295,7 +307,7 @@ export async function getNearbyClinics(
 ): Promise<FrontendClinicData[]> {
   const nearbyClinics = mockData !== undefined
     ? mockData
-    : await makeNearbyClinicsRequest(latitude, longitude, suburb);
+    : await makeNearbyClinicsRequest(vaccine, latitude, longitude, suburb);
 
   // Create map of suburb IDs to suburb objects
   const suburbs: { [key: number]: SuburbSearch } = {};
@@ -315,7 +327,7 @@ export async function getNearbyClinics(
       street_address,
       /** Include the suburb if not already included in the address */
       suburb_name: street_address.includes(suburb.name) ? '' : suburb.name,
-      url: `https://www.hotdoc.com.au/medical-centres/${suburb.slug}/${slug}/doctors?purpose=covid-vaccine?wp=gpvaccinesearch`,
+      url: `https://www.hotdoc.com.au/medical-centres/${suburb.slug}/${slug}/doctors?purpose=covid-vaccine&wp=gpvaccinesearch`,
     }
   });
 }

@@ -5,12 +5,13 @@ import { compareClinic, createTable, formatIsoDate, setElementTextIfExists, slee
 
 
 
-export async function fetchNearbyClinics(latitude?: number, longitude?: number, suburb?: string) {
+export async function fetchNearbyClinics(vaccine: 'astrazeneca' | 'pfizer', latitude?: number, longitude?: number, suburb?: string) {
   setElementTextIfExists('#clinic-fetch-status', 'Finding nearby GPs...');
 
   let params;
   if(latitude !== undefined && longitude !== undefined) {
     params = {
+      vaccine,
       latitude: latitude.toString(),
       longitude: longitude.toString()
     }
@@ -37,7 +38,7 @@ export async function fetchNearbyClinics(latitude?: number, longitude?: number, 
 
     updateView();
     setElementTextIfExists('#clinic-fetch-status', '');
-    await findAppointments();
+    await findAppointments(vaccine);
   } catch (e) {
     setElementTextIfExists('#clinic-fetch-status', 'Failed to check GPs. Likely a bug, please check HotDoc manually.');
     // What errors happened?
@@ -45,7 +46,7 @@ export async function fetchNearbyClinics(latitude?: number, longitude?: number, 
     heap.track('clinic_fetch_failed');
   }
 }
-export async function findAppointments() {
+export async function findAppointments(vaccine: 'astrazeneca' | 'pfizer') {
   let callClinicErrors = 0;
   let serverReturnedErrorErrors = 0;
   let unknownErrors = 0;
@@ -57,10 +58,12 @@ export async function findAppointments() {
     const clinic_id_string = (window as OurWindow).state[i].id_string;
     try {
       const reqUrl = `${apiHostname}get_soonest_clinic_appintment`;
+      console.log(`Searching for ${vaccine} at ${clinic_id_string}`);
       const response = await fetch(reqUrl, {
         method: 'POST',
         body: new URLSearchParams({
           clinic_id_string: clinic_id_string,
+          vaccine
         })
       });
 

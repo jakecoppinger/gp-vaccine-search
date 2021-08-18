@@ -1,17 +1,17 @@
 /*
 Hello!
-Forgive the horrible code, this is the product of two afternoons of work.
+Forgive the horrible code, this is the product of a few afternoons of work.
 I promise I write better usually. It's open source on Github.
 
 Please don't try and abuse the backend server - I just want to help people get vaccinated :)
 */
 
 
-import { whereAmI, apiHostname } from './constants';
-import { blurSearch, debouncedSearch, focusSearch, oninputSearch } from './search';
+import { whereAmI } from './constants';
+import { blurSearch, debouncedSearch, focusSearch } from './search';
 import { postcodeSearchSelector } from './selectors';
-import { OurWindow, Clinic } from './interfaces';
-import {setElementTextIfExists} from './utils';
+import { OurWindow } from './interfaces';
+import {getVaccineFromRadioButtons, setElementTextIfExists} from './utils';
 import {fetchNearbyClinics} from './api';
 
 // Set to true to use hardcoded coordinates (Central station)
@@ -55,12 +55,11 @@ document.addEventListener("DOMContentLoaded", async (event) => {
 
     setElementTextIfExists('#location-status', '')
 
-    await fetchNearbyClinics(lat, long);
+    const vaccine = getVaccineFromRadioButtons();
+    console.log(`Fetching nearby clinics for ${vaccine}`);
+    await fetchNearbyClinics(vaccine, lat, long);
   }
 });
-
-
-
 
 let button = document.getElementById("get-location");
 if (button) {
@@ -77,7 +76,9 @@ if (button) {
       setElementValueIfExists('#latitude', lat.toString())
       setElementValueIfExists('#longitude', long.toString())
 
-      await fetchNearbyClinics(lat, long);
+      const vaccine = getVaccineFromRadioButtons();
+      console.log(`Fetching nearby clinics for ${vaccine}`);
+      await fetchNearbyClinics(vaccine, lat, long);
     });
   });
 }

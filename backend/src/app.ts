@@ -58,9 +58,20 @@ app.post('/nearby_clinics', async (req, res) => {
     res.send(`no body!`);
     return;
   }
+  const vaccine = req.body.vaccine;
   const rawLatitude = req.body.latitude;
   const rawLongitude = req.body.longitude;
 
+  if(typeof vaccine !== 'string' || vaccine === undefined || vaccine.length < 1) {
+    res.status(400);
+    res.send(`vaccine isn't in body`);
+    return;
+  }
+  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer') {
+    res.status(400);
+    res.send(`vaccine must be astrazeneca or pfizer`);
+    return;
+  }
   if(typeof rawLatitude !== 'string' || rawLatitude === undefined || rawLatitude.length < 1) {
     res.status(400);
     res.send(`latitude isn't in body`);
@@ -80,7 +91,7 @@ app.post('/nearby_clinics', async (req, res) => {
     res.send(`can't parse lat and lon into floats`);
     return;
   }
-  const nearbyClinics = await getNearbyClinics(latitude,longitude, undefined);
+  const nearbyClinics = await getNearbyClinics(vaccine, latitude,longitude, undefined);
   res.json(nearbyClinics);
 });
 
@@ -98,7 +109,19 @@ app.post('/nearby_clinics_suburb', async (req, res) => {
     return;
   }
 
-  const nearbyClinics = await getNearbyClinics(undefined,undefined, suburb);
+  const vaccine = req.body.vaccine;
+  if(typeof vaccine !== 'string' || vaccine === undefined || vaccine.length < 1) {
+    res.status(400);
+    res.send(`vaccine isn't in body`);
+    return;
+  }
+  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer') {
+    res.status(400);
+    res.send(`vaccine must be astrazeneca or pfizer`);
+    return;
+  }
+
+  const nearbyClinics = await getNearbyClinics(vaccine, undefined,undefined, suburb);
   res.json(nearbyClinics);
 });
 export default app;

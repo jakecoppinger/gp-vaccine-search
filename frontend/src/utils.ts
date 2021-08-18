@@ -108,3 +108,18 @@ export function formatIsoDate(isoDate: string): string {
 export function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+export function getVaccineFromRadioButtons(): 'pfizer' | 'astrazeneca' {
+  const radio = document.querySelector('input[name="vaccine"]') as HTMLInputElement;
+  if(radio === undefined) {
+    console.error(`radio button val is undefined`);
+    return 'astrazeneca';
+  }
+
+  const value = radio.value;
+  if(value !== 'pfizer' && value !== 'astrazeneca') {
+    console.error(`radio button val is ${value})`);
+    return 'astrazeneca';
+  }
+  return value as 'pfizer' | 'astrazeneca';
+}
