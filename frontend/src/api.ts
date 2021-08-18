@@ -110,7 +110,12 @@ export async function findAppointments(vaccine: 'astrazeneca' | 'pfizer') {
           (window as OurWindow).clinics[i].appointment_status = 'bad-time';
           inPastErrors += 1;
         } else {
-          (window as OurWindow).clinics[i].next_appointment = responseJson.soonest_appointment;
+          if(responseJson.soonest_appointment === undefined) {
+            // No times found
+            (window as OurWindow).clinics[i].next_appointment = null;
+          } else {
+            (window as OurWindow).clinics[i].next_appointment = responseJson.soonest_appointment;
+          }
           (window as OurWindow).clinics[i].appointment_status = 'found';
           successes += 1;
         }
@@ -153,7 +158,7 @@ export function stateToJSON() {
   const mappedClinincs = sortedClinics
     .map((clinic: Clinic) => ({
       name: clinic.name,
-      Date: clinic.next_appointment !== undefined ? formatIsoDate(clinic.next_appointment) : '',
+      Date: clinic.next_appointment !== undefined ? (clinic.next_appointment === null ? 'Not Found' : formatIsoDate(clinic.next_appointment)) : '',
       Status: statusToText(clinic.appointment_status),
       Address: `<a target="_blank" href="https://maps.google.com/?q=${clinic.street_address}+${clinic.suburb_name}">${clinic.street_address} ${clinic.suburb_name}</a>`,
       'Book on HotDoc': `<a target="_blank" href="${clinic.url}">Book</a>`,

@@ -81,6 +81,17 @@ export function compareClinic(a: Clinic, b: Clinic): number {
   if (b.next_appointment === undefined) {
     return -1;
   }
+  if((a.next_appointment === null || a.next_appointment === undefined
+    ) && (b.next_appointment === null || b.next_appointment === undefined)) {
+    return 0;
+  }
+
+  if(a.next_appointment === null || a.next_appointment === undefined) {
+    return 1;
+  }
+  if(b.next_appointment === null || b.next_appointment === undefined) {
+    return -1;
+  }
 
   const date1 = new Date(a.next_appointment);
   const date2 = new Date(b.next_appointment);

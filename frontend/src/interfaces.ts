@@ -35,7 +35,7 @@ export interface Clinic {
   id_string: string;
   street_address: string;
   suburb_name: string;
-  next_appointment?: string;
+  next_appointment?: string | null;
   appointment_status: 'pending' | 'found' | 'call-clinic' | 'error' | 'bad-time';
 }
 export type OurWindow = Window & GlobalState & typeof globalThis;
