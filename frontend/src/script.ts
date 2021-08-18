@@ -9,7 +9,7 @@ Please don't try and abuse the backend server - I just want to help people get v
 
 import { whereAmI } from './constants';
 import { blurSearch, debouncedSearch, focusSearch } from './search';
-import { postcodeSearchSelector } from './selectors';
+import { postcodeSearchSelector, vaccineRadioSelector } from './selectors';
 import { OurWindow } from './interfaces';
 import {getVaccineFromRadioButtons, setElementTextIfExists} from './utils';
 import {fetchNearbyClinics} from './api';
@@ -35,7 +35,7 @@ export interface BackendClinicShape {
   id_string: string
 }
 
-(window as OurWindow).state = [];
+(window as OurWindow).clinics = [];
 
 document.addEventListener("DOMContentLoaded", async (event) => {
   const searchInput = document.querySelector(postcodeSearchSelector);
@@ -50,14 +50,14 @@ document.addEventListener("DOMContentLoaded", async (event) => {
   // when can't do geolocation because localhost isn't HTTPS
   // @ts-ignore
   if (whereAmI === 'local') {
-    let lat = debugPosition.latitude;
-    let long = debugPosition.longitude;
+    (window as OurWindow).coordinates = debugPosition;
+    const {latitude, longitude} = debugPosition;
 
     setElementTextIfExists('#location-status', '')
 
     const vaccine = getVaccineFromRadioButtons();
     console.log(`Fetching nearby clinics for ${vaccine}`);
-    await fetchNearbyClinics(vaccine, lat, long);
+    await fetchNearbyClinics(vaccine, latitude, longitude);
   }
 });
 
@@ -68,19 +68,47 @@ if (button) {
 
     setElementTextIfExists('#location-status', 'Checking location...')
     navigator.geolocation.getCurrentPosition(async function (position) {
-      let lat = position.coords.latitude;
+      let {latitude, longitude} = position.coords;
       let long = position.coords.longitude;
-      console.log({ lat, long });
+      (window as OurWindow).coordinates = { latitude, longitude };
 
       setElementTextIfExists('#location-status', '')
-      setElementValueIfExists('#latitude', lat.toString())
-      setElementValueIfExists('#longitude', long.toString())
 
       const vaccine = getVaccineFromRadioButtons();
       console.log(`Fetching nearby clinics for ${vaccine}`);
-      await fetchNearbyClinics(vaccine, lat, long);
+      await fetchNearbyClinics(vaccine, latitude, longitude);
     });
   });
 }
+const radios = document.querySelectorAll(vaccineRadioSelector);
+radios.forEach(radio => {
+  radio.addEventListener('click', async function () {
+    console.log("Radio click")
+    const value = (radio as HTMLInputElement).value;
+    if(value !== 'pfizer' && value !== 'astrazeneca') {
+      console.error(`radio button val is unknown: ${value})`);
+      return;
+    }
+    console.log(`Value is now: ${value}`);
+
+    const {coordinates, suburb_code} = (window as OurWindow);
+    if (coordinates !== undefined) {
+      const {latitude, longitude} = coordinates;
+      console.log("fetching coordinates clinics");
+      if((window as OurWindow).currently_loading_times === true) {
+        (window as OurWindow).cancel_loading_times = true;
+      }
+      await fetchNearbyClinics(value, latitude, longitude);
+    } else if(suburb_code !== undefined) {
+      console.log("fetching suburb clinics");
+      if((window as OurWindow).currently_loading_times === true) {
+        (window as OurWindow).cancel_loading_times = true;
+      }
+      await fetchNearbyClinics(value, undefined, undefined,suburb_code);
+    } else {
+      console.log("Do nothing, we don't have coordinates or suburb yet!");
+    }
+  });
+})
 
 

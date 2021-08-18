@@ -1,4 +1,5 @@
 import { Clinic } from "./interfaces";
+import { vaccineRadioSelector } from "./selectors";
 
 // TODO: Not sure whats up with my tsconfig, using import halts the program
 // when format is called.
@@ -110,7 +111,7 @@ export function sleep(ms: number) {
 }
 
 export function getVaccineFromRadioButtons(): 'pfizer' | 'astrazeneca' {
-  const radio = document.querySelector('input[name="vaccine"]') as HTMLInputElement;
+  const radio = document.querySelector(vaccineRadioSelector) as HTMLInputElement;
   if(radio === undefined) {
     console.error(`radio button val is undefined`);
     return 'astrazeneca';

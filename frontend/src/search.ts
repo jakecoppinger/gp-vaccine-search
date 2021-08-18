@@ -1,7 +1,7 @@
 import { debounce } from "ts-debounce";
 import { optionsDivSelector, postcodeSearchSelector } from "./selectors";
 import { whereAmI, apiHostname } from './constants';
-import { SuburbSearchObject } from "./interfaces";
+import { OurWindow, SuburbSearchObject } from "./interfaces";
 import { fetchNearbyClinics } from "./api";
 import { getVaccineFromRadioButtons } from "./utils";
 
@@ -38,12 +38,13 @@ function selectSuburb(ev: MouseEvent) {
   if (typeof rawSlug !== "string") {
     throw new Error("Couldn't get slug from link");
   }
-  const slug: string = rawSlug;
-  console.log({ slug });
+  const suburb_code: string = rawSlug;
+  (window as OurWindow).suburb_code = suburb_code;
+  console.log({  suburb_code });
 
   const vaccine = getVaccineFromRadioButtons();
   console.log(`Fetching nearby clinics for ${vaccine}`);
-  fetchNearbyClinics(vaccine, undefined,undefined,slug);
+  fetchNearbyClinics(vaccine, undefined,undefined,suburb_code);
 }
 
 export const debouncedSearch = debounce(oninputSearch, 100, {
@@ -62,7 +63,6 @@ async function searchSuburbs(query: string): Promise<SuburbSearchObject> {
   const jsonString: string = await response.text();
   return JSON.parse(jsonString);
 }
-
 
 export async function oninputSearch(): Promise<void> {
   const input = document.querySelector(postcodeSearchSelector) as HTMLInputElement;

@@ -18,7 +18,15 @@ export interface SuburbSearchObject {
 }
 
 interface GlobalState {
-  state: Clinic[];
+  clinics: Clinic[];
+  coordinates?: {
+    latitude: number,
+    longitude: number
+  },
+  suburb_code?: string;
+  /** If true, and if currently in a loop loading availability times, cancel */
+  cancel_loading_times?: boolean;
+  currently_loading_times?: boolean;
 }
 
 export interface Clinic {
