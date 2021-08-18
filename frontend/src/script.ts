@@ -11,7 +11,7 @@ import { whereAmI } from './constants';
 import { blurSearch, debouncedSearch, focusSearch } from './search';
 import { postcodeSearchSelector, vaccineRadioSelector } from './selectors';
 import { OurWindow } from './interfaces';
-import {getVaccineFromRadioButtons, setElementTextIfExists} from './utils';
+import {getVaccineFromRadioButtons, setElementTextIfExists, stopLoadingTimes} from './utils';
 import {fetchNearbyClinics} from './api';
 
 // Set to true to use hardcoded coordinates (Central station)
@@ -80,6 +80,7 @@ if (button) {
     });
   });
 }
+
 const radios = document.querySelectorAll(vaccineRadioSelector);
 radios.forEach(radio => {
   radio.addEventListener('click', async function () {
@@ -95,15 +96,9 @@ radios.forEach(radio => {
     if (coordinates !== undefined) {
       const {latitude, longitude} = coordinates;
       console.log("fetching coordinates clinics");
-      if((window as OurWindow).currently_loading_times === true) {
-        (window as OurWindow).cancel_loading_times = true;
-      }
       await fetchNearbyClinics(value, latitude, longitude);
     } else if(suburb_code !== undefined) {
       console.log("fetching suburb clinics");
-      if((window as OurWindow).currently_loading_times === true) {
-        (window as OurWindow).cancel_loading_times = true;
-      }
       await fetchNearbyClinics(value, undefined, undefined,suburb_code);
     } else {
       console.log("Do nothing, we don't have coordinates or suburb yet!");

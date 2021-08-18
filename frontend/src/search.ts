@@ -73,6 +73,11 @@ export async function oninputSearch(): Promise<void> {
 
   const searchText = input.value;
   const results = await searchSuburbs(searchText);
+  if(results.suburbs === undefined) {
+    console.error("No suburbs found :(");
+    console.log({results});
+    return;
+  }
 
   const optionsDiv = document.querySelector(
     optionsDivSelector

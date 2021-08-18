@@ -1,4 +1,4 @@
-import { Clinic } from "./interfaces";
+import { Clinic, OurWindow } from "./interfaces";
 import { vaccineRadioSelector } from "./selectors";
 
 // TODO: Not sure whats up with my tsconfig, using import halts the program
@@ -111,16 +111,24 @@ export function sleep(ms: number) {
 }
 
 export function getVaccineFromRadioButtons(): 'pfizer' | 'astrazeneca' {
-  const radio = document.querySelector(vaccineRadioSelector) as HTMLInputElement;
-  if(radio === undefined) {
-    console.error(`radio button val is undefined`);
-    return 'astrazeneca';
-  }
+  const radios = document.querySelectorAll(vaccineRadioSelector);
+  console.log({radios});
+  for(let i = 0; i< radios.length; i++) {
+    const typedRadio = radios[i] as HTMLInputElement
 
-  const value = radio.value;
-  if(value !== 'pfizer' && value !== 'astrazeneca') {
-    console.error(`radio button val is ${value})`);
-    return 'astrazeneca';
+    console.log(typedRadio.checked);
+    if(typedRadio.checked) {
+      const val = typedRadio.value
+      console.log({val});
+      return val as 'astrazeneca' | 'pfizer';
+    }
+  };
+  throw Error("Defaulting to astra");
+  return 'astrazeneca';
+}
+
+export function stopLoadingTimes() {
+  if((window as OurWindow).currently_loading_times === true) {
+    (window as OurWindow).cancel_loading_times = true;
   }
-  return value as 'pfizer' | 'astrazeneca';
 }

@@ -1,13 +1,14 @@
 import { apiHostname, showNumberGps } from "./constants";
 import { Clinic, OurWindow } from "./interfaces";
 import { BackendClinicShape } from "./script";
-import { compareClinic, createTable, formatIsoDate, setElementTextIfExists, sleep, statusToText } from "./utils";
+import { compareClinic, createTable, formatIsoDate, setElementTextIfExists, sleep, statusToText, stopLoadingTimes } from "./utils";
 
 
 
 /** Get nearby clinics from backend for given vaccine and lat/long or suburb, then kick off
  * time/view updates */
 export async function fetchNearbyClinics(vaccine: 'astrazeneca' | 'pfizer', latitude?: number, longitude?: number, suburb?: string) {
+  stopLoadingTimes()
   setElementTextIfExists('#clinic-fetch-status', 'Finding nearby GPs...');
 
   let params;
