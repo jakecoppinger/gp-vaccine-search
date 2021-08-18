@@ -15,8 +15,8 @@ import * as concordFamilyDoctors from './mocks/concord-family-doctors.json';
 import * as concordFamilyDoctorsTimeSlots from './mocks/concord-family-doctors-time-slots.json';
 
 import * as clincsNearCentral from './mocks/clinics-near-central.json'
-import {getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason, isFirstDosePfizerReason, rawTimeslotsToSoonestTimestamp} from '../src/api'
-import { Doctor } from '../src/interfaces';
+import { getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason, isFirstDosePfizerReason, getSoonestDoctorAvailabilities } from '../src/api'
+import { Doctor, TimeSlotDay, TimeSlotDoctor } from '../src/interfaces';
 import { concordFamilyDoctorsDoctors } from './mocks/objects';
 process.on("unhandledRejection", (reason, p) => {
   console.log("Unhandled Rejection at: Promise", p, "reason:", reason);
@@ -25,7 +25,7 @@ process.on("unhandledRejection", (reason, p) => {
   // application specific logging, throwing an error, or other logic here
 });
 
-describe('#isFirstDosePfizerReason()', function() {
+describe('#isFirstDosePfizerReason()', function () {
   it('returns false for standard consultation', () => {
     const reasonName = 'Standard Consult -  Children & Concession Card, 10am to 3.45pm - Mon-Fri';
     const result = isFirstDosePfizerReason(reasonName);
@@ -69,112 +69,139 @@ describe('#isFirstDosePfizerReason()', function() {
 
 });
 
-describe("#isFirstDoseAZReason()", function() {
-    it('returns false for standard consultation', () => {
-      const reasonName = 'Standard Consult -  Children & Concession Card, 10am to 3.45pm - Mon-Fri';
-      const result = isFirstDoseAZReason(reasonName);
-      assert(result === false);
-    });
-    it('returns true for Astra Zeneca dose 1', () => {
-      const reasonName = 'Astra Zeneca COVID-19 Vaccine Dose 1  - Bulk Billed';
-      const result = isFirstDoseAZReason(reasonName);
-      assert(result === true);
-    });
-    it('returns true for AstraZeneca dose 1', () => {
-      const reasonName = 'AstraZeneca COVID-19 Vaccine Dose 1  - Bulk Billed';
-      const result = isFirstDoseAZReason(reasonName);
-      assert(result === true);
-    });
-    it('returns false for AstraZeneca dose 2', () => {
-      const reasonName = 'AstraZeneca COVID-19 Vaccine Dose 2  - Bulk Billed';
-      const result = isFirstDoseAZReason(reasonName);
-      assert(result === false);
-    });
-    it('returns true for COVID dose 1', () => {
-      const reasonName = 'COVID-19 Vaccine Dose 1  - Bulk Billed';
-      const result = isFirstDoseAZReason(reasonName);
-      assert(result === true);
-    });
-    it('returns false for Pfizer COVID dose 1', () => {
-      const reasonName = 'Pfizer COVID-19 Vaccine Dose 1  - Bulk Billed';
-      const result = isFirstDoseAZReason(reasonName);
-      assert(result === false);
-    });
-    it('returns false for Flu vaccine', () => {
-      const reasonName = 'Flu Vaccine - Bulk Billed Appointment';
-      const result = isFirstDoseAZReason(reasonName);
-      assert(result === false);
-    });
-    it('returns false for Flu symptoms consult', () => {
-      const reasonName = 'PHONE Consult - Cold & Flu Symptoms (Bulk-Billed During Covid 19 Lockdown)';
-      const result = isFirstDoseAZReason(reasonName);
-      assert(result === false);
-    });
-});
-
-describe("#getSoonestClinicAppointments()", async function () {
-  describe("pfizer", async function () {
-    it("Green Square Health (1425): returns earliest time", async () => {
-      const soonestTimestamp = await getSoonestClinicAppointments('pfizer', 'green-square-health', greenSquareHealth, greenSquareHealthTimeSlots);
-      assert(soonestTimestamp === '2021-08-14T15:00:00+10:00');
-    });
-
-    it("mirandaSkinCancerClinic: returns Wed 10th nov 3:20pm", async() => {
-      const soonestTimestamp = await getSoonestClinicAppointments('pfizer', 'miranda-skin-cancer-clinic', mirandaSkinCancerClinic, mirandaSkinCancerClinicTimeSlots);
-      assert(soonestTimestamp === '2021-11-10T15:20:00+11:00');
-    });
-
-    it("concordFamilyDoctors: doesn't have appointments", async() => {
-      const soonestTimestamp = await getSoonestClinicAppointments('pfizer', 'concord-family-doctors', concordFamilyDoctors, concordFamilyDoctorsTimeSlots);
-      assert(soonestTimestamp === undefined);
-    });
+describe("#isFirstDoseAZReason()", function () {
+  it('returns false for standard consultation', () => {
+    const reasonName = 'Standard Consult -  Children & Concession Card, 10am to 3.45pm - Mon-Fri';
+    const result = isFirstDoseAZReason(reasonName);
+    assert(result === false);
   });
-  describe("astrazeneca", async function () {
-    it("Green Square Health (1425): returns earliest time", async () => {
-      const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'green-square-health', greenSquareHealth, greenSquareHealthTimeSlots);
-      assert(soonestTimestamp === '2021-08-23T15:15:00+10:00');
-    });
-
-    it("Montrose Medical Practice: returns earliest time", async () => {
-      const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'montrose-medical-practice', montroseMedicalPractice, montroseMedicalPracticeTimeSlots);
-      assert(soonestTimestamp === '2021-08-19T11:40:00+10:00');
-    });
-
-    // TODO: Fix getSoonestClinicAppointments
-    it("Crowd St Medical Centre: returns earliest time", async () => {
-      // TODO: Fix this type error
-      // @ts-ignore
-      const soonestTimestamp = await getSoonestClinicAppointments('astrazeneca', 'crown-st-medical-centre', crownStMedicalCentre, crownStMedicalCentreTimeSlots);
-      // 24 Aug, 1:45 according to the website a few mins after data capture
-      assert(soonestTimestamp === '2021-08-24T13:45:00+10:00');
-    });
+  it('returns true for Astra Zeneca dose 1', () => {
+    const reasonName = 'Astra Zeneca COVID-19 Vaccine Dose 1  - Bulk Billed';
+    const result = isFirstDoseAZReason(reasonName);
+    assert(result === true);
+  });
+  it('returns true for AstraZeneca dose 1', () => {
+    const reasonName = 'AstraZeneca COVID-19 Vaccine Dose 1  - Bulk Billed';
+    const result = isFirstDoseAZReason(reasonName);
+    assert(result === true);
+  });
+  it('returns false for AstraZeneca dose 2', () => {
+    const reasonName = 'AstraZeneca COVID-19 Vaccine Dose 2  - Bulk Billed';
+    const result = isFirstDoseAZReason(reasonName);
+    assert(result === false);
+  });
+  it('returns true for COVID dose 1', () => {
+    const reasonName = 'COVID-19 Vaccine Dose 1  - Bulk Billed';
+    const result = isFirstDoseAZReason(reasonName);
+    assert(result === true);
+  });
+  it('returns false for Pfizer COVID dose 1', () => {
+    const reasonName = 'Pfizer COVID-19 Vaccine Dose 1  - Bulk Billed';
+    const result = isFirstDoseAZReason(reasonName);
+    assert(result === false);
+  });
+  it('returns false for Flu vaccine', () => {
+    const reasonName = 'Flu Vaccine - Bulk Billed Appointment';
+    const result = isFirstDoseAZReason(reasonName);
+    assert(result === false);
+  });
+  it('returns false for Flu symptoms consult', () => {
+    const reasonName = 'PHONE Consult - Cold & Flu Symptoms (Bulk-Billed During Covid 19 Lockdown)';
+    const result = isFirstDoseAZReason(reasonName);
+    assert(result === false);
   });
 });
 
-describe("#getNearbyClinics()", async function () {
-  it("finds clinics near central", async () => {
-    const nearbyClinics = await getNearbyClinics('astrazeneca',-33.8834805, 151.2058995, undefined, clincsNearCentral);
+describe("#getSoonestDoctorAvailabilities()", async function () {
+  it("finds soonest timeslot for example doctor", async () => {
+    const timeslotDoctors: TimeSlotDoctor[] = [{
+      "id": 1,
+      "detail": false,
+      "next_available": "2021-01-01T01:00:00+10:00",
+      "prev_available": null
+    },
+    {
+      "id": 2,
+      "detail": false,
+      "next_available": "2021-02-01T01:00:00+10:00",
+      "prev_available": null
+    }]
 
-    const expected = {
-      name: 'World Square Medical Centre',
-      id_string: 'world-square-medical-centre',
-      street_address: 'Shop 9.09c, 644 George St, Sydney',
-      suburb_name: '',
-      url: 'https://www.hotdoc.com.au/medical-centres/sydney-NSW-2000/world-square-medical-centre/doctors?purpose=covid-vaccine&wp=gpvaccinesearch',
-    }
-    assert(JSON.stringify(nearbyClinics[0]) === JSON.stringify(expected));
-  });
-});
-
-describe("#rawTimeslotsToSoonestTimestamp()", async function() {
-  it("finds correct timeslots for concordFamilyDoctors", async () => {
-    const soonestTimestamp = await rawTimeslotsToSoonestTimestamp(
-      'pfizer',concordFamilyDoctorsTimeSlots,concordFamilyDoctorsDoctors
+    const doctors: Doctor[] = [
+      {
+        "id": 1,
+        "slug": "dr-colin-chu",
+        "full_name": "Dr Colin Chu",
+        "gender": "male",
+        "pre_triage_availability_type_id": "24157-900",
+        "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/24157/profile_631eec61a74c99d1faa0d76440c104af.jpg",
+        "accepts_new_patients": true,
+        "does_not_accept_new_patients_call_to_discuss": true,
+        "does_not_accept_new_patients_message_html": "Dr Colin Chu does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+        "statement": "Graduated 1993 with Honours from Sydney University. Completed a Diploma of Child Health with The Children's Hospital in 1995 and a Certificate in Family Planning in 1996. He then attained his Fellowship of the Royal Australian College of General Practitioners in 1997. All aspects of general practice including paediatrics, men's health and skin checks. ",
+        "statement_html": "<p>Graduated 1993 with Honours from Sydney University. Completed a Diploma of Child Health with The Children's Hospital in 1995 and a Certificate in Family Planning in 1996. He then attained his Fellowship of the Royal Australian College of General Practitioners in 1997. All aspects of general practice including paediatrics, men's health and skin checks. </p>\n",
+        "position": 4,
+        "earliest_available": "2021-08-19T01:15:00+00:00",
+        "call_to_book": false,
+        "visible_on_hot_doc": true,
+        "has_bookings_support": true,
+        "languages": [],
+        "qualifications": [],
+        "detail": true,
+        "segment": {},
+        "clinic_id": 1629,
+        "doctor_reason_ids": [
+          82947,
+          82943,
+          82942,
+          106675,
+          310231,
+          445359,
+          82944,
+          82946
+        ],
+        "doctor_interest_ids": []
+      },
+      {
+        "id": 2,
+        "slug": "dr-colin-chu",
+        "full_name": "Dr Old mate",
+        "gender": "male",
+        "pre_triage_availability_type_id": "24157-900",
+        "profile_image_url": "https://d3sjaxzllw9rho.cloudfront.net/doctor_images/24157/profile_631eec61a74c99d1faa0d76440c104af.jpg",
+        "accepts_new_patients": true,
+        "does_not_accept_new_patients_call_to_discuss": true,
+        "does_not_accept_new_patients_message_html": "Dr Colin Chu does not take on new patients <strong>online</strong>. Please call the practice to book an appointment.",
+        "statement": "Graduated 1993 with Honours from Sydney University. Completed a Diploma of Child Health with The Children's Hospital in 1995 and a Certificate in Family Planning in 1996. He then attained his Fellowship of the Royal Australian College of General Practitioners in 1997. All aspects of general practice including paediatrics, men's health and skin checks. ",
+        "statement_html": "<p>Graduated 1993 with Honours from Sydney University. Completed a Diploma of Child Health with The Children's Hospital in 1995 and a Certificate in Family Planning in 1996. He then attained his Fellowship of the Royal Australian College of General Practitioners in 1997. All aspects of general practice including paediatrics, men's health and skin checks. </p>\n",
+        "position": 4,
+        "earliest_available": "2021-08-19T01:15:00+00:00",
+        "call_to_book": false,
+        "visible_on_hot_doc": true,
+        "has_bookings_support": true,
+        "languages": [],
+        "qualifications": [],
+        "detail": true,
+        "segment": {},
+        "clinic_id": 1629,
+        "doctor_reason_ids": [
+          82947,
+          82943,
+          82942,
+          106675,
+          310231,
+          445359,
+          82944,
+          82946
+        ],
+        "doctor_interest_ids": []
+      }
+    ]
+    const soonestTimestamp = await getSoonestDoctorAvailabilities(
+      timeslotDoctors, doctors
     );
-    
-    assert(soonestTimestamp === undefined);
+    const jsonOutput = JSON.stringify(soonestTimestamp)
+    assert(jsonOutput === '["2021-01-01T01:00:00+10:00","2021-02-01T01:00:00+10:00"]'
+    );
   });
-
-
-
 });

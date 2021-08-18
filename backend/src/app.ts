@@ -30,8 +30,19 @@ app.post('/get_soonest_clinic_appintment', async (req, res) => {
     res.send(`clinic_id_string isn't in body`);
     return;
   }
+  const vaccine = req.body.vaccine;
+  if(typeof vaccine !== 'string' || vaccine === undefined || vaccine.length < 1) {
+    res.status(400);
+    res.send(`vaccine isn't in body`);
+    return;
+  }
+  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer') {
+    res.status(400);
+    res.send(`vaccine must be astrazeneca or pfizer`);
+    return;
+  }
 
-  const soonestAppointment = await getSoonestClinicAppointments('astrazeneca', clinic_id_string);
+  const soonestAppointment = await getSoonestClinicAppointments(vaccine, clinic_id_string);
   res.json({status: 'success', soonest_appointment: soonestAppointment});
 });
 
