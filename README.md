@@ -43,7 +43,7 @@ yarn
 yarn build
 ```
 
-For debugging, set `debug = true` at the top of `frontend/src/script.ts`.
+For debugging, set variables in `frontend/src/constants.ts`.
 
 This uses the coordinates of Central to find clinics, see comment in
 `document.addEventListener("DOMContentLoaded", ...`.
