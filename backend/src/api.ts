@@ -30,10 +30,10 @@ export function isVaccineReason(reasonName: string): boolean {
     // Looking for first dose!
     return false;
   }
-  if(nameWithout19.includes('pfizer')) {
+  if (nameWithout19.includes('pfizer')) {
     return true;
   }
-  if(nameWithout19.includes('flu')) {
+  if (nameWithout19.includes('flu')) {
     return false;
   }
 
@@ -49,7 +49,7 @@ export function isFirstDoseAZReason(reasonName: string): boolean {
   const name = reasonName.toLowerCase();
   const nameWithout19 = name.replace('19', '');
 
-  if(name.includes('pfizer')) {
+  if (name.includes('pfizer')) {
     return false;
   }
 
@@ -70,7 +70,7 @@ export function isFirstDosePfizerReason(reasonName: string): boolean {
   const name = reasonName.toLowerCase();
   const nameWithout19 = name.replace('19', '');
 
-  if(name.includes('astra') || name.includes('zeneca') || name.includes('az')) {
+  if (name.includes('astra') || name.includes('zeneca') || name.includes('az')) {
     return false;
   }
 
@@ -90,7 +90,7 @@ export function isFirstDosePfizerReason(reasonName: string): boolean {
 export function isBoosterReason(reasonName: string): boolean {
   const name = reasonName.toLowerCase();
 
-  if(name.includes('booster')) {
+  if (name.includes('booster')) {
     return true;
   }
 
@@ -160,7 +160,7 @@ export async function getRawTimeslots(availabilityIds: number[], clinicId: numbe
 
 export function isAZClinic(clinic_name: string) {
   const name = clinic_name.toLowerCase();
-  if(name.includes('pfizer')) {
+  if (name.includes('pfizer')) {
     return false;
   }
   if (name.includes('astra') || name.includes('az')) {
@@ -168,32 +168,40 @@ export function isAZClinic(clinic_name: string) {
   }
   return false;
 }
+
 export function isPfizerClinic(clinic_name: string) {
   const name = clinic_name.toLowerCase();
   if (name.includes('astra') || name.includes('zeneca') || name.includes('AZ')) {
     return false;
   }
-  if(name.includes('pfizer')) {
+  if (name.includes('pfizer')) {
     return true;
   }
   return false;
 }
 
+export function isModernaClinic(clinic_name: string) {
+  const name = clinic_name.toLowerCase();
+  if (name.includes('moderna')) {
+    return true;
+  }
+  return false;
+}
 
 /** Join timeslots and doctors on ids */
 export function getSoonestDoctorAvailabilities(
-    rawTimeslotsDoctors: TimeSlotDoctor[],
-    doctors: Doctor[]
-  ): string [] {
+  rawTimeslotsDoctors: TimeSlotDoctor[],
+  doctors: Doctor[]
+): string[] {
   // We just want the next timestamps, so we've intentionall set to the past, so that
   // we only have to handle one logic path.
   const timeslots = rawTimeslotsDoctors
-    .filter((doctor:TimeSlotDoctor) => {
+    .filter((doctor: TimeSlotDoctor) => {
       const doctorInfo: Doctor | undefined = doctors.find(doctor_search => doctor_search.id === doctor.id);
-      if(doctorInfo === undefined) {
+      if (doctorInfo === undefined) {
         return false;
       }
-      if(doctorInfo.accepts_new_patients === false) {
+      if (doctorInfo.accepts_new_patients === false) {
         return false;
       }
       return true;
@@ -219,7 +227,7 @@ export function getSoonestDoctorAvailabilities(
  * @returns ISO8601 string of earliest appointment time
  */
 export async function getSoonestClinicAppointments(
-  vaccine: 'astrazeneca' | 'pfizer',
+  vaccine: 'astrazeneca' | 'pfizer' | 'anybooster',
   clinic_code_string: string,
 ): Promise<string | undefined> {
   const clinicInfo: RootObject = await getClinicInfo(clinic_code_string);
@@ -237,23 +245,31 @@ export async function getSoonestClinicAppointments(
   const rawTimeslotsForAnyVaccine: Promise<TimeSlotRootObject> =
     getRawTimeslots(vaccineAvailabilityIds, clinicId);
 
+  const checkReason = {
+    'anybooster': isBoosterReason,
+    'astrazeneca': isFirstDoseAZReason,
+    'pfizer': isFirstDosePfizerReason
+  }
   /////////////////
   // These reasons must be for our given vaccine
   const reasonsWithOurVaccine = clinicInfo.reasons.filter(reason =>
-    vaccine === 'astrazeneca'
-      ? isFirstDoseAZReason(reason.name)
-      : isFirstDosePfizerReason(reason.name)
-    );
+    (checkReason[vaccine])(reason.name)
+  );
   const availabilityIdsForOurVaccine = clinicInfoToAvailabilityIds(
     reasonsWithOurVaccine, clinicInfo.doctor_reasons);
   const rawTimeslotsForOurVaccine: Promise<TimeSlotRootObject> =
     getRawTimeslots(availabilityIdsForOurVaccine, clinicId);
   ////////////////
 
-  const doctorsNamedByOurVaccine = clinicInfo.doctors.filter(doctor =>
-    vaccine === 'astrazeneca'
-        ? isAZClinic(doctor.full_name)
-        : isPfizerClinic(doctor.full_name)
+  const doctorsNamedByOurVaccine = clinicInfo.doctors.filter(doctor => {
+    if (vaccine === 'astrazeneca') {
+      return isAZClinic(doctor.full_name);
+    } else if (vaccine === 'pfizer') {
+      return isPfizerClinic(doctor.full_name);
+    } else if (vaccine === 'anybooster') {
+      return isPfizerClinic(doctor.full_name) || isModernaClinic(doctor.full_name);
+    }
+  }
   )
   const soonestTimestamps1 = getSoonestDoctorAvailabilities(
     (await rawTimeslotsForAnyVaccine).doctors, doctorsNamedByOurVaccine);
@@ -262,7 +278,7 @@ export async function getSoonestClinicAppointments(
     (await rawTimeslotsForOurVaccine).doctors, clinicInfo.doctors);
 
   let sortedTimeslots = [...soonestTimestamps1, ...soonestTimestamps2];
-  if(sortedTimeslots.length === 0) {
+  if (sortedTimeslots.length === 0) {
     return;
   }
   sortedTimeslots.sort()
@@ -273,15 +289,15 @@ export async function getSoonestClinicAppointments(
  * Make request to HotDoc API to get nearby clinics
  * @param suburb Must be defined if latitude and longitude not defined
  */
-async function makeNearbyClinicsRequest(vaccine: 'astrazeneca' | 'pfizer', latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
+async function makeNearbyClinicsRequest(vaccine: 'astrazeneca' | 'pfizer' | 'anybooster', latitude?: number, longitude?: number, suburb?: string): Promise<ClinicSearchRootObject> {
 
-    /* Currently
-    filters=covid_vaccine-astrazeneca_under_60 and &filters=covid_vaccine-astrazeneca_60_plus
-    are the only AZ filter options. Seeing as AZ is pretty popular, it should be *very* likely
-    clinics that give any vaccine give AZ.
-    */
-    const filterParams = vaccine === 'astrazeneca'
-      ? {} : {filters: 'covid_vaccine-pfizer'}
+  /* Currently
+  filters=covid_vaccine-astrazeneca_under_60 and &filters=covid_vaccine-astrazeneca_60_plus
+  are the only AZ filter options. Seeing as AZ is pretty popular, it should be *very* likely
+  clinics that give any vaccine give AZ.
+  */
+  const filterParams = vaccine === 'astrazeneca'
+    ? {} : { filters: 'covid_vaccine-pfizer' }
 
   const params = latitude !== undefined
     ? {
@@ -320,7 +336,7 @@ async function makeNearbyClinicsRequest(vaccine: 'astrazeneca' | 'pfizer', latit
  * Create nearby clinics object ready to send to frontend
  */
 export async function getNearbyClinics(
-  vaccine: 'astrazeneca' | 'pfizer',
+  vaccine: 'astrazeneca' | 'pfizer' | 'anybooster',
   latitude?: number,
   longitude?: number,
   suburb?: string,
