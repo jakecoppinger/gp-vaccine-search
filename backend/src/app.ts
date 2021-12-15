@@ -36,9 +36,9 @@ app.post('/get_soonest_clinic_appintment', async (req, res) => {
     res.send(`vaccine isn't in body`);
     return;
   }
-  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer') {
+  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer' && vaccine !== 'anybooster') {
     res.status(400);
-    res.send(`vaccine must be astrazeneca or pfizer`);
+    res.send(`vaccine arg must be astrazeneca, pfizer or anybooster`);
     return;
   }
 
@@ -78,9 +78,9 @@ app.post('/nearby_clinics', async (req, res) => {
     res.send(`vaccine isn't in body`);
     return;
   }
-  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer') {
+  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer' && vaccine !== 'anybooster') {
     res.status(400);
-    res.send(`vaccine must be astrazeneca or pfizer`);
+    res.send(`vaccine arg must be astrazeneca, pfizer or anybooster`);
     return;
   }
   if(typeof rawLatitude !== 'string' || rawLatitude === undefined || rawLatitude.length < 1) {
@@ -126,9 +126,9 @@ app.post('/nearby_clinics_suburb', async (req, res) => {
     res.send(`vaccine isn't in body`);
     return;
   }
-  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer') {
+  if(vaccine !== 'astrazeneca' && vaccine !== 'pfizer' && vaccine !== 'anybooster') {
     res.status(400);
-    res.send(`vaccine must be astrazeneca or pfizer`);
+    res.send(`vaccine arg must be astrazeneca, pfizer or anybooster`);
     return;
   }
 

@@ -45,7 +45,7 @@ export async function fetchNearbyClinics(vaccine: 'astrazeneca' | 'pfizer', lati
     await findAppointments(vaccine);
   } catch (e) {
     console.log("Error getting nearby clinics:");
-    console.error(e);
+    console.error(JSON.stringify(e));
     setElementTextIfExists('#clinic-fetch-status', 'Failed to check GPs. Likely a bug, please check HotDoc manually.');
     // What errors happened?
     // @ts-ignore
@@ -55,7 +55,7 @@ export async function fetchNearbyClinics(vaccine: 'astrazeneca' | 'pfizer', lati
 
 /** Get appointments from the backend for a given vaccine, update the state, and kick off view
  * update */
-export async function findAppointments(vaccine: 'astrazeneca' | 'pfizer') {
+export async function findAppointments(vaccine: 'astrazeneca' | 'pfizer' | 'anybooster') {
   let callClinicErrors = 0;
   let serverReturnedErrorErrors = 0;
   let unknownErrors = 0;

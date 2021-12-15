@@ -27,9 +27,7 @@
       <h1>GPVaccineSearch.com</h1>
       <h2>Unofficial Australian GP Vaccine Search</h2>
 
-      <h3>Searches HotDoc for nearby GPs, and ranks them by their next available appointment for
-        first AstraZeneca or Pfizer dose.
-      </h3>
+      <h3>Searches HotDoc for nearby GPs, and ranks them by their next available vaccine appointment.</h3>
 
 
       <p>Click 'Get My Location' to find nearby GPs.</p>
@@ -39,7 +37,10 @@
       </p>
 
       <div>
-        <input type="radio" id="az_radio" name="vaccine" value="astrazeneca" checked="checked">
+        <input type="radio" id="anybooster_radio" name="vaccine" value="anybooster" checked="checked">
+        <label for="anybooster_radio">Booster</label>
+
+        <input type="radio" id="az_radio" name="vaccine" value="astrazeneca" >
         <label for="az_radio">AstraZeneca</label>
 
         <input type="radio" id="pfizer_radio" name="vaccine" value="pfizer">
