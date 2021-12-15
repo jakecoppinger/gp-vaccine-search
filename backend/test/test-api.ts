@@ -15,7 +15,7 @@ import * as concordFamilyDoctors from './mocks/concord-family-doctors.json';
 import * as concordFamilyDoctorsTimeSlots from './mocks/concord-family-doctors-time-slots.json';
 
 import * as clincsNearCentral from './mocks/clinics-near-central.json'
-import { getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason, isFirstDosePfizerReason, getSoonestDoctorAvailabilities } from '../src/api'
+import { getNearbyClinics, getSoonestClinicAppointments, isFirstDoseAZReason, isFirstDosePfizerReason, getSoonestDoctorAvailabilities, isBoosterReason } from '../src/api'
 import { Doctor, TimeSlotDay, TimeSlotDoctor } from '../src/interfaces';
 import { concordFamilyDoctorsDoctors } from './mocks/objects';
 process.on("unhandledRejection", (reason, p) => {
@@ -108,6 +108,25 @@ describe("#isFirstDoseAZReason()", function () {
   it('returns false for Flu symptoms consult', () => {
     const reasonName = 'PHONE Consult - Cold & Flu Symptoms (Bulk-Billed During Covid 19 Lockdown)';
     const result = isFirstDoseAZReason(reasonName);
+    assert(result === false);
+  });
+});
+
+
+describe('#isFirstDoseBoosterReason()', function () {
+  it('returns true for booster consult', () => {
+    const reasonName = 'PFIZER: COVID-19 Vaccine booster/Dose 3';
+    const result = isBoosterReason(reasonName);
+    assert(result === true);
+  });
+  it('returns true for booster consult in capitals', () => {
+    const reasonName = 'PFIZER: COVID-19 Vaccine BOOSTER/Dose 3';
+    const result = isBoosterReason(reasonName);
+    assert(result === true);
+  });
+  it('returns false for standard vaccine consult', () => {
+    const reasonName = 'COVID-19 Vaccine Dose 2 - Moderna';
+    const result = isBoosterReason(reasonName);
     assert(result === false);
   });
 });

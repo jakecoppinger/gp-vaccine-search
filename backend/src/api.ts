@@ -85,6 +85,19 @@ export function isFirstDosePfizerReason(reasonName: string): boolean {
 }
 
 /**
+ * Returns true if the appointment reason is a booster dose.
+ */
+export function isBoosterReason(reasonName: string): boolean {
+  const name = reasonName.toLowerCase();
+
+  if(name.includes('booster')) {
+    return true;
+  }
+
+  return false;
+}
+
+/**
  * Scary function name! The arg is a number signifying a vaccine reason type (hopefully 1st dose).
  * It returns a list of ids which are the availability ids, which get passed to the availability
  * search.
