@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Unofficial Australian GP Vaccine Search. Searches HotDoc for nearby GPs, and ranks them by their next available appointment for
-    first vaccine dose.">
-    <meta name="keywords" content="vaccine,astrazeneca,gp,australia,nearby,soonest,appointment,pfizer">
+    <meta name="description" content="Unofficial Australian GP Vaccine Search. Find soonest booster
+    or vaccine appointment in Australia. Search HotDoc for nearby GPs, and rank by their next available appointment.">
+    <meta name="keywords" content="booster,vaccine,astrazeneca,gp,australia,nearby,soonest,appointment,pfizer">
     <meta name="author" content="Jake Coppinger">
 
     <meta property="og:url" content="https://gpvaccinesearch.com/" />
@@ -31,20 +31,17 @@
 
 
       <p>Click 'Get My Location' to find nearby GPs.</p>
-      <p>Privacy note: Your location is not logged or stored. HotDoc receives your location; their
-        privacy policy is <a href="https://practices.hotdoc.com.au/privacy-policy/">here</a>.
-        This website is open source on <a href="https://github.com/jakecoppinger/gp-vaccine-search/">GitHub</a>.
-      </p>
 
       <div>
         <input type="radio" id="anybooster_radio" name="vaccine" value="anybooster" checked="checked">
-        <label for="anybooster_radio">Booster</label>
+        <label for="anybooster_radio">Booster (Pfizer / Moderna)</label>
+
+        <input type="radio" id="pfizer_radio" name="vaccine" value="pfizer">
+        <label for="pfizer_radio">Pfizer</label>
 
         <input type="radio" id="az_radio" name="vaccine" value="astrazeneca" >
         <label for="az_radio">AstraZeneca</label>
 
-        <input type="radio" id="pfizer_radio" name="vaccine" value="pfizer">
-        <label for="pfizer_radio">Pfizer (subject to eligibility)</label>
       </div>
       <br>
 
@@ -88,9 +85,14 @@
         <li><a href="https://covidqueue.com/">covidqueue.com</a> - Unofficial vaccine appointment finder (hospitals & vaccination hubs)</li>
         <li><a href="https://covid19nearme.com.au/state/nsw/vaccination">covid19nearme.com.au</a> - A map of vaccination clinics, built by the legendary <a href="https://twitter.com/jxeeno">Ken Tsang</a></li>
       </ul>
+      <br>
+      <p>Privacy note: Your location is not logged or stored. HotDoc receives your location; their
+        privacy policy is <a href="https://practices.hotdoc.com.au/privacy-policy/">here</a>.
+        This website is open source on <a href="https://github.com/jakecoppinger/gp-vaccine-search/">GitHub</a>.
+      </p>
 
       <br>
-      <p>I built this in a weekend so don't expect too much! It is open source on <a href="https://github.com/jakecoppinger/gp-vaccine-search/">
+      <p>I (mostly) built this in a weekend so don't expect too much! It is open source on <a href="https://github.com/jakecoppinger/gp-vaccine-search/">
       GitHub</a>, PRs are very welcome.</p>
       <p>Rate limited so as not to affect HotDoc.</p>
       <p>Please add bugs on <a href="https://github.com/jakecoppinger/gp-vaccine-search/issues">GitHub Issues</a>. If you don't have GitHub please <a href="https://twitter.com/jakecoppinger">tweet</a> or email me.</p>
